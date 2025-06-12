@@ -45,35 +45,78 @@ body {
 /* ====================
    Header
    ==================== */
-.main-header {
-    background-color: #f8f9fa; /* Light gray background */
-    padding: 15px 0;
-    border-radius: 10px;
-    margin: 20px 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    position: relative;
-    z-index: 1000;
-}
-
-.main-header .container {
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    padding: 20px 40px;
+    background: transparent;
+    position: relative;
+    z-index: 1000;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 0 20px;
+}
+
+.navbar {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 10px 25px;
+    margin: 0 5px 0 auto;
+    border: 1px solid transparent;
+   /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);*/
+    flex: 0 1 auto;
+    max-width: 490px;
+    transition: border-color 0.3s ease;
+}
+
+.navbar:hover {
+    border-color: #e0e0e0;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-contact {
+    position: relative;
+    z-index: 10;
+    margin-left: 20px;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.btn-contact:hover {
+    background-color: #3D79FF;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-    width: 180px;
+    width: 160px;
     height: 50px;
     display: flex;
     align-items: center;
+    z-index: 10;
 }
 
 .logo-img {
     max-width: 100%;
     height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-img {
+    transform: scale(1.03);
+}
+
+.btn-contact {
+    z-index: 10;
+    margin-left: 5px;
+    white-space: nowrap;
 }
 
 .main-nav ul {
@@ -92,11 +135,26 @@ body {
 .nav-item a {
     text-decoration: none;
     color: #333;
-    font-weight: 500;
-    font-size: 0.95rem;
+    font-weight: var(--nav-font-weight);
+    font-size: var(--nav-font-size);
     transition: all 0.3s ease;
     padding: 8px 12px;
     border-radius: 5px;
+}
+
+.nav-item.active a {
+    color: var(--nav-active-color);
+    font-weight: var(--nav-font-weight);
+}
+
+.nav-item a:hover {
+    color: var(--nav-active-color);
+    background-color: rgba(77, 139, 255, 0.1);
+}
+
+.nav-item.has-dropdown .dropdown-menu {
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav-item a:hover {
@@ -177,17 +235,16 @@ body {
 
 /* Button Styles */
 .btn-contact {
-    background-color: var(--primary-color);
-    color: var(--white) !important;
+    background-color: #4D8BFF;
+    color: white;
     padding: 10px 25px;
-    border-radius: 6px;
+    border-radius: 25px;
+    text-decoration: none;
     transition: all 0.3s ease;
     font-weight: 500;
-    border: none;
-    cursor: pointer;
-    text-decoration: none !important;
-    display: inline-block;
-    text-align: center;
+    margin-left: 15px;
+    position: relative;
+    z-index: 10;
     box-shadow: 0 2px 5px rgba(0, 102, 204, 0.2);
 }
 

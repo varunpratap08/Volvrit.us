@@ -3,7 +3,7 @@
         <div class="footer-container">
             <div class="footer-content">
                 <a href="<?php echo $base_url; ?>" class="footer-logo">
-                    <img src="<?php echo $base_url; ?>/assets/images/logo-white.png" alt="Volvrit" width="120">
+                    <img src="<?php echo $base_url; ?>/assets/images/logo-white.png" alt="Evolvrix" width="120">
                 </a>
                 
                 <nav class="footer-nav">
@@ -43,7 +43,7 @@
             </div>
             <div class="footer-divider"></div>
             <div class="footer-copyright">
-                <p>© 2023 Volvrit. All rights reserved.</p>
+                <p>© 2023 Evolvrix. All rights reserved.</p>
             </div>
         </div>
     </footer>
