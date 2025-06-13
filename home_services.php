@@ -110,12 +110,45 @@
         color: #007BFF;
     }
 
-    /* Services Grid Layout */
+    /* Base Mobile Styles */
     .services-grid {
-        display: grid;
-        grid-template-columns: 2fr 3fr; /* Adjusted: App Development 40%, Right column 60% */
+        display: flex;
+        flex-direction: column;
         gap: 20px;
-        height: auto;
+        width: 100%;
+    }
+    
+    /* Tablet and up (768px) */
+    @media (min-width: 768px) {
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+        }
+        
+        .app-card {
+            grid-row: 1 / span 2;
+        }
+        
+        .right-cards-wrapper {
+            grid-column: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .top-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+    }
+    
+    /* Desktop (1024px and up) */
+    @media (min-width: 1024px) {
+        .services-grid {
+            grid-template-columns: 2fr 3fr;
+        }
     }
 
     /* Right Cards Wrapper */
@@ -145,13 +178,18 @@
     /* Service Card Styling */
     .service-card {
         background: #fff;
-        padding: 30px;
-        border-radius: 10px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        transition: transform 0.3s ease;
+        padding: 1.875rem;
+        border-radius: 0.625rem;
+        box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
         display: flex;
         flex-direction: column;
-        flex: 1;
+        width: 100%;
+        margin-bottom: 1.25rem;
+    }
+    
+    .service-card:last-child {
+        margin-bottom: 0;
     }
 
     .app-card {
@@ -161,11 +199,12 @@
     /* Card Image */
     .card-image {
         position: relative;
-        margin: -30px -30px 20px -30px;
+        margin: -1.875rem -1.875rem 1.25rem -1.875rem;
         overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: center;
+        width: calc(100% + 3.75rem);
     }
     
     /* App Development Card Image */
@@ -274,74 +313,73 @@
         transform: scale(1.05);
     }
 
-    /* Responsive Adjustments */
-    @media (max-width: 768px) {
-        .services-grid {
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-        }
-
-        .app-card {
-            grid-row: auto;
-        }
-
-        .right-cards-wrapper {
-            gap: 20px;
-        }
-
-        .top-cards {
-            grid-template-columns: 1fr;
-        }
-
+    /* Responsive Image Heights */
+    .card-image {
+        height: 12.5rem; /* 200px */
+    }
+    
+    .app-card .card-image {
+        height: 18.75rem; /* 300px */
+    }
+    
+    /* Small devices (576px and up) */
+    @media (min-width: 576px) {
         .card-image {
-            height: 250px; /* Increased for App Development on mobile */
-            margin: -20px -20px 15px -20px;
+            height: 15.625rem; /* 250px */
         }
         
         .app-card .card-image {
-            height: 300px; /* Taller for App Development on mobile */
+            height: 25rem; /* 400px */
         }
-
+    }
+    
+    /* Medium devices (768px and up) */
+    @media (min-width: 768px) {
         .top-cards .card-image,
         .bottom-card .card-image {
-            height: 140px; /* Increased for other cards on mobile */
+            height: 11.25rem; /* 180px */
         }
-
-        .service-card {
-            padding: 20px;
+        
+        .app-card .card-image {
+            height: calc(100% + 3.75rem);
         }
-
-        .service-card h3 {
-            font-size: 18px;
+    }
+    
+    /* Large devices (992px and up) */
+    @media (min-width: 992px) {
+        .top-cards .card-image,
+        .bottom-card .card-image {
+            height: 12.5rem; /* 200px */
         }
-
-        .service-card p {
-            font-size: 13px;
+    }
+    
+    /* Extra large devices (1200px and up) */
+    @media (min-width: 1200px) {
+        .top-cards .card-image,
+        .bottom-card .card-image {
+            height: 15.625rem; /* 250px */
         }
-
-        h2 {
-            font-size: 24px;
-        }
+    }
 
         .deco-dot-1 {
-            width: 15px;
-            height: 15px;
-            top: 5px;
-            left: 5px;
+            width: 0.9375rem; /* 15px */
+            height: 0.9375rem;
+            top: 0.3125rem;
+            left: 0.3125rem;
         }
 
         .deco-dot-2 {
-            width: 10px;
-            height: 10px;
-            top: 30px;
-            left: 15px;
+            width: 0.625rem; /* 10px */
+            height: 0.625rem;
+            top: 1.875rem;
+            left: 0.9375rem;
         }
 
         .deco-dot-3 {
-            width: 20px;
-            height: 20px;
-            bottom: 5px;
-            left: 20px;
+            width: 1.25rem; /* 20px */
+            height: 1.25rem;
+            bottom: 0.3125rem;
+            left: 1.25rem;
         }
     }
 
@@ -356,19 +394,36 @@
 
         .card-image {
 height: 200px;
+        
+        .section-label {
+            font-size: 0.875rem; /* 14px */
         }
-
-        .top-cards .card-image,
-        .bottom-card .card-image {
-            height: 160px;
+        
+        .card-image {
+            height: 10rem; /* 160px */
+            margin: -1.25rem -1.25rem 1rem -1.25rem;
         }
         
         .app-card .card-image {
-            height: 250px;
+            height: 15rem; /* 240px */
         }
-
+        
         .service-card {
-            padding: 15px;
+            padding: 1.25rem;
+        }
+        
+        .service-card h3 {
+            font-size: 1.125rem; /* 18px */
+        }
+        
+        .service-card p {
+            font-size: 0.875rem; /* 14px */
+            margin-bottom: 1rem;
+        }
+        
+        .btn {
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
         }
     }
 </style>
