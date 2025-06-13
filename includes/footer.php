@@ -1,52 +1,67 @@
-    </main>
-    <footer class="main-footer">
-        <div class="footer-container">
-            <div class="footer-content">
-                <a href="<?php echo $base_url; ?>" class="footer-logo">
-                    <img src="<?php echo $base_url; ?>/assets/images/logo-white.png" alt="Evolvrix" width="120">
-                </a>
-                
-                <nav class="footer-nav">
-                    <ul class="nav-links">
-                        <li><a href="<?php echo $base_url; ?>/index.php" class="nav-link">Home</a></li>
-                        <li><a href="<?php echo $base_url; ?>/about.php" class="nav-link">About</a></li>
-                        <li><a href="<?php echo $base_url; ?>/services.php" class="nav-link">Services</a></li>
-                        <li><a href="<?php echo $base_url; ?>/portfolio.php" class="nav-link">Portfolio</a></li>
-                        <li><a href="<?php echo $base_url; ?>/contact.php" class="nav-link">Contact</a></li>
-                    </ul>
-                </nav>
-
-                <div class="social-links">
-                    <a href="#" class="social-link" aria-label="Facebook">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M18 2H15C13.6739 2 12.4021 2.52678 11.4645 3.46447C10.5268 4.40215 10 5.67392 10 7V10H7V14H10V22H14V14H17L18 10H14V7C14 6.73478 14.1054 6.48043 14.2929 6.29289C14.4804 6.10536 14.7348 6 15 6H18V2Z" fill="white"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-link" aria-label="Twitter">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M22.46 6.01233C21.69 6.35233 20.86 6.58233 20 6.69033C20.88 6.16033 21.56 5.33233 21.88 4.31233C21.05 4.81233 20.13 5.16233 19.16 5.36233C18.37 4.49233 17.26 3.97233 16 3.97233C13.65 3.97233 11.73 5.92233 11.73 8.29233C11.73 8.63233 11.77 8.96233 11.84 9.27233C8.28 9.09233 5.11 7.13233 3 4.16233C2.63 4.79233 2.42 5.49233 2.42 6.29233C2.42 7.77233 3.25 9.05233 4.5 9.82233C3.85 9.79233 3.24 9.61233 2.71 9.33233V9.39233C2.71 11.4423 4.22 13.1123 6.22 13.5123C6.08 13.5523 5.77 13.6023 5.46 13.6023C5.21 13.6023 4.95 13.5723 4.7 13.5223C5.21 15.1623 6.69 16.3623 8.45 16.4023C7.11 17.4923 5.39 18.1323 3.51 18.1323C3.18 18.1323 2.83 18.1123 2.5 18.0723C4.29 19.2423 6.42 19.9723 8.73 19.9723C16 19.9723 20.1 13.6723 20.1 8.10233C20.1 7.93233 20.1 7.76233 20.09 7.59233C20.94 6.96233 21.67 6.16233 22.23 5.26233L22.22 5.27233C21.96 5.31233 21.7 5.41233 21.46 5.51233C21.78 5.10233 22.05 4.67233 22.23 4.19233C21.94 4.66233 21.58 5.06233 21.17 5.40233C21.56 5.33233 21.94 5.19233 22.28 5.02233L22.46 6.01233Z" fill="white"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-link" aria-label="Instagram">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2.16272C15.204 2.16272 15.584 2.17272 16.85 2.23272C18.021 2.28872 18.655 2.46072 19.077 2.65072C19.616 2.89172 20.054 3.20972 20.407 3.59272C20.79 3.94572 21.108 4.38372 21.349 4.92272C21.539 5.34472 21.711 5.97872 21.767 7.14872C21.827 8.41572 21.837 8.79572 21.837 11.9997C21.837 15.2037 21.827 15.5837 21.767 16.8497C21.711 18.0197 21.539 18.6547 21.349 19.0767C21.108 19.6157 20.79 20.0537 20.407 20.4067C20.054 20.7897 19.616 21.1077 19.077 21.3487C18.655 21.5387 18.021 21.7107 16.851 21.7667C15.584 21.8267 15.204 21.8367 12 21.8367C8.796 21.8367 8.416 21.8267 7.15 21.7667C5.98 21.7107 5.345 21.5387 4.923 21.3487C4.384 21.1077 3.946 20.7897 3.593 20.4067C3.21 20.0537 2.892 19.6157 2.651 19.0767C2.461 18.6547 2.289 18.0207 2.233 16.8507C2.173 15.5837 2.163 15.2037 2.163 11.9997C2.163 8.79572 2.173 8.41572 2.233 7.14972C2.289 5.97872 2.461 5.34472 2.651 4.92272C2.892 4.38372 3.21 3.94572 3.593 3.59272C3.946 3.20972 4.384 2.89172 4.923 2.65072C5.345 2.46072 5.979 2.28872 7.149 2.23272C8.416 2.17272 8.796 2.16272 12 2.16272ZM12 0.000720978C8.741 0.000720978 8.333 0.011721 7.053 0.071721C5.775 0.131721 4.903 0.308721 4.141 0.582721C3.351 0.865721 2.68 1.24572 2.052 1.92672C1.371 2.55472 0.991 3.22672 0.708 4.01572C0.434 4.77872 0.257 5.65072 0.197 6.92772C0.137 8.20672 0.127 8.61472 0.127 11.8737C0.127 15.1327 0.137 15.5407 0.197 16.8197C0.257 18.0967 0.434 18.9697 0.708 19.7317C0.991 20.5217 1.371 21.1927 2.052 21.8197C2.68 22.5007 3.351 22.8807 4.141 23.1637C4.904 23.4377 5.776 23.6147 7.053 23.6747C8.331 23.7347 8.739 23.7447 11.998 23.7447C15.259 23.7447 15.666 23.7347 16.944 23.6747C18.221 23.6147 19.094 23.4377 19.856 23.1637C20.646 22.8807 21.317 22.5007 21.945 21.8197C22.626 21.1927 23.006 20.5217 23.289 19.7317C23.563 18.9687 23.74 18.0967 23.8 16.8197C23.86 15.5417 23.87 15.1337 23.87 11.8747C23.87 8.61572 23.86 8.20772 23.8 6.92772C23.74 5.65072 23.563 4.77772 23.289 4.01572C23.006 3.22572 22.626 2.55472 21.945 1.92672C21.317 1.24572 20.646 0.865721 19.856 0.582721C19.093 0.308721 18.221 0.131721 16.944 0.071721C15.666 0.011721 15.259 0.000720978 11.998 0.000720978H12Z" fill="white"/>
-                            <path d="M12 5.83789C8.596 5.83789 5.837 8.59689 5.837 12.0009C5.837 15.4039 8.596 18.1629 12 18.1629C15.404 18.1629 18.162 15.4039 18.162 12.0009C18.162 8.59689 15.404 5.83789 12 5.83789ZM12 15.9999C9.794 15.9999 8 14.2059 8 12.0009C8 9.79489 9.794 7.99989 12 7.99989C14.206 7.99989 16 9.79489 16 12.0009C16 14.2059 14.206 15.9999 12 15.9999Z" fill="white"/>
-                            <path d="M18.406 7.0332C18.406 7.5892 17.958 8.0372 17.402 8.0372C16.846 8.0372 16.398 7.5892 16.398 7.0332C16.398 6.4772 16.846 6.0292 17.402 6.0292C17.958 6.0292 18.406 6.4772 18.406 7.0332Z" fill="white"/>
-                        </svg>
-                    </a>
-                    <a href="#" class="social-link" aria-label="LinkedIn">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21.6 0H2.4C1.076 0 0 1.076 0 2.4V21.6C0 22.924 1.076 24 2.4 24H21.6C22.924 24 24 22.924 24 21.6V2.4C24 1.076 22.924 0 21.6 0ZM7.2 20.4H3.6V9.6H7.2V20.4ZM5.4 7.56C4.2 7.56 3.24 6.6 3.24 5.4C3.24 4.2 4.2 3.24 5.4 3.24C6.6 3.24 7.56 4.2 7.56 5.4C7.56 6.6 6.6 7.56 5.4 7.56ZM20.4 20.4H16.8V14.88C16.8 13.08 16.68 10.8 14.28 10.8C12.24 10.8 11.88 12.66 11.88 14.76V20.4H8.28V9.6H11.64V11.28H11.7C12.36 10.08 13.68 9.24 15.12 9.24C18.12 9.24 20.4 11.28 20.4 14.88V20.4Z" fill="white"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="footer-divider"></div>
-            <div class="footer-copyright">
-                <p>© 2023 Evolvrix. All rights reserved.</p>
-            </div>
+<!-- footer.php -->
+<style>
+    footer {
+        background: #fff;
+        padding: 40px 0;
+        border-top: 1px solid #e0e0e0;
+    }
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+    .footer-logo img {
+        max-width: 150px;
+    }
+    .footer-links h4, .footer-services h4, .footer-contact h4 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .footer-links a, .footer-services a {
+        display: block;
+        color: #333;
+        text-decoration: none;
+        margin-bottom: 10px;
+        transition: color 0.3s ease;
+    }
+    .footer-links a:hover, .footer-services a:hover {
+        color: #007BFF;
+    }
+    .footer-contact p {
+        margin-bottom: 10px;
+    }
+</style>
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="https://via.placeholder.com/150x50?text=Evolve+Logo" alt="Evolve Logo">
+            <p>Lorem ipsum has been the industry's standard dummy text making it.</p>
         </div>
-    </footer>
-    <script src="<?php echo $base_url; ?>/js/main.js"></script>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="footer-services">
+            <h4>Services</h4>
+            <a href="#">Web Development</a>
+            <a href="#">App Development</a>
+            <a href="#">CRM Development</a>
+            <a href="#">UX Designing</a>
+            <a href="#">API Development</a>
+        </div>
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p>📞 +1 223 456 7890</p>
+            <p>📧 evolve@gmail.com</p>
+            <p>📍 2212 4th Street NY, USA</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
