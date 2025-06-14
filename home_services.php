@@ -65,7 +65,7 @@
 <style>
     /* Grid Background */
     .grid-bg {
-        background: url('https://www.transparenttextures.com/patterns/grid-me.png') repeat;
+        background-image: url('assets/images/background_grid.png');
         background-color: #F5F7FA;
         padding: 60px 0;
     }

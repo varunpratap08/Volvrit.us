@@ -116,7 +116,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            text-align: center;
+            text-align: left;
             width: 80%;
         }
 
@@ -132,7 +132,7 @@
             background: #fff;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
         }
 
         .testimonial-text p {

@@ -12,7 +12,8 @@
     <style>
         /* Header Styles */
         header {
-            background: transparent;
+            /* background-image: url('assets/images/background_grid.png'); */
+           background-color: #F5F7FA;
             padding: 10px 0;
             position: fixed;
             width: 100%;
