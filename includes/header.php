@@ -324,11 +324,11 @@
                         <div class="services-menu">
                             <h3>Our Services</h3>
                             <div class="services-grid">
-                                <a href="#" class="service-item">
+                                <a href="web_development.php" class="service-item">
                                     <span class="service-icon"><i class="fas fa-rocket"></i></span>
                                     <span>Web Development</span>
                                 </a>
-                                <a href="#" class="service-item">
+                                <a href="app_development.php" class="service-item">
                                     <span class="service-icon"><i class="fas fa-mobile-alt"></i></span>
                                     <span>Mobile App Development</span>
                                 </a>

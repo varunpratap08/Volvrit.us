@@ -24,17 +24,22 @@ require_once 'includes/header.php';
             height: 80vh;
             min-height: 600px;
             background: linear-gradient(
-                to bottom,
-                rgba(255, 255, 255, 0.95) 0%,
-                rgba(255, 255, 255, 0.85) 100%
-            ), url('assets/images/about_usbg.png') center/cover no-repeat;
-            background-blend-mode: overlay;
+                    to bottom,
+                    rgba(255, 255, 255, 0.9) 0%,
+                    rgba(255, 255, 255, 0.8) 100%
+                ),
+                url('assets/images/about_usbg.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 120px 20px 80px;
+            align-items: flex-start;
+            text-align: left;
+            padding: 120px 0 80px;
+            padding-left: max(5%, calc((100% - 1200px) / 2));
+            padding-right: 5%;
             overflow: hidden;
         }
 
@@ -50,22 +55,27 @@ require_once 'includes/header.php';
         }
 
         .hero-section h1 {
+            font-family: 'Poppins', sans-serif;
             font-size: 56px;
             font-weight: 700;
             line-height: 1.2;
-            color: #1F2937;
-            margin: 0 auto 24px;
+            color: #2563EB;
+            margin: 0 0 24px 0;
             max-width: 800px;
             z-index: 2;
+            text-align: left;
+            width: 100%;
         }
 
         .hero-section p {
             font-size: 18px;
             color: #4B5563;
             line-height: 1.6;
-            margin: 0 auto 40px;
+            margin: 0 0 40px 0;
             max-width: 600px;
             z-index: 2;
+            text-align: left;
+            width: 100%;
         }
 
         .hero-section .btn {
@@ -73,8 +83,9 @@ require_once 'includes/header.php';
             background-color: #2563EB;
             color: white;
             padding: 12px 28px;
-            border-radius: 6px;
+            border-radius: 24px;
             font-weight: 500;
+            font-size: 18px;
             text-decoration: none;
             transition: all 0.3s ease;
             border: none;
@@ -89,27 +100,137 @@ require_once 'includes/header.php';
 
         .tech-icons {
             position: absolute;
-            width: 100%;
+            width: 40%;
             height: 100%;
             top: 0;
-            left: 0;
+            right: 5%;
             pointer-events: none;
             z-index: 1;
             opacity: 0.8;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 20px;
         }
 
         .tech-icons img {
-            position: absolute;
-            width: 120px;
-            height: 120px;
+            position: relative;
+            width: 100px;
+            height: 100px;
             object-fit: contain;
             transition: all 0.4s ease;
+            margin: 10px 0;
         }
 
-        .tech-icons img:nth-child(1) { top: 15%; left: 10%; }
-        .tech-icons img:nth-child(2) { top: 20%; right: 12%; }
-        .tech-icons img:nth-child(3) { bottom: 25%; left: 15%; }
-        .tech-icons img:nth-child(4) { bottom: 20%; right: 10%; }
+        /* Responsive adjustments for tech icons */
+        @media (max-width: 1024px) {
+            .tech-icons {
+                width: 50%;
+                right: 2%;
+            }
+            .tech-icons img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+         /* Responsive Design */
+         @media (max-width: 1024px) {
+            .hero-section {
+                height: 70vh;
+                min-height: 500px;
+                padding: 100px 5% 60px;
+            }
+
+            .hero-section h1 {
+                font-size: 44px;
+                max-width: 600px;
+            }
+
+            .hero-section p {
+                font-size: 16px;
+                max-width: 500px;
+            }
+
+            .tech-icons img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                height: auto;
+                min-height: 450px;
+                padding: 80px 0 40px;
+                padding-left: max(5%, calc((100% - 1200px) / 2));
+                padding-right: 5%;
+                text-align: center;
+                align-items: center;
+            }
+            .hero-section h1,
+            .hero-section p {
+                text-align: center;
+            }
+            .tech-icons {
+                position: relative;
+                width: 100%;
+                right: 0;
+                flex-direction: row;
+                justify-content: center;
+                margin-top: 30px;
+                opacity: 0.6;
+            }
+
+            .hero-section h1 {
+                font-size: 32px;
+                max-width: 90%;
+            }
+
+            .hero-section p {
+                font-size: 14px;
+                max-width: 90%;
+            }
+
+            .hero-section .btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+
+            .tech-icons img {
+                width: 80px;
+                height: 80px;
+                opacity: 0.6;
+            }
+
+            .tech-icons img:nth-child(1) { top: 10%; left: 5%; }
+            .tech-icons img:nth-child(2) { top: 15%; right: 5%; }
+            .tech-icons img:nth-child(3) { bottom: 15%; left: 5%; }
+            .tech-icons img:nth-child(4) { bottom: 10%; right: 5%; }
+        }
+
+        @media (max-width: 480px) {
+            .hero-section {
+                height: auto;
+                min-height: 400px;
+                padding: 60px 0 30px;
+                padding-left: max(5%, calc((100% - 1200px) / 2));
+                padding-right: 5%;
+            }
+
+            .hero-section h1 {
+                font-size: 24px;
+            }
+
+            .hero-section p {
+                font-size: 12px;
+            }
+
+            .tech-icons img {
+                width: 60px;
+                height: 60px;
+            }
+        }
 
         /* Main Content Sections with Grid Background */
         .content-section {
@@ -323,27 +444,7 @@ require_once 'includes/header.php';
 
         /* Responsive Design */
         @media (max-width: 1024px) {
-            .hero-section {
-                height: 70vh;
-                min-height: 500px;
-                padding: 100px 20px 60px;
-            }
-
-            .hero-section h1 {
-                font-size: 44px;
-                max-width: 600px;
-            }
-
-            .hero-section p {
-                font-size: 16px;
-                max-width: 500px;
-            }
-
-            .tech-icons img {
-                width: 100px;
-                height: 100px;
-            }
-
+        
             .content-section {
                 padding: 40px 15px;
             }
@@ -367,39 +468,69 @@ require_once 'includes/header.php';
             }
         }
 
+        /* Intro Section with Scrolling Text */
+        .intro-section {
+            background-color: #2563EB;
+            overflow: hidden;
+            position: relative;
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        .scrolling-text-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            height: 100%;
+        }
+
+        .scrolling-text-wrapper {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+        }
+
+        .scrolling-text {
+            display: flex;
+            white-space: nowrap;
+            will-change: transform;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            align-items: center;
+            padding: 0;
+            transition: transform 0.3s ease-out;
+            transform: translateX(0);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            padding: 0 20px;
+        }
+        
+        .scrolling-text span {
+            display: inline-block;
+            padding-right: 50px; /* Space between repeated text */
+        }
+        
+        .scrolling-text-container:hover .scrolling-text {
+            animation: scroll-left 20s linear infinite;
+            animation-play-state: running;
+        }
+        
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
         @media (max-width: 768px) {
-            .hero-section {
-                height: 60vh;
-                min-height: 450px;
-                padding: 80px 15px 40px;
-            }
-
-            .hero-section h1 {
-                font-size: 32px;
-                max-width: 90%;
-            }
-
-            .hero-section p {
-                font-size: 14px;
-                max-width: 90%;
-            }
-
-            .hero-section .btn {
-                padding: 10px 20px;
-                font-size: 14px;
-            }
-
-            .tech-icons img {
-                width: 80px;
-                height: 80px;
-                opacity: 0.6;
-            }
-
-            .tech-icons img:nth-child(1) { top: 10%; left: 5%; }
-            .tech-icons img:nth-child(2) { top: 15%; right: 5%; }
-            .tech-icons img:nth-child(3) { bottom: 15%; left: 5%; }
-            .tech-icons img:nth-child(4) { bottom: 10%; right: 5%; }
-
             .content-section {
                 padding: 30px 10px;
             }
@@ -435,25 +566,6 @@ require_once 'includes/header.php';
         }
 
         @media (max-width: 480px) {
-            .hero-section {
-                height: 50vh;
-                min-height: 400px;
-                padding: 60px 10px 30px;
-            }
-
-            .hero-section h1 {
-                font-size: 24px;
-            }
-
-            .hero-section p {
-                font-size: 12px;
-            }
-
-            .tech-icons img {
-                width: 60px;
-                height: 60px;
-            }
-
             .content-section h2 {
                 font-size: 24px;
             }
@@ -562,7 +674,7 @@ require_once 'includes/header.php';
     </style>
 </head>
 <body>
-    <!-- Hero Section -->
+<!-- Hero Section -->
     <section class="hero-section">
         <div class="tech-icons">
             <img src="assets/images/react 2.svg" alt="React" loading="lazy">
@@ -571,10 +683,23 @@ require_once 'includes/header.php';
             <img src="assets/images/figma 2.svg" alt="Figma" loading="lazy">
         </div>
         <div class="container">
-            <div class="section-label">What we do</div>
-            <h1>We evolve ideas into intelligent digital products.</h1>
+            <h1>We evolve ideas into Intelligent digital products.</h1>
             <p>Industry dummy ipsum has been the industry's standard dummy text. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-            <a href="#contact" class="btn">Let's plan your project</a>
+            <a href="#contact" class="btn">
+            <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
+            <span>Let's plan your project</span>
+            </a>
+        </div>
+    </section>
+    
+    <!-- Scrolling Text Section -->
+    <section class="intro-section">
+        <div class="scrolling-text-container">
+            <div class="scrolling-text-wrapper">
+                <div class="scrolling-text" id="scrollingText">
+                    <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -624,3 +749,82 @@ require_once 'includes/header.php';
 
     <!-- Include Footer -->
     <?php require_once 'includes/footer.php'; ?>
+    
+    <script>
+        function initScrollingText() {
+            const scrollingWrapper = document.querySelector('.scrolling-text-wrapper');
+            const scrollingText = document.querySelector('.scrolling-text');
+            const textElement = document.getElementById('scrollingText');
+            
+            if (!scrollingWrapper || !scrollingText || !textElement) return;
+            
+            // Clear any existing clones
+            const existingClones = scrollingText.querySelectorAll('span[aria-hidden="true"]');
+            existingClones.forEach(clone => clone.remove());
+            
+            // Create a clone of the text
+            const clone = textElement.cloneNode(true);
+            clone.setAttribute('aria-hidden', 'true');
+            
+            // Add the clone to create a seamless loop
+            scrollingText.appendChild(clone);
+            
+            // Set initial styles
+            scrollingText.style.opacity = '1';
+            
+            // Handle window resize
+            let resizeTimer;
+            const updateAnimation = () => {
+                const textWidth = textElement.offsetWidth;
+                const containerWidth = scrollingWrapper.offsetWidth;
+                
+                // Only enable scrolling if text is wider than container
+                if (textWidth > containerWidth) {
+                    const duration = textWidth / 50; // Speed factor (pixels per second)
+                    scrollingText.style.width = textWidth * 2 + 'px';
+                    scrollingText.style.animation = `scroll-left ${duration}s linear infinite`;
+                    scrollingText.style.animationPlayState = 'paused';
+                } else {
+                    scrollingText.style.width = 'auto';
+                    scrollingText.style.animation = 'none';
+                }
+            };
+            
+            // Initial setup
+            updateAnimation();
+            
+            // Handle window resize
+            const handleResize = () => {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(updateAnimation, 250);
+            };
+            
+            window.addEventListener('resize', handleResize);
+            
+            // Pause/play on hover
+            const container = document.querySelector('.scrolling-text-container');
+            container.addEventListener('mouseenter', () => {
+                if (scrollingText.style.animation) {
+                    scrollingText.style.animationPlayState = 'running';
+                }
+            });
+            
+            container.addEventListener('mouseleave', () => {
+                if (scrollingText.style.animation) {
+                    scrollingText.style.animationPlayState = 'paused';
+                    // Reset position when mouse leaves
+                    scrollingText.style.animation = 'none';
+                    scrollingText.style.transform = 'translateX(0)';
+                    scrollingText.offsetHeight; // Trigger reflow
+                    updateAnimation();
+                }
+            });
+        }
+        
+        // Run on DOMContentLoaded and when the page is fully loaded
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initScrollingText);
+        } else {
+            initScrollingText();
+        }
+    </script>

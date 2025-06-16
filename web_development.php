@@ -15,14 +15,18 @@ require_once 'includes/header.php';
             padding: 0;
             box-sizing: border-box;
             font-family: 'Arial', sans-serif;
-            background-image: url('https://www.transparenttextures.com/patterns/grid-me.png');
+          /*  background-image: url('https://www.transparenttextures.com/patterns/grid-me.png');*/
             background-repeat: repeat;
             background-size: auto;
         }
 
         body {
             /* Background styles are inherited from universal selector */
+            background-image: url('https://www.transparenttextures.com/patterns/grid-me.png');
         }
+
+        /* Import Poppins font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
         /* Hero Section Styling */
         .hero-section {
@@ -30,17 +34,22 @@ require_once 'includes/header.php';
             height: 80vh;
             min-height: 600px;
             background: linear-gradient(
-                to bottom,
-                rgba(255, 255, 255, 0.95) 0%,
-                rgba(255, 255, 255, 0.85) 100%
-            );
-            background-blend-mode: overlay;
+                    to bottom,
+                    rgba(255, 255, 255, 0.9) 0%,
+                    rgba(255, 255, 255, 0.8) 100%
+                ),
+                url('assets/images/about_usbg.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 120px 20px 80px;
+            align-items: flex-start;
+            text-align: left;
+            padding: 120px 0 80px;
+            padding-left: max(5%, calc((100% - 1200px) / 2));
+            padding-right: 5%;
             overflow: hidden;
         }
 
@@ -56,22 +65,27 @@ require_once 'includes/header.php';
         }
 
         .hero-section h1 {
+            font-family: 'Poppins', sans-serif;
             font-size: 56px;
             font-weight: 700;
             line-height: 1.2;
-            color: #1F2937;
-            margin: 0 auto 24px;
+            color: #2563EB;
+            margin: 0 0 24px 0;
             max-width: 800px;
             z-index: 2;
+            text-align: left;
+            width: 100%;
         }
 
         .hero-section p {
             font-size: 18px;
             color: #4B5563;
             line-height: 1.6;
-            margin: 0 auto 40px;
+            margin: 0 0 40px 0;
             max-width: 600px;
             z-index: 2;
+            text-align: left;
+            width: 100%;
         }
 
         .hero-section .btn {
@@ -79,8 +93,9 @@ require_once 'includes/header.php';
             background-color: #2563EB;
             color: white;
             padding: 12px 28px;
-            border-radius: 6px;
+            border-radius: 24px;
             font-weight: 500;
+            font-size: 18px;
             text-decoration: none;
             transition: all 0.3s ease;
             border: none;
@@ -95,33 +110,46 @@ require_once 'includes/header.php';
 
         .tech-icons {
             position: absolute;
-            width: 100%;
+            width: 40%;
             height: 100%;
             top: 0;
-            left: 0;
+            right: 5%;
             pointer-events: none;
             z-index: 1;
             opacity: 0.8;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 20px;
         }
 
         .tech-icons img {
-            position: absolute;
-            width: 120px;
-            height: 120px;
+            position: relative;
+            width: 100px;
+            height: 100px;
             object-fit: contain;
             transition: all 0.4s ease;
+            margin: 10px 0;
         }
 
-        .tech-icons img:nth-child(1) { top: 15%; left: 10%; }
-        .tech-icons img:nth-child(2) { top: 20%; right: 12%; }
-        .tech-icons img:nth-child(3) { bottom: 25%; left: 15%; }
-        .tech-icons img:nth-child(4) { bottom: 20%; right: 10%; }
+        /* Responsive adjustments for tech icons */
+        @media (max-width: 1024px) {
+            .tech-icons {
+                width: 50%;
+                right: 2%;
+            }
+            .tech-icons img {
+                width: 80px;
+                height: 80px;
+            }
+        }
          /* Responsive Design */
          @media (max-width: 1024px) {
             .hero-section {
                 height: 70vh;
                 min-height: 500px;
-                padding: 100px 20px 60px;
+                padding: 100px 5% 60px;
             }
 
             .hero-section h1 {
@@ -142,9 +170,26 @@ require_once 'includes/header.php';
 
         @media (max-width: 768px) {
             .hero-section {
-                height: 60vh;
+                height: auto;
                 min-height: 450px;
-                padding: 80px 15px 40px;
+                padding: 80px 0 40px;
+                padding-left: max(5%, calc((100% - 1200px) / 2));
+                padding-right: 5%;
+                text-align: center;
+                align-items: center;
+            }
+            .hero-section h1,
+            .hero-section p {
+                text-align: center;
+            }
+            .tech-icons {
+                position: relative;
+                width: 100%;
+                right: 0;
+                flex-direction: row;
+                justify-content: center;
+                margin-top: 30px;
+                opacity: 0.6;
             }
 
             .hero-section h1 {
@@ -176,9 +221,11 @@ require_once 'includes/header.php';
 
         @media (max-width: 480px) {
             .hero-section {
-                height: 50vh;
+                height: auto;
                 min-height: 400px;
-                padding: 60px 10px 30px;
+                padding: 60px 0 30px;
+                padding-left: max(5%, calc((100% - 1200px) / 2));
+                padding-right: 5%;
             }
 
             .hero-section h1 {
@@ -193,6 +240,251 @@ require_once 'includes/header.php';
                 width: 60px;
                 height: 60px;
             }
+        }
+
+        /* Intro Section with Scrolling Text */
+        .intro-section {
+            background-color: #2563EB;
+            overflow: hidden;
+            position: relative;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .scrolling-text-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .scrolling-text-wrapper {
+            display: flex;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .scrolling-text {
+            display: flex;
+            white-space: nowrap;
+            will-change: transform;
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            align-items: center;
+            padding: 0;
+            transition: transform 0.3s ease-out;
+            transform: translateX(0);
+        }
+        
+        .scrolling-text-container:hover .scrolling-text {
+            animation: scroll-left 30s linear infinite;
+        }
+        
+        /* Button Styles */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: #2563EB;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            padding: 12px 30px;
+            border-radius: 50px; /* Creates capsule shape */
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            margin-top: 20px;
+            line-height: 1.5;
+        }
+        
+        .btn:hover {
+            background-color: #1D4ED8;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 6px rgba(37, 99, 235, 0.2);
+        }
+        
+        .btn-icon {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .btn:hover .btn-icon {
+            transform: translateX(3px);
+        }
+
+        /* Offer Tag Styles */
+        .offer-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border: 1px solid #E5E7EB;
+            border-radius: 24px;
+            background-color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #6C7075;
+            margin-bottom: 20px;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+        }
+        
+        .offer-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+        }
+        
+        .offer-icon svg {
+            width: 16px;
+            height: 16px;
+        }
+        
+        .offer-text {
+            white-space: nowrap;
+            letter-spacing: 0.01em;
+        }
+        
+        .gradient-text {
+            display: block;
+            background: linear-gradient(90deg, #2563EB 0%, #66C1A9 80.42%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-top: 8px;
+        }
+        
+        /* Common styles for both Business Value and What We Offer sections */
+        .business-value-section .item-text,
+        .business-value-section .sub-list,
+        .business-value-section .sub-list li,
+        .intro-list .item-text,
+        .intro-list .sub-list,
+        .intro-list .sub-list li {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 36px;
+            letter-spacing: 0;
+            color: #959595;
+            margin-bottom: 16px;
+        }
+        
+        .business-value-section .sub-list,
+        .intro-list .sub-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 16px;
+        }
+        
+        .business-value-section .sub-list li,
+        .intro-list .sub-list li {
+            position: relative;
+            padding-left: 32px;
+            margin-bottom: 8px;
+        }
+        
+        .business-value-section .sub-list li:before,
+        .intro-list .sub-list li:before {
+            content: '•';
+            color: #2563EB;
+            font-size: 24px;
+            position: absolute;
+            left: 8px;
+            top: 0;
+            line-height: 36px;
+        }
+        
+        .intro-list .item-title {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 1.4;
+            color: #000000;
+            margin-bottom: 16px;
+        }
+        
+        .intro-list .subtitle-line {
+            display: block;
+            background: linear-gradient(90deg, #2563EB 0%, #2AB7B7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-top: 4px;
+        }
+        
+        /* Title Styles */
+        .item-title {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 44px;
+            letter-spacing: 0;
+            margin: 0 0 16px 0;
+        }
+        
+        .title-line {
+            color: #000;
+        }
+        
+        .subtitle-line {
+            background: linear-gradient(90deg, #2563EB 0%, #2AB7B7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: block;
+            margin-top: -8px; /* Compensate for line height */
+        }
+        
+        .scrolling-text span {
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            white-space: nowrap;
+            flex-shrink: 0;
+            padding: 0 40px 0 20px;
+            line-height: 1;
+            display: inline-flex;
+            align-items: center;
+            height: 100%;
+            position: relative;
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-100% + 100vw));
+            }
+        }
+        
+        .scrolling-text-wrapper {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
         }
 
         .section {
@@ -308,7 +600,7 @@ require_once 'includes/header.php';
             grid-template-columns: repeat(4, 1fr);
             gap: 30px;
         }
-}
+
 
 /* Section Title */
 .section-title {
@@ -590,30 +882,45 @@ require_once 'includes/header.php';
             <img src="assets/images/figma 2.svg" alt="Figma" loading="lazy">
         </div>
         <div class="container">
-            <div class="section-label">What we do</div>
-            <h1>We evolve ideas into intelligent digital products.</h1>
+            <h1>We evolve ideas into Intelligent digital products.</h1>
             <p>Industry dummy ipsum has been the industry's standard dummy text. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-            <a href="#contact" class="btn">Let's plan your project</a>
+            <a href="#contact" class="btn">
+            <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
+            <span>Let's plan your project</span>
+            </a>
         </div>
     </section>
     <!-- Intro Section -->
-    <section class="intro-section section">
+    <section class="intro-section">
+        <div class="scrolling-text-container">
+            <div class="scrolling-text-wrapper">
+                <div class="scrolling-text" id="scrollingText">
+                    <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
+                  <!-- <span aria-hidden="true">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section">
         <div class="container">
-            <p class="intro-text">
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-            </p>
             <ul class="intro-list">
                 <li class="intro-item">
-                    <span class="icon"></span>
-                    <div>
-                        <h3 class="item-title">What we offer</h3>
-                        <p class="item-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                    <div class="offer-tag">
+                        <span class="offer-icon">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" fill="#28A745"/>
+                            </svg>
+                        </span>
+                        <span class="offer-text">What we offer</span>
                     </div>
                 </li>
-                <li class="intro-item">
-                    <span class="icon"></span>
+               
                     <div>
-                        <h3 class="item-title">We develop responsive, and ready to scale.</h3>
+                        <h3 class="item-title">
+                            <span class="title-line">We Develop</span>
+                            <span class="subtitle-line">Robust, responsive, and ready to scale.</span>
+                        </h3>
                         <p class="item-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                         <ul class="sub-list">
                             <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
@@ -621,7 +928,6 @@ require_once 'includes/header.php';
                             <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
                         </ul>
                     </div>
-                </li>
             </ul>
         </div>
     </section>
@@ -629,14 +935,20 @@ require_once 'includes/header.php';
     <!-- Business Value Section -->
     <section class="business-value-section section">
         <div class="container">
-            <h2 class="section-title">
-                Turn clicks into customers with <span>Smart web development</span>
+            <div class="offer-tag">
+                <span class="offer-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" fill="#28A745"/>
+                    </svg>
+                </span>
+                <span class="offer-text">Business Value</span>
+            </div>
+            <h2 class="section-title" style="margin-top: 16px">
+                Turn clicks into customers with
+                <span class="gradient-text">Smart web development</span>
             </h2>
-            <ul class="intro-list">
-                <li class="intro-item">
-                    <span class="icon"></span>
+            
                     <div>
-                        <h3 class="item-title">Business value</h3>
                         <p class="item-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                         <ul class="sub-list">
                             <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
@@ -644,8 +956,6 @@ require_once 'includes/header.php';
                             <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
                         </ul>
                     </div>
-                </li>
-            </ul>
         </div>
     </section>
   <section>
@@ -656,7 +966,8 @@ require_once 'includes/header.php';
   <section class="tech-stack-section section">
         <div class="container">
             <h2 class="section-title">
-                Turn clicks into customers with <span>Smart web development</span>
+                Turn clicks into customers with
+                <span class="gradient-text">Smart web development</span>
             </h2>
             <div class="tech-mindmap">
                 <img src="assets/images/web_development_techstackimg.png" alt="Tech Stack Mindmap" class="mindmap-image">
@@ -677,9 +988,82 @@ require_once 'includes/header.php';
 </section>
 
 </body>
+    <script>
+        function initScrollingText() {
+            const scrollingWrapper = document.querySelector('.scrolling-text-wrapper');
+            const scrollingText = document.querySelector('.scrolling-text');
+            const textElement = document.getElementById('scrollingText');
+            
+            if (!scrollingWrapper || !scrollingText || !textElement) return;
+            
+            // Clear any existing clones
+            const existingClones = scrollingText.querySelectorAll('span[aria-hidden="true"]');
+            existingClones.forEach(clone => clone.remove());
+            
+            // Create a clone of the text
+            const clone = textElement.cloneNode(true);
+            clone.setAttribute('aria-hidden', 'true');
+            
+            // Add the clone to create a seamless loop
+            scrollingText.appendChild(clone);
+            
+            // Set initial styles
+            scrollingText.style.opacity = '1';
+            
+            // Handle window resize
+            let resizeTimer;
+            const updateAnimation = () => {
+                const textWidth = textElement.offsetWidth;
+                const containerWidth = scrollingWrapper.offsetWidth;
+                
+                // Only enable scrolling if text is wider than container
+                if (textWidth > containerWidth) {
+                    const duration = textWidth / 50; // Speed factor (pixels per second)
+                    scrollingText.style.width = textWidth * 2 + 'px';
+                    scrollingText.style.animation = `scroll-left ${duration}s linear infinite`;
+                    scrollingText.style.animationPlayState = 'paused';
+                } else {
+                    scrollingText.style.width = 'auto';
+                    scrollingText.style.animation = 'none';
+                }
+            };
+            
+            // Initial setup
+            updateAnimation();
+            
+            // Handle window resize
+            const handleResize = () => {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(updateAnimation, 250);
+            };
+            
+            window.addEventListener('resize', handleResize);
+            
+            // Pause/play on hover
+            const container = document.querySelector('.scrolling-text-container');
+            container.addEventListener('mouseenter', () => {
+                if (scrollingText.style.animation) {
+                    scrollingText.style.animationPlayState = 'running';
+                }
+            });
+            
+            container.addEventListener('mouseleave', () => {
+                if (scrollingText.style.animation) {
+                    scrollingText.style.animationPlayState = 'paused';
+                    // Reset position when mouse leaves
+                    scrollingText.style.animation = 'none';
+                    scrollingText.style.transform = 'translateX(0)';
+                    scrollingText.offsetHeight; // Trigger reflow
+                    updateAnimation();
+                }
+            });
+        }
+        
+        // Run on DOMContentLoaded and when the page is fully loaded
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initScrollingText);
+        } else {
+            initScrollingText();
+        }
+    </script>
 </html>
-
-
- 
-
-
