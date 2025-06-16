@@ -1,7 +1,16 @@
 <div class="container process-container">
     <div class="process-content">
-        <p style="color: #28a745; font-size: 14px; margin: 0 0 10px 0;">What we do</p>
-        <h2>From idea, <span style="color: #007BFF;">execution</span>, build, and scale</h2>
+        <div class="process-intro">
+            <svg class="process-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L3 9L12 16L21 9L12 2Z" fill="#28a745"/>
+                <path d="M3 13L12 20L21 13" stroke="#28a745" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>How we do it</span>
+        </div>
+        <h2 class="process-heading">
+            <span class="heading-line">From idea to execution</span>
+            <span class="gradient-text">We simplify, build, and scale</span>
+        </h2>
         <p class="subtitle">
             There are many variations of passages of Lorem ipsum available but the majority have suffered alteration in some form, by injected humour, or randomised words which don't even look slightly believable.
         </p>
@@ -61,10 +70,47 @@
     top: 100px;
 }
 
-.process-content h2 {
-    font-size: 2.5rem;
+.process-intro {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #959595;
+    font-size: 14px;
+    padding: 6px 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.process-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.process-heading {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0%;
     margin-bottom: 20px;
+}
+
+.heading-line {
+    display: block;
     color: #333;
+    margin-bottom: 5px;
+}
+
+.gradient-text {
+    display: block;
+    background: linear-gradient(90deg, #2563EB 0%, #2AB7B7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
 
 .process-content .subtitle {

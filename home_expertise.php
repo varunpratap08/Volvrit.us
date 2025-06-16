@@ -1,8 +1,15 @@
 <!-- expertise.php -->
 <div class="container">
-    <p class="section-label">What we have done</p>
-    <h2 class="fade-in">
-        From idea, <span>execution</span>, build, and scale
+    <div class="section-intro">
+        <svg class="section-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L3 9L12 16L21 9L12 2Z" fill="#28a745"/>
+            <path d="M3 13L12 20L21 13" stroke="#28a745" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="section-label">Why Choose us</span>
+    </div>
+    <h2 class="fade-in expertise-heading">
+        <span class="heading-line">From idea to execution</span>
+        <span class="gradient-text">We simplify, build, and scale</span>
     </h2>
     <p class="fade-in" style="animation-delay: 0.2s; margin-bottom: 40px;">
         There are many variations of passages of Lorem ipsum available but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t even look slightly believable.
@@ -54,6 +61,45 @@
 </div>
 
 <style>
+    /* Expertise Section Heading */
+    .expertise-heading {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0%;
+        margin: 15px 0 25px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .expertise-heading .heading-line {
+        display: block;
+        color: #333;
+        margin-bottom: 5px;
+    }
+    
+    .expertise-heading .gradient-text {
+        display: block;
+        background: linear-gradient(90deg, #2563EB 0%, #2AB7B7 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+    }
+    
+    @media (max-width: 768px) {
+        .expertise-heading {
+            font-size: 22px;
+            line-height: 1.3;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .expertise-heading {
+            font-size: 20px;
+        }
+    }
     /* Container */
     .container {
         width: 90%;
@@ -73,12 +119,34 @@
         animation: fadeInUp 1s ease forwards;
     }
 
-    /* Section Label */
-    .section-label {
-        color: #28a745;
+    /* Section Intro */
+    .section-intro {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+        padding: 6px 16px;
+        border: 1px solid #e0e0e0;
+        border-radius: 20px;
+        margin-bottom: 15px;
+        background: #fff;
+    }
+    
+    .section-intro .section-label {
+        color: #959595 !important;
         font-size: 14px;
         font-weight: 400;
-        margin-bottom: 10px;
+        line-height: 1.2;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .section-intro .section-icon {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+        display: inline-block;
+        vertical-align: middle;
     }
 
     /* Headings */
@@ -197,73 +265,153 @@
         font-size: 14px;
         font-weight: 300;
         color: #666;
-        flex-grow: 1;
+        line-height: 1.5;
+        margin: 0 0 15px;
     }
 
     /* Responsive Adjustments */
-    @media (max-width: 768px) {
+    @media (max-width: 1200px) {
+        .container {
+            padding: 30px 0;
+        }
+        
+        .expertise-grid {
+            gap: 15px;
+        }
+    }
+    
+    @media (max-width: 992px) {
         .expertise-row {
-            grid-template-columns: 1fr; /* Stack cards vertically */
+            gap: 15px;
         }
-
-        .small-card,
-        .large-card {
-            width: 100%; /* Full width on mobile */
-        }
-
-        .card-image {
-            height: 120px;
-            margin: -15px -15px 10px -15px;
-        }
-
+        
         .expertise-card {
             padding: 15px;
         }
-
+        
+        .card-image {
+            height: 130px;
+        }
+        
         .expertise-card h3 {
             font-size: 18px;
+            margin: 10px 0;
         }
-
+        
         .expertise-card p {
             font-size: 13px;
         }
-
-        h2 {
-            font-size: 24px;
+    }
+    
+    @media (max-width: 768px) {
+        .expertise-row {
+            grid-template-columns: 1fr;
+            gap: 20px;
         }
-
+        
+        .expertise-card {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        
+        .card-image {
+            height: 160px;
+        }
+        
+        .section-intro {
+            font-size: 13px;
+            padding: 5px 14px;
+        }
+        
+        .expertise-heading {
+            font-size: 22px;
+            margin: 10px 0 20px;
+        }
+        
+        .container > p {
+            margin-bottom: 30px;
+            font-size: 15px;
+        }
+        
         .deco-dot-orange,
         .deco-dot-purple,
         .deco-dot-green {
-            width: 15px;
-            height: 15px;
-            top: 5px;
-            left: 5px;
-        }
-
-        .deco-line-blue {
-            width: 20px;
-            height: 4px;
-            bottom: 5px;
-            right: 5px;
+            width: 16px;
+            height: 16px;
         }
     }
-
-    @media (max-width: 480px) {
+    
+    @media (max-width: 576px) {
         .container {
-            padding: 20px 0;
+            width: 95%;
+            padding: 25px 0;
         }
-
-        h2 {
+        
+        .card-image {
+            height: 140px;
+        }
+        
+        .section-intro {
+            font-size: 12px;
+            padding: 4px 12px;
+        }
+        
+        .expertise-heading {
             font-size: 20px;
         }
-
-        .card-image {
-            height: 100px;
+        
+        .expertise-card h3 {
+            font-size: 17px;
         }
-
+        
+        .expertise-card p {
+            font-size: 13px;
+        }
+        
+        .deco-dot-orange,
+        .deco-dot-purple,
+        .deco-dot-green {
+            width: 14px;
+            height: 14px;
+        }
+    }
+    
+    @media (max-width: 400px) {
+        .card-image {
+            height: 120px;
+        }
+        
+        .section-intro {
+            font-size: 11px;
+            padding: 3px 10px;
+        }
+        
+        .expertise-heading {
+            font-size: 18px;
+        }
+        
+        .expertise-card h3 {
+            font-size: 16px;
+        }
+        
         .expertise-card {
-            padding: 10px;
+            padding: 12px;
+        }
+        
+        .deco-dot-orange,
+        .deco-dot-purple,
+        .deco-dot-green {
+            width: 12px;
+            height: 12px;
+            top: 8px;
+            left: 8px;
+        }
+        
+        .deco-line-blue {
+            width: 20px;
+            height: 3px;
         }
     }
 </style>
