@@ -332,27 +332,27 @@
                                     <span class="service-icon"><i class="fas fa-mobile-alt"></i></span>
                                     <span>Mobile App Development</span>
                                 </a>
-                                <a href="#" class="service-item">
+                                <a href="ui_ux_development.php" class="service-item">
                                     <span class="service-icon"><i class="fas fa-layer-group"></i></span>
                                     <span>UI/UX Design</span>
                                 </a>
-                                <a href="#" class="service-item">
+                                <a href="digitalMarketing.php" class="service-item">
                                     <span class="service-icon"><i class="fas fa-bullhorn"></i></span>
                                     <span>Digital Marketing</span>
                                 </a>
-                                <a href="#" class="service-item">
+                                <a href="crm_development.php" class="service-item">
                                     <span class="service-icon"><i class="fas fa-users"></i></span>
                                     <span>CRM Development</span>
                                 </a>
-                                <a href="#" class="service-item">
+                                <a href="API_development.php" class="service-item">
                                     <span class="service-icon"><i class="fas fa-code"></i></span>
                                     <span>API Development</span>
                                 </a>
-                                <a href="#" class="service-item">
+                                <a href="Blockchain_development.php" class="service-item">
                                     <span class="service-icon"><i class="fas fa-link"></i></span>
                                     <span>Blockchain Development</span>
                                 </a>
-                                <a href="#" class="service-item">
+                                <a href="AI_development.php" class="service-item">
                                     <span class="service-icon"><i class="fas fa-brain"></i></span>
                                     <span>AI Development</span>
                                 </a>

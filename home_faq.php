@@ -1,9 +1,16 @@
 <!-- faq.php -->
 <div class="faq-section">
     <div class="container">
-        <p class="section-subtitle">FAQ</p>
+        <div class="faq-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2L3 9L12 16L21 9L12 2Z" fill="#28a745"/>
+                <path d="M3 13L12 20L21 13" stroke="#28a745" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>FAQ</span>
+        </div>
         <h2 class="section-title">
-            From idea, <span class="highlight">execution</span>, build, and scale
+            <div class="heading-line">From idea to execution</div>
+            <div class="gradient-text">We simplify, build and scale</div>
         </h2>
         <div class="faq-list">
             <div class="faq-item">
@@ -95,6 +102,22 @@
     box-sizing: border-box;
 }
 
+.faq-badge {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    padding: 4px 15px;
+    margin-bottom: 15px;
+    color: #959595;
+    font-size: 14px;
+}
+
+.faq-badge svg {
+    margin-right: 8px;
+    flex-shrink: 0;
+}
+
 .section-subtitle {
     color: #28a745;
     font-size: 14px;
@@ -105,14 +128,24 @@
 }
 
 .section-title {
-    font-size: 32px;
-    margin: 10px 0 40px;
-    color: #333;
-    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 44px;
+    text-align: left;
+    margin: 15px 0 30px;
 }
 
-.highlight {
-    color: #007BFF;
+.heading-line {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #2563EB 0%, #2AB7B7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
 
 .faq-list {

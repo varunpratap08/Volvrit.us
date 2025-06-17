@@ -4,16 +4,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mobile menu toggle functionality will be added here
     console.log('Volvrit website loaded');
     
-    // Add smooth scrolling to all links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    // Add smooth scrolling to internal page anchors only
+    document.querySelectorAll('a[href^="#"]:not([href*=" "]):not([href*="\."])').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
             
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
+                e.preventDefault();
                 targetElement.scrollIntoView({
                     behavior: 'smooth',
                     block: 'start'

@@ -31,7 +31,7 @@ require_once 'includes/header.php';
                 <div class="service-icon" style="background-color: #D7D7D7; height: 80px; width: 80px; border-radius: 50%; margin: 0 auto 20px;"></div>
                 <h3>Web Development</h3>
                 <p>Custom websites and web applications built with the latest technologies to meet your business needs.</p>
-                <a href="#" class="read-more">Learn More →</a>
+                <a href="web_development.php" class="read-more">Learn More →</a>
             </div>
             
             <!-- Service 2 -->
@@ -39,7 +39,7 @@ require_once 'includes/header.php';
                 <div class="service-icon" style="background-color: #D7D7D7; height: 80px; width: 80px; border-radius: 50%; margin: 0 auto 20px;"></div>
                 <h3>Mobile App Development</h3>
                 <p>Native and cross-platform mobile applications for iOS and Android platforms.</p>
-                <a href="#" class="read-more">Learn More →</a>
+                <a href="app_development.php" class="read-more">Learn More →</a>
             </div>
             
             <!-- Service 3 -->
@@ -47,7 +47,7 @@ require_once 'includes/header.php';
                 <div class="service-icon" style="background-color: #D7D7D7; height: 80px; width: 80px; border-radius: 50%; margin: 0 auto 20px;"></div>
                 <h3>UI/UX Design</h3>
                 <p>Beautiful and intuitive user interfaces that enhance user experience and engagement.</p>
-                <a href="#" class="read-more">Learn More →</a>
+                <a href="ui_ux_development.php" class="read-more">Learn More →</a>
             </div>
             
             <!-- Add more services as needed -->

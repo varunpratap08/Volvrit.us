@@ -881,6 +881,7 @@ require_once 'includes/header.php';
             <img src="assets/images/js 2.svg" alt="JavaScript" loading="lazy">
             <img src="assets/images/figma 2.svg" alt="Figma" loading="lazy">
             <img src="assets/images/chatgpt 3.svg" alt="ChatGpt" loading="lazy">
+
         </div>
         <div class="container">
             <h1>We evolve ideas into Intelligent digital products.</h1>

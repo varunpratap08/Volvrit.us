@@ -1,6 +1,44 @@
 <!-- contact.php -->
 <div class="container">
     <style>
+    .contact-badge {
+        display: inline-flex;
+        align-items: center;
+        background: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 20px;
+        padding: 6px 16px;
+        margin-bottom: 15px;
+        color: #959595;
+        font-size: 14px;
+        font-weight: 500;
+        width: fit-content;
+    }
+
+    .contact-badge svg {
+        margin-right: 8px;
+        flex-shrink: 0;
+    }
+
+    .contact-heading {
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 1.3;
+        margin: 15px 0 25px;
+    }
+
+    .heading-line {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .gradient-text {
+        background: linear-gradient(90deg, #2563EB 0%, #2AB7B7 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+    }
         /* Container (already defined in style.css, but adjusted for inline use) */
         .container {
             width: 90%;
@@ -41,105 +79,129 @@
             color: #007BFF;
         }
 
-        /* Contact Section */
+        /* Contact Section Layout */
         .contact-section {
-            display: flex;
-            align-items: stretch;
-            gap: 40px;
             margin: 40px 0;
         }
 
-        .contact-form {
-            flex: 1;
+        .content-wrapper {
+            display: flex;
+            gap: 40px;
+            align-items: stretch;
         }
 
-        .contact-form form {
+        .text-content, .image-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form {
             background: #fff;
             padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            flex-grow: 1;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
         }
 
         .contact-form input,
         .contact-form textarea {
             width: 100%;
-            padding: 12px;
+            padding: 12px 15px;
             margin-bottom: 15px;
             border: 1px solid #e0e0e0;
             border-radius: 5px;
             font-family: 'Poppins', sans-serif;
             font-size: 14px;
+            box-sizing: border-box;
         }
 
         .contact-form textarea {
             min-height: 120px;
             resize: vertical;
+            flex-grow: 1;
         }
 
         .contact-form button {
-            display: inline-block;
             background: #007BFF;
             color: #fff;
-            padding: 12px 24px;
+            padding: 10px 24px;
             border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            font-weight: 400;
+            border-radius: 24px;
+            font-size: 14px;
+            font-weight: 500;
             cursor: pointer;
-            transition: background 0.3s ease;
+            transition: all 0.3s ease;
+            margin: 10px 0 0 0;
+            width: 140px;
+            text-align: center;
+            display: block;
         }
 
         .contact-form button:hover {
-            background: #0056b3;
+            background: #0069d9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .contact-testimonial {
-            flex: 1;
+        /* Testimonial Image Section */
+        .testimonial-content {
             position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            overflow: hidden;
         }
 
         .testimonial-image {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-
-        .testimonial-bg {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            border-radius: 10px;
+            display: block;
         }
 
         .testimonial-overlay {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: left;
-            width: 80%;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            padding: 20px 30px;
+            background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.6) 50%, rgba(0,0,0,0) 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            color: white;
+            box-sizing: border-box;
         }
 
         .user-avatar {
-            max-width: 100px;
+            width: 80px;
+            height: 80px;
             border-radius: 50%;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             border: 3px solid #fff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            object-fit: cover;
         }
 
         .testimonial-text {
-            background: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+            color: white;
+            max-width: 100%;
+            margin-bottom: 10px;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.5);
         }
 
         .testimonial-text p {
             font-style: italic;
-            font-size: 16px;
-            color: #666;
-            position: relative;
+            font-size: 15px;
+            color: white;
+            margin: 0;
+            line-height: 1.6;
+            font-weight: 400;
         }
 
         .testimonial-text p::before,
@@ -150,52 +212,158 @@
         }
 
         /* Responsive Design */
-        @media (max-width: 768px) {
-            .contact-section {
+        @media (max-width: 1200px) {
+            .content-wrapper {
+                gap: 30px;
+            }
+            
+            .testimonial-overlay {
+                padding: 20px 25px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .content-wrapper {
                 flex-direction: column;
-                text-align: center;
+                gap: 30px;
             }
 
-            .contact-testimonial {
-                margin-top: 20px;
+            .image-content, .text-content {
+                width: 100%;
             }
 
-            .testimonial-bg {
-                height: 300px;
+            .testimonial-image {
+                min-height: 350px;
             }
 
             .testimonial-overlay {
-                width: 90%;
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-heading {
+                font-size: 26px;
+                line-height: 1.3;
             }
 
-            h2 {
-                font-size: 24px;
+            .gradient-text {
+                font-size: 26px;
             }
+
+            .contact-form {
+                padding: 20px;
+            }
+
+            .testimonial-overlay {
+                padding: 15px 20px;
+            }
+
+            .user-avatar {
+                width: 70px;
+                height: 70px;
+                margin-bottom: 12px;
+            }
+
+            .testimonial-text p {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .contact-badge {
+                font-size: 13px;
+                padding: 5px 14px;
+            }
+
+            .contact-heading {
+                font-size: 22px;
+                margin: 10px 0 15px;
+            }
+
+            .gradient-text {
+                font-size: 22px;
+            }
+
+            .contact-form {
+                padding: 15px;
+            }
+
+            .contact-form input,
+            .contact-form textarea {
+                padding: 10px 12px;
+                font-size: 13px;
+            }
+
+            .contact-form button {
+                padding: 9px 20px;
+                font-size: 13px;
+                width: 120px;
+            }
+
+            .testimonial-overlay {
+                padding: 12px 15px;
+            }
+
+            .user-avatar {
+                width: 60px;
+                height: 60px;
+                margin-bottom: 10px;
+            }
+
+            .testimonial-text p {
+                font-size: 13px;
+                line-height: 1.5;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .contact-heading {
+                font-size: 20px;
+            }
+
+            .gradient-text {
+                font-size: 20px;
+            }
+
+            .testimonial-overlay {
+                padding: 12px;
+            }
+        }
         }
     </style>
 
-    <p class="section-label">What we say</p>
-    <h2 class="fade-in">
-        From idea, <span>execution</span>, build, and scale
-    </h2>
     <div class="contact-section">
-        <div class="contact-form">
-            <form action="submit.php" method="POST">
-                <input type="text" name="name" placeholder="Name" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <textarea name="message" placeholder="Messages" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-        <div class="contact-testimonial">
-            <div class="testimonial-image">
-                <img src="assets/images/home_contactus.png" alt="Background Image" class="testimonial-bg">
-                <div class="testimonial-overlay">
-                    <img src="assets/images/profile_icon.svg" alt="User" class="user-avatar">
-                    <div class="testimonial-text">
-                        <p class="fade-in" style="animation-delay: 0.4s;">
-                            "Contrary to popular belief, Lorem ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over."
-                        </p>
+        <div class="content-wrapper">
+            <div class="text-content">
+                <div class="contact-badge">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2L3 9L12 16L21 9L12 2Z" fill="#28a745"/>
+                        <path d="M3 13L12 20L21 13" stroke="#28a745" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>What other says</span>
+                </div>
+                <h2 class="contact-heading">
+                    <div class="heading-line">From idea to execution</div>
+                    <div class="gradient-text">We simplify, build and scale</div>
+                </h2>
+                <form action="submit.php" method="POST" class="contact-form">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Messages" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="image-content">
+                <div class="testimonial-content">
+                    <img src="assets/images/home_contactus.png" alt="Background Image" class="testimonial-image">
+                    <div class="testimonial-overlay">
+                        <img src="assets/images/profile_icon.svg" alt="User" class="user-avatar">
+                        <div class="testimonial-text">
+                            <p class="fade-in" style="animation-delay: 0.4s;">
+                                "Contrary to popular belief, Lorem ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over."
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

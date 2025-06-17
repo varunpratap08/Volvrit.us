@@ -16,7 +16,18 @@ require_once 'includes/header.php';
             padding: 0;
             box-sizing: border-box;
             font-family: 'Arial', sans-serif;
+          /*  background-image: url('https://www.transparenttextures.com/patterns/grid-me.png');*/
+            background-repeat: repeat;
+            background-size: auto;
         }
+
+        body {
+            /* Background styles are inherited from universal selector */
+            background-image: url('https://www.transparenttextures.com/patterns/grid-me.png');
+        }
+
+        /* Import Poppins font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
         /* Hero Section Styling */
         .hero-section {
@@ -134,8 +145,9 @@ require_once 'includes/header.php';
                 height: 80px;
             }
         }
-         /* Responsive Design */
-         @media (max-width: 1024px) {
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
             .hero-section {
                 height: 70vh;
                 min-height: 500px;
@@ -469,11 +481,12 @@ require_once 'includes/header.php';
         }
 
         /* Intro Section with Scrolling Text */
+        /* Scrolling Text Section */
         .intro-section {
             background-color: #2563EB;
             overflow: hidden;
             position: relative;
-            height: 50px;
+            height: 60px;
             display: flex;
             align-items: center;
         }
@@ -490,43 +503,56 @@ require_once 'includes/header.php';
             width: 100%;
             height: 100%;
             align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
 
         .scrolling-text {
             display: flex;
             white-space: nowrap;
-            will-change: transform;
             position: absolute;
             left: 0;
             top: 0;
             height: 100%;
             align-items: center;
-            padding: 0;
-            transition: transform 0.3s ease-out;
-            transform: translateX(0);
+            padding: 0 20px;
             color: white;
             font-family: 'Poppins', sans-serif;
             font-weight: 500;
             font-size: 18px;
-            padding: 0 20px;
+            animation: scroll-left 30s linear infinite;
         }
         
         .scrolling-text span {
+            padding-right: 50px;
             display: inline-block;
-            padding-right: 50px; /* Space between repeated text */
         }
-        
-        .scrolling-text-container:hover .scrolling-text {
-            animation: scroll-left 20s linear infinite;
-            animation-play-state: running;
-        }
-        
+
         @keyframes scroll-left {
-            0% {
-                transform: translateX(0);
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        
+        @media (max-width: 768px) {
+            .scrolling-text {
+                font-size: 16px;
+                padding: 0 15px;
             }
-            100% {
-                transform: translateX(-50%);
+            
+            .scrolling-text span {
+                padding-right: 30px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .scrolling-text {
+                font-size: 14px;
+                padding: 0 10px;
+            }
+            
+            .scrolling-text span {
+                padding-right: 20px;
             }
         }
 
@@ -681,6 +707,7 @@ require_once 'includes/header.php';
             <img src="assets/images/php 2.svg" alt="PHP" loading="lazy">
             <img src="assets/images/js 2.svg" alt="JavaScript" loading="lazy">
             <img src="assets/images/figma 2.svg" alt="Figma" loading="lazy">
+            <img src="assets/images/chatgpt 3.svg" alt="ChatGpt" loading="lazy">
         </div>
         <div class="container">
             <h1>We evolve ideas into Intelligent digital products.</h1>
@@ -696,7 +723,7 @@ require_once 'includes/header.php';
     <section class="intro-section">
         <div class="scrolling-text-container">
             <div class="scrolling-text-wrapper">
-                <div class="scrolling-text" id="scrollingText">
+                <div class="scrolling-text">
                     <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
                 </div>
             </div>
@@ -751,43 +778,55 @@ require_once 'includes/header.php';
     <?php require_once 'includes/footer.php'; ?>
     
     <script>
-        function initScrollingText() {
-            const scrollingWrapper = document.querySelector('.scrolling-text-wrapper');
+        document.addEventListener('DOMContentLoaded', function() {
             const scrollingText = document.querySelector('.scrolling-text');
-            const textElement = document.getElementById('scrollingText');
+            if (!scrollingText) return;
             
-            if (!scrollingWrapper || !scrollingText || !textElement) return;
+            // Clone the text for seamless looping
+            const textElement = scrollingText.querySelector('span');
+            if (textElement) {
+                const clone = textElement.cloneNode(true);
+                scrollingText.appendChild(clone);
+            }
             
-            // Clear any existing clones
-            const existingClones = scrollingText.querySelectorAll('span[aria-hidden="true"]');
-            existingClones.forEach(clone => clone.remove());
-            
-            // Create a clone of the text
-            const clone = textElement.cloneNode(true);
-            clone.setAttribute('aria-hidden', 'true');
-            
-            // Add the clone to create a seamless loop
-            scrollingText.appendChild(clone);
-            
-            // Set initial styles
+            // Make sure the text is visible
             scrollingText.style.opacity = '1';
             
             // Handle window resize
             let resizeTimer;
-            const updateAnimation = () => {
+            const handleResize = function() {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(updateAnimation, 250);
+            };
+            
+            window.addEventListener('resize', handleResize);
+            
+            // Initial update
+            updateAnimation();
+            
+            function updateAnimation() {
+                const container = document.querySelector('.scrolling-text-container');
+                if (!container || !textElement) return;
+                
+                const containerWidth = container.offsetWidth;
                 const textWidth = textElement.offsetWidth;
-                const containerWidth = scrollingWrapper.offsetWidth;
                 
                 // Only enable scrolling if text is wider than container
                 if (textWidth > containerWidth) {
-                    const duration = textWidth / 50; // Speed factor (pixels per second)
-                    scrollingText.style.width = textWidth * 2 + 'px';
+                    const duration = textWidth / 50; // Adjust speed as needed
+                    scrollingText.style.width = (textWidth * 2) + 'px';
                     scrollingText.style.animation = `scroll-left ${duration}s linear infinite`;
-                    scrollingText.style.animationPlayState = 'paused';
                 } else {
-                    scrollingText.style.width = 'auto';
                     scrollingText.style.animation = 'none';
+                    scrollingText.style.width = 'auto';
                 }
+            }
+            
+            // Cleanup event listener on component unmount
+            return function cleanup() {
+                window.removeEventListener('resize', handleResize);
+            };
+        });
             };
             
             // Initial setup

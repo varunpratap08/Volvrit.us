@@ -10,24 +10,40 @@ require_once 'includes/header.php';
             padding: 0;
             box-sizing: border-box;
             font-family: 'Arial', sans-serif;
+         /*   background-image: url('https://www.transparenttextures.com/patterns/grid-me.png');*/
+            background-repeat: repeat;
+            background-size: auto;
         }
+
+        body {
+            /* Background styles are inherited from universal selector */
+            background-image: url('https://www.transparenttextures.com/patterns/grid-me.png');
+        }
+
+        /* Import Poppins font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
     /* Hero Section Styling */
     .hero-section {
             position: relative;
             height: 80vh;
             min-height: 600px;
             background: linear-gradient(
-                to bottom,
-                rgba(255, 255, 255, 0.95) 0%,
-                rgba(255, 255, 255, 0.85) 100%
-            ), url('assets/images/about_usbg.png') center/cover no-repeat;
-            background-blend-mode: overlay;
+                    to bottom,
+                    rgba(255, 255, 255, 0.9) 0%,
+                    rgba(255, 255, 255, 0.8) 100%
+                ),
+                url('assets/images/about_usbg.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 120px 20px 80px;
+            align-items: flex-start;
+            text-align: left;
+            padding: 120px 0 80px;
+            padding-left: max(5%, calc((100% - 1200px) / 2));
+            padding-right: 5%;
             overflow: hidden;
         }
 
@@ -43,22 +59,27 @@ require_once 'includes/header.php';
         }
 
         .hero-section h1 {
+            font-family: 'Poppins', sans-serif;
             font-size: 56px;
             font-weight: 700;
             line-height: 1.2;
-            color: #1F2937;
-            margin: 0 auto 24px;
+            color: #2563EB;
+            margin: 0 0 24px 0;
             max-width: 800px;
             z-index: 2;
+            text-align: left;
+            width: 100%;
         }
 
         .hero-section p {
             font-size: 18px;
             color: #4B5563;
             line-height: 1.6;
-            margin: 0 auto 40px;
+            margin: 0 0 40px 0;
             max-width: 600px;
             z-index: 2;
+            text-align: left;
+            width: 100%;
         }
 
         .hero-section .btn {
@@ -66,12 +87,21 @@ require_once 'includes/header.php';
             background-color: #2563EB;
             color: white;
             padding: 12px 28px;
-            border-radius: 6px;
+            border-radius: 24px;
             font-weight: 500;
+            font-size: 18px;
             text-decoration: none;
             transition: all 0.3s ease;
             border: none;
             cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .hero-section .btn-icon {
+            width: 20px;
+            height: 20px;
         }
 
         .hero-section .btn:hover {
@@ -82,27 +112,104 @@ require_once 'includes/header.php';
 
         .tech-icons {
             position: absolute;
-            width: 100%;
+            width: 40%;
             height: 100%;
             top: 0;
-            left: 0;
+            right: 5%;
             pointer-events: none;
             z-index: 1;
             opacity: 0.8;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 20px;
         }
 
         .tech-icons img {
-            position: absolute;
-            width: 120px;
-            height: 120px;
+            position: relative;
+            width: 100px;
+            height: 100px;
             object-fit: contain;
             transition: all 0.4s ease;
+            margin: 10px 0;
         }
 
-        .tech-icons img:nth-child(1) { top: 15%; left: 10%; }
-        .tech-icons img:nth-child(2) { top: 20%; right: 12%; }
-        .tech-icons img:nth-child(3) { bottom: 25%; left: 15%; }
-        .tech-icons img:nth-child(4) { bottom: 20%; right: 10%; }
+        /* Responsive adjustments for tech icons */
+        @media (max-width: 1024px) {
+            .tech-icons {
+                width: 50%;
+                right: 2%;
+            }
+            .tech-icons img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero-section {
+                height: 70vh;
+                min-height: 500px;
+                padding: 100px 5% 60px;
+            }
+
+            .hero-section h1 {
+                font-size: 44px;
+                max-width: 600px;
+            }
+
+            .hero-section p {
+                font-size: 16px;
+                max-width: 500px;
+            }
+
+            .tech-icons img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                height: auto;
+                min-height: 450px;
+                padding: 80px 0 40px;
+                padding-left: max(5%, calc((100% - 1200px) / 2));
+                padding-right: 5%;
+                text-align: center;
+                align-items: center;
+            }
+            .hero-section h1,
+            .hero-section p {
+                text-align: center;
+            }
+            .tech-icons {
+                position: relative;
+                width: 100%;
+                right: 0;
+                flex-direction: row;
+                justify-content: center;
+                margin-top: 30px;
+                opacity: 0.6;
+            }
+
+            .hero-section h1 {
+                font-size: 32px;
+                max-width: 90%;
+            }
+
+            .hero-section p {
+                font-size: 14px;
+                max-width: 90%;
+            }
+
+            .hero-section .btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
         /* Section Styling */
         .contact-section {
             background: url('https://www.transparenttextures.com/patterns/grid-me.png') repeat;
@@ -432,22 +539,25 @@ require_once 'includes/header.php';
 
 </style>
 
-<!-- Portfolio Hero Section -->
- <!-- Hero Section -->
- <section class="hero-section">
-        <div class="tech-icons">
-            <img src="assets/images/react 2.svg" alt="React" loading="lazy">
-            <img src="assets/images/php 2.svg" alt="PHP" loading="lazy">
-            <img src="assets/images/js 2.svg" alt="JavaScript" loading="lazy">
-            <img src="assets/images/figma 2.svg" alt="Figma" loading="lazy">
-        </div>
-        <div class="container">
-            <div class="section-label">What we do</div>
-            <h1>We evolve ideas into intelligent digital products.</h1>
-            <p>Industry dummy ipsum has been the industry's standard dummy text. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-            <a href="#contact" class="btn">Let's plan your project</a>
-        </div>
-    </section>
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="tech-icons">
+        <img src="assets/images/react 2.svg" alt="React" loading="lazy">
+        <img src="assets/images/php 2.svg" alt="PHP" loading="lazy">
+        <img src="assets/images/js 2.svg" alt="JavaScript" loading="lazy">
+        <img src="assets/images/figma 2.svg" alt="Figma" loading="lazy">
+        <img src="assets/images/chatgpt 3.svg" alt="ChatGpt" loading="lazy">
+    </div>
+    <div class="container">
+        <div class="section-label">What we do</div>
+        <h1>We evolve ideas into intelligent digital products.</h1>
+        <p>Industry dummy ipsum has been the industry's standard dummy text. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <a href="#contact" class="btn">
+            <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
+            <span>Let's plan your project</span>
+        </a>
+    </div>
+</section>
     
 <!-- Main Content Section for Contact Us Page -->
 <section class="contact-section">
