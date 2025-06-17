@@ -23,7 +23,7 @@ require_once 'includes/header.php';
 
         body {
             /* Background styles are inherited from universal selector */
-            background-image: url('https://www.transparenttextures.com/patterns/grid-me.png');
+           /* background-image: url('https://www.transparenttextures.com/patterns/grid-me.png');
         }
 
         /* Import Poppins font */
@@ -348,8 +348,52 @@ require_once 'includes/header.php';
         .what-we-believe p {
             font-size: 16px;
             color: #666;
+            
+        /* About Label Styling */
+        .about-label {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 20px;
+            border: 1px solid #e0e0e0; /* Gray outline */
+            border-radius: 24px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #959595;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .about-label svg {
+            margin-right: 8px;
+        }
+        
+        .about-label-icon {
+            margin-right: 8px;
+            width: 16px;
+            height: 16px;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #2563EB 0%, #2AB7B7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+            margin-top: -20px;  /* Reduced from -10px to -20px to decrease the gap */
+            margin-bottom: 20px;
+            font-size: 30px;
+            font-weight: 600;
+            line-height: 44px;
+            display: block
+        }
+        
+        .what-we-believe h2 {
+            margin-bottom: 0;
+        }
             line-height: 1.6;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             max-width: 600px;
         }
 
@@ -508,6 +552,63 @@ require_once 'includes/header.php';
             left: 0;
         }
 
+        /* Content Text Section Styles */
+        .content-text-section {
+            padding: 40px 0 50px;  /* Reduced top and bottom padding */
+            background-color: #ffffff;
+            margin-top: -20px;  /* Pull the section up slightly */
+        }
+        
+        .content-text {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            font-size: 42px;  /* Increased from 38px */
+            line-height: 1.4;  /* Changed to a relative line height */
+            letter-spacing: 0%;
+            text-align: center;
+            color: #333333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 30px;  /* Increased side padding */
+        }
+        
+        @media (max-width: 1200px) {
+            .content-text {
+                font-size: 38px;
+                padding: 0 25px;
+            }
+        }
+        
+        @media (max-width: 1024px) {
+            .content-text {
+                font-size: 34px;
+                line-height: 1.4;
+                padding: 0 20px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .content-text-section {
+                padding: 30px 0 40px;
+            }
+            .content-text {
+                font-size: 30px;
+                line-height: 1.4;
+                padding: 0 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .content-text-section {
+                padding: 25px 0 35px;
+            }
+            .content-text {
+                font-size: 26px;
+                line-height: 1.4;
+                padding: 0 15px;
+            }
+        }
+        
         .scrolling-text {
             display: flex;
             white-space: nowrap;
@@ -712,7 +813,7 @@ require_once 'includes/header.php';
         <div class="container">
             <h1>We evolve ideas into Intelligent digital products.</h1>
             <p>Industry dummy ipsum has been the industry's standard dummy text. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-            <a href="#contact" class="btn">
+            <a href="contact.php" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
             </a>
@@ -729,17 +830,29 @@ require_once 'includes/header.php';
             </div>
         </div>
     </section>
+    <section class="content-text-section">
+        <div class="container">
+            <p class="content-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+        </div>
+    </section>
 
     <!-- Main Content Section -->
     <section class="content-section">
-       
-            <div class="two-column">
-                <div class="text">
-                    <h2>From idea to execution <span>We simplify, build, and scale</span></h2>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+        <div class="container">
+            <div class="what-we-believe">
+                <div class="about-label">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2L3 9L12 16L21 9L12 2Z" fill="#28a745"/>
+                        <path d="M3 13L12 20L21 13" stroke="#28a745" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Who we are</span>
                 </div>
+                <h2><span style="color: black;">From idea to execution</span><br>
+                <span class="gradient-text">We simplify, build, and scale</span></h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
             </div>
-
+        </div>
+    </section>
             <!-- What We Believe Section -->
     <section class="content-section">
         <div class="container">

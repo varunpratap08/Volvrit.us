@@ -27,7 +27,7 @@
                 </div>
                 <h3>App Development</h3>
                 <p>There are many variations of passages of Lorem ipsum available but the majority have suffered alteration in some form, by injected.</p>
-                <a href="#contact" class="btn">Contact Us</a>
+                <a href="contact.php" class="btn">Contact Us</a>
             </div>
             <!-- Right Column Wrapper for Other Cards -->
             <div class="right-cards-wrapper">
@@ -40,7 +40,7 @@
                         </div>
                         <h3>Web Development</h3>
                         <p>There are many variations of passages of Lorem ipsum available but the majority have suffered alteration in some form, by injected.</p>
-                        <a href="#contact" class="btn">Contact Us</a>
+                        <a href="contact.php" class="btn">Contact Us</a>
                     </div>
                     <!-- UI/UX Design Card -->
                     <div class="service-card fade-in" style="animation-delay: 0.4s;">
@@ -49,7 +49,7 @@
                         </div>
                         <h3>UI/UX Design</h3>
                         <p>There are many variations of passages of Lorem ipsum available but the majority have suffered alteration in some form, by injected.</p>
-                        <a href="#contact" class="btn">Contact Us</a>
+                        <a href="contact.php" class="btn">Contact Us</a>
                     </div>
                 </div>
                 <!-- Bottom Row: AI Development -->
@@ -60,7 +60,7 @@
                             <div class="ai-text-content">
                                 <h3>AI Development</h3>
                                 <p>There are many variations of passages of Lorem ipsum available but the majority have suffered alteration in some form, by injected.</p>
-                                <a href="#contact" class="btn">Contact Us</a>
+                                <a href="contact.php" class="btn">Contact Us</a>
                             </div>
                             <div class="ai-card-image">
                                 <img src="assets/images/home_AIDevelopment.png" alt="AI Development">

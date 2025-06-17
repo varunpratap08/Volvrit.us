@@ -131,7 +131,7 @@
                 <p class="fade-in" style="animation-delay: 0.2s; margin: 20px 0;">
                     There are many variations of passages of Lorem ipsum available but the majority have suffered alteration in some form, by injected humour, or randomised words which don't even look slightly believable. If you are going to use a passage of Lorem ipsum.
                 </p>
-                <a href="#contact" class="btn fade-in" style="animation-delay: 0.4s;">Contact Us</a>
+                <a href="contact.php" class="btn fade-in" style="animation-delay: 0.4s;">Contact Us</a>
             </div>
             <div class="about-image">
                 <img src="assets/images/home_about_image.png" alt="About Image" class="fade-in" style="animation-delay: 0.6s;">

@@ -1,36 +1,265 @@
 <!-- hero.php -->
+<link rel="stylesheet" href="css/hero.css">
+
 <div class="grid-bg">
     <div class="container">
-        <div class="hero" style="display: flex; align-items: center; min-height: 80vh;">
-            <div class="hero-text" style="flex: 1;">
-                <h1 class="fade-in" style="font-size: 66px; margin-bottom: 20px; font-family: 'Poppins', sans-serif; font-weight: 700; line-height: 1.2;">
-                    <span style="color: #2563EB;">WE</span> 
-                    <span id="animated-text" style="display: inline-block; vertical-align: top; min-width: 250px; height: 70px; overflow: hidden; position: relative;">
-                        <span class="text-word" style="display: block; background: linear-gradient(90deg, #2563EB 0%, #2AB7B7 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">DESIGN!</span>
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title fade-in">
+                    <span class="highlight">WE</span> 
+                    <span class="animated-text-container">
+                        <span class="animated-text" id="animated-text">DESIGN!</span>
                     </span>
-                    <br>
-                  <!-- <span style="font-size: 20px; font-weight: 400; color: #4B5563; display: inline-block; margin-top: 15px;">
-                        the simply test of printing and typesetting industry
-                    </span> -->
                 </h1>
-                <p class="fade-in" style="animation-delay: 0.2s; margin: 30px 0; font-size: 16px; color: #6B7280;">
+                <p class="hero-description fade-in">
                     Lorem ipsum has been the industry's standard dummy text.
                 </p>
-                <a href="#contact" class="btn fade-in" style="animation-delay: 0.4s; background: #2563EB; color: white; padding: 12px 30px; border-radius: 30px; text-decoration: none; display: inline-block; font-weight: 500; border: none; cursor: pointer; transition: all 0.3s ease;">
+                <a href="contact.php" class="hero-button fade-in">
                     Let's plan your project
                 </a>
             </div>
-            <div class="hero-image" style="flex: 1; text-align: right;">
-                <img src="assets/images/Hero%20section%20image.png" alt="Hero Image" class="fade-in" style="animation-delay: 0.6s; max-width: 100%; border-radius: 12px;">
+            <div class="hero-image-container fade-in">
+                <img src="assets/images/Hero%20section%20image.png" alt="Hero Image" class="hero-image">
             </div>
         </div>
     </div>
 </div>
 
+</div>
+
+<!-- Scrolling Text Section -->
+<div class="scrolling-text-section">
+    <div class="scrolling-text-container">
+        <div class="scrolling-text">
+            <span class="text-segment">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
+            <span class="text-segment" aria-hidden="true">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
+            <span class="text-segment" aria-hidden="true">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
+        </div>
+    </div>
+</div>
+
+<style>
+/* Scrolling Text Styles */
+.scrolling-text-section {
+    background-color: #2563EB;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+}
+
+.scrolling-text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.scrolling-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    will-change: transform;
+    display: inline-block;
+    padding: 0;
+    animation: scroll-left 20s linear infinite;
+    animation-play-state: running;
+    opacity: 1 !important;
+    visibility: visible !important;
+    min-width: 100%;
+}
+
+.scrolling-text.paused {
+    animation-play-state: paused;
+}
+
+.scrolling-text .text-segment {
+    color: white !important;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1;
+    white-space: nowrap;
+    display: inline-block;
+    padding: 0 40px;
+    position: relative;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0) translateY(-50%);
+    }
+    100% {
+        transform: translateX(-33.33%) translateY(-50%);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .scrolling-text-section {
+        height: 40px;
+    }
+    
+    .scrolling-text span {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .scrolling-text-section {
+        height: 35px;
+    }
+    
+    .scrolling-text span {
+        font-size: 12px;
+        padding: 0 15px;
+    }
+}
+</style>
+
+<script src="js/scrolling-text.js"></script>
+
+<style>
+/* Scrolling Text Styles */
+.scrolling-text-section {
+    background-color: #2563EB;
+    overflow: hidden;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    z-index: 10;
+}
+
+.scrolling-text-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.scrolling-text-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.scrolling-text {
+    display: inline-flex;
+    white-space: nowrap;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    animation: scroll-left 20s linear infinite;
+    will-change: transform;
+}
+
+.scrolling-text.paused {
+    animation-play-state: paused;
+}
+
+.scrolling-text span {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    padding: 0 40px;
+    line-height: 1;
+    display: inline-block;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .scrolling-text-section {
+        height: 40px;
+    }
+    
+    .scrolling-text span {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .scrolling-text-section {
+        height: 35px;
+    }
+    
+    .scrolling-text span {
+        font-size: 12px;
+        padding: 0 15px;
+    }
+}
+</style>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize scrolling text
+    const scrollingText = document.querySelector('.scrolling-text');
+    const container = document.querySelector('.scrolling-text-container');
+    
+    if (!scrollingText || !container) return;
+    
+    // Create a clone of the text for seamless looping
+    const textContent = scrollingText.innerHTML;
+    scrollingText.innerHTML = textContent + ' ' + textContent; // Duplicate content for seamless loop
+    
+    // Pause on hover
+    container.addEventListener('mouseenter', () => {
+        scrollingText.classList.add('paused');
+    });
+    
+    container.addEventListener('mouseleave', () => {
+        scrollingText.classList.remove('paused');
+    });
+    
+    // Handle window resize
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+            // Force reflow to reset animation
+            scrollingText.style.animation = 'none';
+            scrollingText.offsetHeight; // Trigger reflow
+            scrollingText.style.animation = 'scroll-left 20s linear infinite';
+        }, 100);
+    });
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Hero text animation
     const words = ['DESIGN!', 'DEVELOP!', 'DEPLOY!'];
-    const textElement = document.querySelector('.text-word');
+    const textElement = document.getElementById('animated-text');
+    if (!textElement) return; // Exit if element not found
+    
     let currentWordIndex = 0;
     let isDeleting = false;
     let charIndex = 0;

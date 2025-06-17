@@ -537,7 +537,181 @@ require_once 'includes/header.php';
             }
         }
 
+        /* Map Container Styles */
+        .map-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            min-height: 500px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+            min-height: 500px;
+            border: none;
+        }
+
+        .map-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .map-overlay .info-title {
+            color: #1f2937;
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .map-overlay .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .map-overlay .info-icon {
+            margin-right: 12px;
+            font-size: 1.1rem;
+        }
+
+        .map-overlay .info-text {
+            color: #4b5563;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .map-container {
+                min-height: 400px;
+            }
+            
+            #map {
+                min-height: 300px;
+            }
+            
+            .map-overlay {
+                position: relative;
+                padding: 15px;
+            }
+        }
 </style>
+
+<!-- Google Maps API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
+<!-- Initialize Google Map -->
+<script>
+    function initMap() {
+        // Coordinates for the map center (using the provided coordinates)
+        const location = { lat: 28.658206, lng: 77.144194 };
+        
+        // Create a map centered at the specified location
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 15,
+            center: location,
+            styles: [
+                {
+                    "featureType": "all",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{"saturation": 36}, {"color": "#333333"}, {"lightness": 40}]
+                },
+                {
+                    "featureType": "all",
+                    "elementType": "labels.text.stroke",
+                    "stylers": [{"visibility": "on"}, {"color": "#ffffff"}, {"lightness": 16}]
+                },
+                {
+                    "featureType": "all",
+                    "elementType": "labels.icon",
+                    "stylers": [{"visibility": "off"}]
+                },
+                {
+                    "featureType": "administrative",
+                    "elementType": "geometry.fill",
+                    "stylers": [{"color": "#fefefe"}, {"lightness": 20}]
+                },
+                {
+                    "featureType": "administrative",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{"color": "#fefefe"}, {"lightness": 17}, {"weight": 1.2}]
+                },
+                {
+                    "featureType": "landscape",
+                    "elementType": "geometry",
+                    "stylers": [{"color": "#f5f5f5"}, {"lightness": 20}]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "geometry",
+                    "stylers": [{"color": "#f5f5f5"}, {"lightness": 21}]
+                },
+                {
+                    "featureType": "poi.park",
+                    "elementType": "geometry",
+                    "stylers": [{"color": "#dedede"}, {"lightness": 21}]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.fill",
+                    "stylers": [{"color": "#ffffff"}, {"lightness": 17}]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{"color": "#ffffff"}, {"lightness": 29}, {"weight": 0.2}]
+                },
+                {
+                    "featureType": "road.arterial",
+                    "elementType": "geometry",
+                    "stylers": [{"color": "#ffffff"}, {"lightness": 18}]
+                },
+                {
+                    "featureType": "road.local",
+                    "elementType": "geometry",
+                    "stylers": [{"color": "#ffffff"}, {"lightness": 16}]
+                },
+                {
+                    "featureType": "transit",
+                    "elementType": "geometry",
+                    "stylers": [{"color": "#f2f2f2"}, {"lightness": 19}]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [{"color": "#e9e9e9"}, {"lightness": 17}]
+                }
+            ]
+        });
+
+        // Add a marker at the specified location
+        new google.maps.Marker({
+            position: location,
+            map: map,
+            title: 'Our Office',
+            icon: {
+                url: 'https://maps.google.com/mapfiles/ms/icons/red-dot.png',
+                scaledSize: new google.maps.Size(40, 40)
+            }
+        });
+    }
+    
+    // Handle window resize
+    window.addEventListener('resize', function() {
+        if (typeof map !== 'undefined') {
+            google.maps.event.trigger(map, 'resize');
+        }
+    });
+</script>
 
 <!-- Hero Section -->
 <section class="hero-section">
@@ -571,28 +745,28 @@ require_once 'includes/header.php';
 
         <!-- Two-Column Layout -->
         <div class="contact-grid">
-            <!-- Left Column: Contact Information -->
-            <div class="contact-info">
-                <h3 class="info-title">Contact Information</h3>
-                <div class="info-item">
-                    <span class="info-icon">📍</span>
-                    <div>
-                        <p class="info-label">Address</p>
-                        <p class="info-text">123 Business Street, Suite 456<br>City, State, 12345</p>
+            <!-- Left Column: Map Container -->
+            <div class="map-container">
+                <div id="map"></div>
+                <div class="map-overlay">
+                    <h3 class="info-title">Our Location</h3>
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <div>
+                            <p class="info-text">123 Business Street, Suite 456<br>City, State, 12345</p>
+                        </div>
                     </div>
-                </div>
-                <div class="info-item">
-                    <span class="info-icon">📞</span>
-                    <div>
-                        <p class="info-label">Phone</p>
-                        <p class="info-text">+1 (555) 123-4567</p>
+                    <div class="info-item">
+                        <span class="info-icon">📞</span>
+                        <div>
+                            <p class="info-text">+1 (555) 123-4567</p>
+                        </div>
                     </div>
-                </div>
-                <div class="info-item">
-                    <span class="info-icon">✉️</span>
-                    <div>
-                        <p class="info-label">Email</p>
-                        <p class="info-text">contact@volvrit.com</p>
+                    <div class="info-item">
+                        <span class="info-icon">✉️</span>
+                        <div>
+                            <p class="info-text">contact@volvrit.com</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -622,6 +796,87 @@ require_once 'includes/header.php';
         </div>
     </div>
 </section>
+
+<!-- Floating WhatsApp Button -->
+<a href="#" id="floating-whatsapp" class="floating-whatsapp" data-phone="15167791394">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<style>
+    /* Floating WhatsApp Button Styles */
+    .floating-whatsapp {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        background-color: #25D366;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+
+    .floating-whatsapp i {
+        margin-top: 3px;
+    }
+
+    .floating-whatsapp:hover {
+        background-color: #128C7E;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 768px) {
+        .floating-whatsapp {
+            width: 50px;
+            height: 50px;
+            font-size: 26px;
+            bottom: 20px;
+            right: 20px;
+        }
+    }
+</style>
+
+<!-- Font Awesome for WhatsApp icon -->
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">-->
+
+<script>
+    // Initialize floating WhatsApp button
+    document.addEventListener('DOMContentLoaded', function() {
+        const whatsappBtn = document.getElementById('floating-whatsapp');
+        if (whatsappBtn) {
+            // Get the phone number from data-phone attribute
+            const phoneNumber = whatsappBtn.getAttribute('data-phone');
+            if (phoneNumber) {
+                // Clean the phone number (remove any non-numeric characters)
+                const cleanNumber = phoneNumber.replace(/\D/g, '');
+                // Create the WhatsApp URL with the cleaned number
+                const whatsappUrl = `https://wa.me/${cleanNumber}?text=Hello%20Volvrit%2C%20I%20have%20a%20question`;
+                // Set the href attribute
+                whatsappBtn.href = whatsappUrl;
+                // For debugging - you can remove this in production
+                console.log('WhatsApp URL:', whatsappUrl);
+                
+                // Add click event for smooth scroll before redirect
+                whatsappBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    // Small delay to allow any animations to complete
+                    setTimeout(() => {
+                        window.location.href = whatsappUrl;
+                    }, 100);
+                });
+            }
+        }
+    });
+</script>
 
 <?php include 'home_faq.php'; ?>
 <?php

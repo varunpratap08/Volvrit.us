@@ -1,7 +1,7 @@
 <!-- footer.php -->
 <style>
     footer {
-        background: #fff;
+        background: #F4F4F4;
         padding: 40px 0;
         border-top: 1px solid #e0e0e0;
     }
@@ -42,18 +42,21 @@
         </div>
         <div class="footer-links">
             <h4>Quick Links</h4>
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact Us</a>
+            <a href="index.php">Home</a>
+            <a href="about.php">About Us</a>
+            <a href="portfolio.php">Portfolio</a>
+            <a href="contact.php">Contact Us</a>
         </div>
         <div class="footer-services">
             <h4>Services</h4>
-            <a href="#">Web Development</a>
-            <a href="#">App Development</a>
-            <a href="#">CRM Development</a>
-            <a href="#">UX Designing</a>
-            <a href="#">API Development</a>
+            <a href="web_development.php">Web Development</a>
+            <a href="app_development.php">App Development</a>
+            <a href="crm_development.php">CRM Development</a>
+            <a href="ui_ux_development.php">UX Designing</a>
+            <a href="API_development.php">API Development</a>
+            <a href="AI_development.php">AI Development</a>
+            <a href="digitalMarketing.php">Digital Marketing</a>
+            
         </div>
         <div class="footer-contact">
             <h4>Contact Us</h4>
@@ -63,5 +66,96 @@
         </div>
     </div>
 </footer>
+
+<!-- Global WhatsApp Floating Button -->
+<a href="#" id="global-whatsapp" class="whatsapp-float" data-phone="15167791394" aria-label="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- WhatsApp Button Styles -->
+<style>
+    /* WhatsApp Floating Button */
+    .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 30px;
+        right: 30px;
+        background-color: #25D366;
+        color: #FFF;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+
+    .whatsapp-float:hover {
+        background-color: #128C7E;
+        transform: translateY(-3px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .whatsapp-float i {
+        margin-top: 3px;
+    }
+
+    /* Add animation */
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+
+    .whatsapp-float:hover {
+        animation: pulse 1.5s infinite;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .whatsapp-float {
+            width: 50px;
+            height: 50px;
+            font-size: 26px;
+            bottom: 20px;
+            right: 20px;
+        }
+    }
+</style>
+
+<!-- WhatsApp Button JavaScript -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const whatsappBtn = document.getElementById('global-whatsapp');
+        if (whatsappBtn) {
+            const phoneNumber = whatsappBtn.getAttribute('data-phone');
+            if (phoneNumber) {
+                const cleanNumber = phoneNumber.replace(/\D/g, '');
+                const whatsappUrl = `https://wa.me/${cleanNumber}?text=Hello%20Volvrit%2C%20I%20have%20a%20question`;
+                
+                // Set the href attribute
+                whatsappBtn.href = whatsappUrl;
+                
+                // Add click event for smooth interaction
+                whatsappBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    // Small delay for any animations
+                    setTimeout(() => {
+                        window.open(whatsappUrl, '_blank');
+                    }, 100);
+                });
+            }
+        }
+    });
+</script>
+
+<!-- Font Awesome for WhatsApp icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </body>
 </html>

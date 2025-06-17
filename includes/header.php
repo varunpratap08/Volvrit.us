@@ -245,40 +245,72 @@
         @media (max-width: 992px) {
             .menu-toggle {
                 display: block;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                z-index: 1000;
+            }
+
+            .header-container {
+                position: relative;
+                padding: 15px 20px;
             }
 
             .nav-container {
                 flex-direction: column;
                 width: 100%;
-                gap: 15px;
+                gap: 0;
+                position: static;
             }
 
             .nav {
                 display: none;
                 position: absolute;
                 top: 100%;
-                left: 20px;
-                right: 20px;
+                left: 0;
+                right: 0;
                 background: #fff;
                 flex-direction: column;
-                padding: 20px;
+                padding: 15px 20px;
                 box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
                 z-index: 99;
-                width: auto;
                 margin: 0;
+                border-radius: 0 0 8px 8px;
             }
 
             .nav.active {
                 display: flex;
             }
 
+            .nav-link {
+                padding: 12px 0;
+                border-bottom: 1px solid #f0f0f0;
+                width: 100%;
+                display: block;
+            }
+
             .services-dropdown {
                 width: 100%;
+                position: relative;
             }
 
             .services-toggle {
                 width: 100%;
                 justify-content: space-between;
+                padding: 12px 0;
+                border-bottom: 1px solid #f0f0f0;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+            }
+
+            .services-toggle i {
+                transition: transform 0.3s ease;
+                margin-left: 8px;
+            }
+
+            .services-dropdown.active .services-toggle i {
+                transform: rotate(180deg);
             }
 
             .services-menu {
@@ -290,12 +322,24 @@
                 visibility: visible;
                 transform: none;
                 display: none;
-                padding: 0 0 0 20px;
-                margin: 10px 0;
+                padding: 10px 0 0 10px;
+                margin: 0;
+                background: #f9f9f9;
+                border-radius: 4px;
             }
 
-            .services-dropdown:hover .services-menu {
+            .services-dropdown.active .services-menu {
                 display: block;
+            }
+
+            .service-item {
+                padding: 10px 0;
+                display: flex;
+                align-items: center;
+            }
+
+            .service-item:not(:last-child) {
+                border-bottom: 1px solid #eee;
             }
         }
     </style>
@@ -369,18 +413,96 @@
     <div style="padding-top: 80px;"></div> <!-- Spacer for fixed header -->
 
     <script>
-        // Mobile menu toggle
-        document.getElementById('menuToggle').addEventListener('click', function() {
-            document.getElementById('mainNav').classList.toggle('active');
-        });
-
-        // Close menu when clicking outside
-        document.addEventListener('click', function(event) {
-            const nav = document.getElementById('mainNav');
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
             const menuToggle = document.getElementById('menuToggle');
+            const mainNav = document.getElementById('mainNav');
+            const servicesDropdown = document.querySelector('.services-dropdown');
+            const servicesToggle = document.querySelector('.services-toggle');
             
-            if (!nav.contains(event.target) && event.target !== menuToggle) {
-                nav.classList.remove('active');
+            // Function to check screen size and update menu state
+            function handleResponsiveMenu() {
+                if (window.innerWidth > 992) {
+                    // Always hide menu on desktop
+                    mainNav.classList.remove('active');
+                    servicesDropdown.classList.remove('active');
+                }
             }
+            
+            // Toggle main navigation
+            function toggleMainMenu() {
+                mainNav.classList.toggle('active');
+                const icon = menuToggle.querySelector('i');
+                if (mainNav.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                    // Close services dropdown when closing main menu
+                    servicesDropdown.classList.remove('active');
+                }
+            }
+            
+            // Toggle services dropdown
+            function toggleServicesDropdown(e) {
+                if (window.innerWidth <= 992) { // Only for mobile
+                    e.preventDefault();
+                    e.stopPropagation();
+                    servicesDropdown.classList.toggle('active');
+                }
+            }
+            
+            // Event listeners
+            menuToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                toggleMainMenu();
+            });
+            
+            // Toggle services dropdown on click
+            if (servicesToggle) {
+                servicesToggle.addEventListener('click', toggleServicesDropdown);
+            }
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (window.innerWidth <= 992) { // Only for mobile
+                    if (!mainNav.contains(event.target) && event.target !== menuToggle) {
+                        mainNav.classList.remove('active');
+                        servicesDropdown.classList.remove('active');
+                        const icon = menuToggle.querySelector('i');
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                }
+            });
+            
+            // Handle window resize
+            let resizeTimer;
+            window.addEventListener('resize', function() {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(function() {
+                    handleResponsiveMenu();
+                    
+                    // Reset states on resize
+                    if (window.innerWidth > 992) {
+                        const icon = menuToggle.querySelector('i');
+                        icon.classList.remove('fa-times');
+                        icon.classList.add('fa-bars');
+                    }
+                }, 250);
+            });
+            
+            // Close dropdown when clicking outside on mobile
+            document.addEventListener('click', function(event) {
+                if (window.innerWidth <= 992 && 
+                    !servicesDropdown.contains(event.target) && 
+                    event.target !== servicesToggle) {
+                    servicesDropdown.classList.remove('active');
+                }
+            });
+            
+            // Initial check
+            handleResponsiveMenu();
         });
     </script>
