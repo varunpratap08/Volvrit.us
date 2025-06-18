@@ -34,12 +34,7 @@ require_once 'includes/header.php';
             position: relative;
             height: 80vh;
             min-height: 600px;
-            background: linear-gradient(
-                    to bottom,
-                    rgba(255, 255, 255, 0.9) 0%,
-                    rgba(255, 255, 255, 0.8) 100%
-                ),
-                url('assets/images/about_usbg.png');
+            background: url('assets/images/Hero Section(1).jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -803,13 +798,7 @@ require_once 'includes/header.php';
 <body>
 <!-- Hero Section -->
     <section class="hero-section">
-        <div class="tech-icons">
-            <img src="assets/images/react 2.svg" alt="React" loading="lazy">
-            <img src="assets/images/php 2.svg" alt="PHP" loading="lazy">
-            <img src="assets/images/js 2.svg" alt="JavaScript" loading="lazy">
-            <img src="assets/images/figma 2.svg" alt="Figma" loading="lazy">
-            <img src="assets/images/chatgpt 3.svg" alt="ChatGpt" loading="lazy">
-        </div>
+       
         <div class="container">
             <h1>We evolve ideas into Intelligent digital products.</h1>
             <p>Industry dummy ipsum has been the industry's standard dummy text. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>

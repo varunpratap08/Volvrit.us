@@ -33,24 +33,26 @@ require_once 'includes/header.php';
             position: relative;
             height: 80vh;
             min-height: 600px;
-            background: linear-gradient(
-                    to bottom,
-                    rgba(255, 255, 255, 0.9) 0%,
-                    rgba(255, 255, 255, 0.8) 100%
-                ),
-                url('assets/images/about_usbg.png');
+            background: url('assets/images/Hero Section.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: flex-start;
-            text-align: left;
-            padding: 120px 0 80px;
-            padding-left: max(5%, calc((100% - 1200px) / 2));
-            padding-right: 5%;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
             overflow: hidden;
+        }
+        
+        .hero-section .container {
+            max-width: 1000px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 20px;
         }
 
         .hero-section .section-label {
@@ -66,15 +68,17 @@ require_once 'includes/header.php';
 
         .hero-section h1 {
             font-family: 'Poppins', sans-serif;
-            font-size: 56px;
-            font-weight: 700;
-            line-height: 1.2;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 48px;
+            letter-spacing: 0;
             color: #2563EB;
             margin: 0 0 24px 0;
             max-width: 800px;
             z-index: 2;
-            text-align: left;
+            text-align: center;
             width: 100%;
+            padding: 0 20px;
         }
 
         .hero-section p {
@@ -83,8 +87,10 @@ require_once 'includes/header.php';
             line-height: 1.6;
             margin: 0 0 40px 0;
             max-width: 600px;
+            width: 100%;
+            padding: 0 20px;
             z-index: 2;
-            text-align: left;
+            text-align: center;
             width: 100%;
         }
 
@@ -101,6 +107,7 @@ require_once 'includes/header.php';
             border: none;
             cursor: pointer;
         }
+
 
         .hero-section .btn:hover {
             background-color: #1D4ED8;
@@ -875,17 +882,10 @@ require_once 'includes/header.php';
 <body>
     <!-- Hero Section -->
     <section class="hero-section">
-        <div class="tech-icons">
-            <img src="assets/images/react 2.svg" alt="React" loading="lazy">
-            <img src="assets/images/php 2.svg" alt="PHP" loading="lazy">
-            <img src="assets/images/js 2.svg" alt="JavaScript" loading="lazy">
-            <img src="assets/images/figma 2.svg" alt="Figma" loading="lazy">
-            <img src="assets/images/chatgpt 3.svg" alt="ChatGpt" loading="lazy">
-
-        </div>
+       
         <div class="container">
-            <h1>We evolve ideas into Intelligent digital products.</h1>
-            <p>Industry dummy ipsum has been the industry's standard dummy text. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <h1>We evolve ideas into<br><span style="display: inline-block;">Intelligent digital products</span></h1>
+        <p>Industry dummy ipsum has been the industry's standard dummy text. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
             <a href="contact.php" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
