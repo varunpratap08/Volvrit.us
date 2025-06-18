@@ -1,9 +1,16 @@
 <!-- footer.php -->
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+    
     footer {
         background: #F4F4F4;
         padding: 40px 0;
         border-top: 1px solid #e0e0e0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0%;
     }
     .footer-container {
         display: flex;
@@ -26,19 +33,66 @@
         text-decoration: none;
         margin-bottom: 10px;
         transition: color 0.3s ease;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0%;
     }
     .footer-links a:hover, .footer-services a:hover {
         color: #007BFF;
     }
+    .footer-logo p {
+        margin-bottom: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0%;
+    }
     .footer-contact p {
         margin-bottom: 10px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0%;
+    }
+    .social-icons {
+        display: flex;
+        gap: 15px;
+        margin-top: 15px;
+    }
+    .social-icons a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        background-color: #333;
+        color: white;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+    .social-icons a:hover {
+        background-color: #007BFF;
+        transform: translateY(-3px);
     }
 </style>
 <footer>
     <div class="footer-container">
         <div class="footer-logo">
-            <img src="https://via.placeholder.com/150x50?text=Evolve+Logo" alt="Evolve Logo">
+            <img src="assets/images/evolvix logo.png" alt="Evolvix Logo">
             <p>Lorem ipsum has been the industry's standard dummy text making it.</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/yourpage" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/yourpage" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
         </div>
         <div class="footer-links">
             <h4>Quick Links</h4>
@@ -61,7 +115,7 @@
         <div class="footer-contact">
             <h4>Contact Us</h4>
             <p>📞 +1 223 456 7890</p>
-            <p>📧 evolve@gmail.com</p>
+            <p>📧 evolvix@gmail.com</p>
             <p>📍 2212 4th Street NY, USA</p>
         </div>
     </div>

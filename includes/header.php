@@ -14,11 +14,12 @@
         header {
             /* background-image: url('assets/images/background_grid.png'); */
            background-color: #F5F7FA;
-            padding: 10px 0;
+            padding: 5px 0;
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         }
 
         .header-container {
@@ -348,7 +349,7 @@
     <header>
         <div class="header-container">
             <a href="index.php" class="logo">
-              <!-- <img src="assets/images/logo.png" alt="Evolvrix Logo"> -->
+              <img src="assets/images/evolvix logo.png" alt="Evolvix Logo"> 
             </a>
             
             <button class="menu-toggle" id="menuToggle">

@@ -1,10 +1,41 @@
 <!-- hero.php -->
 <link rel="stylesheet" href="css/hero.css">
+<link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+    .hero-tagline {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .hero-tagline h2 {
+        font-family: 'Amita', cursive;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 48px;
+        color: #2563EB;
+        margin: 0;
+        letter-spacing: 0;
+    }
+    
+    .tagline-gif {
+        width: 48px;
+        height: 48px;
+        object-fit: contain;
+    }
+</style>
 
 <div class="grid-bg">
     <div class="container">
+        
         <div class="hero-section">
             <div class="hero-content">
+                <div class="hero-tagline fade-in">
+                    <h2>You Evolve</h2>
+                    <img src="assets/images/evolve-gif.gif" alt="Evolution" class="tagline-gif">
+                </div>
                 <h1 class="hero-title fade-in">
                     <span class="highlight">WE</span> 
                     <span class="animated-text-container">
