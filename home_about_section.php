@@ -1,7 +1,30 @@
 <!-- about.php -->
 <style>
+    @keyframes slideInLeft {
+        from {
+            transform: translateX(-100px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100px);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
     .about-section {
         margin: 40px 0;
+        overflow: hidden;
     }
     
     .about-container {
@@ -12,6 +35,15 @@
     
     .about-text {
         flex: 1;
+        opacity: 0;
+        transform: translateX(-100px);
+        transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+        transition-delay: 0.3s;
+    }
+    
+    .animate .about-text {
+        transform: translateX(0);
+        opacity: 1;
     }
     
     .about-badge {
@@ -39,6 +71,15 @@
     .about-image {
         flex: 1;
         text-align: center;
+        opacity: 0;
+        transform: translateX(100px);
+        transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+    }
+    
+    .animate .about-image {
+        transform: translateX(0);
+        opacity: 1;
+        transition-delay: 0.5s;
     }
     
     .about-image img {
@@ -113,6 +154,45 @@
         }
     }
 </style>
+
+<script>
+// Animation on page load
+document.addEventListener('DOMContentLoaded', function() {
+    const aboutSection = document.querySelector('.about-section');
+    const aboutText = document.querySelector('.about-text');
+    const aboutImage = document.querySelector('.about-image');
+    
+    function resetAnimations() {
+        // Remove animations
+        aboutText.style.animation = 'none';
+        aboutImage.style.animation = 'none';
+        
+        // Force reflow
+        void aboutText.offsetWidth;
+        void aboutImage.offsetWidth;
+        
+        // Reset styles
+        aboutText.style.opacity = '0';
+        aboutText.style.transform = 'translateX(-100px)';
+        aboutImage.style.opacity = '0';
+        aboutImage.style.transform = 'translateX(100px)';
+        
+        // Re-add animations after a small delay
+        setTimeout(() => {
+            aboutText.style.opacity = '1';
+            aboutText.style.transform = 'translateX(0)';
+            aboutImage.style.opacity = '1';
+            aboutImage.style.transform = 'translateX(0)';
+        }, 50);
+    }
+    
+    // Initial animation
+    setTimeout(resetAnimations, 300);
+    
+    // Reset animation on hover
+    aboutSection.addEventListener('mouseenter', resetAnimations);
+});
+</script>
 
 <div class="container">
     <div class="about-section">

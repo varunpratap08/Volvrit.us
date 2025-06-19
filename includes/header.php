@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evolvrix - <?php echo $pageTitle ?? 'Home'; ?></title>
+    <title>Evolvix - <?php echo $pageTitle ?? 'Home'; ?></title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
@@ -19,7 +19,7 @@
             width: 100%;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+           /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); */
         }
 
         .header-container {

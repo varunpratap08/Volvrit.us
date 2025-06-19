@@ -108,7 +108,6 @@ require_once 'includes/header.php';
             cursor: pointer;
         }
 
-
         .hero-section .btn:hover {
             background-color: #1D4ED8;
             transform: translateY(-2px);
@@ -116,8 +115,8 @@ require_once 'includes/header.php';
         }
 
        
-       
 
+       
          /* Responsive Design */
          @media (max-width: 1024px) {
             .hero-section {
@@ -153,7 +152,7 @@ require_once 'includes/header.php';
             .hero-section p {
                 text-align: center;
             }
-           
+            
 
             .hero-section h1 {
                 font-size: 32px;
@@ -170,7 +169,8 @@ require_once 'includes/header.php';
                 font-size: 14px;
             }
 
-          
+           
+        }
 
         @media (max-width: 480px) {
             .hero-section {
@@ -189,7 +189,7 @@ require_once 'includes/header.php';
                 font-size: 12px;
             }
 
-            
+           
         }
 
         /* Intro Section with Scrolling Text */
@@ -633,14 +633,7 @@ require_once 'includes/header.php';
     margin: 0 auto;
 }
 
-/* Section Title */
-.section-title {
-    font-size: 32px;
-    font-weight: bold;
-    color: #2a2a2a;
-    margin-bottom: 30px;
-    line-height: 1.3;
-}
+
 
 .section-title span {
     color: #007bff;
@@ -825,10 +818,10 @@ require_once 'includes/header.php';
 <body>
     <!-- Hero Section -->
     <section class="hero-section">
-       
+     
         <div class="container">
-        <h1>We evolve ideas into<br><span style="display: inline-block;">Intelligent digital products</span></h1>
-        <p>Industry dummy ipsum has been the industry's standard dummy text. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <h1>We evolve ideas into<br><span style="display: inline-block;">Intelligent digital products</span></h1>
+            <p>Industry dummy ipsum has been the industry's standard dummy text. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
             <a href="contact.php" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>

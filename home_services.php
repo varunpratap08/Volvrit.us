@@ -1,5 +1,5 @@
 <!-- services.php -->
-<div class="grid-bg">
+<div >
     <div class="container">
         <div class="section-intro">
             <svg class="section-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -19,7 +19,7 @@
             <!-- App Development Card -->
             <div class="service-card app-card fade-in">
                 <div class="card-image">
-                    <img src="assets/images/home_appdevelopment.png" alt="App Development">
+                    <img src="assets/images/app_development.jpg" alt="App Development">
                     <!-- Decorative Elements for App Development -->
                     <span class="deco-dot deco-dot-1"></span>
                     <span class="deco-dot deco-dot-2"></span>
@@ -74,12 +74,12 @@
 </div>
 
 <style>
-    /* Grid Background */
+    /* Grid Background 
     .grid-bg {
         background-image: url('assets/images/background_grid.png');
         background-color: #F5F7FA;
         padding: 60px 0;
-    }
+    }*/
 
     /* Container */
     .container {
@@ -137,7 +137,7 @@
         }
         
         .app-card {
-            grid-row: 1 / span 2;
+            grid-row: 1 / 3;
         }
         
         .right-cards-wrapper {
@@ -256,6 +256,14 @@
         .btn {
             padding: 10px 20px;
             font-size: 14px;
+        }
+        
+        .app-card .btn {
+            margin: 15px 20px 0; /* Match other cards' button margin */
+            padding: 10px 20px; /* Match other cards' button padding */
+            font-size: 14px;
+            display: inline-block;
+            align-self: flex-start; /* Align to start like other cards */
         }
     }
     
@@ -405,7 +413,7 @@
     }
 
     .app-card {
-        grid-row: 1 / span 2;
+        grid-row: 1 / 3;
     }
 
     /* Card Image */
@@ -422,21 +430,32 @@
     
     /* App Development Card */
     .app-card {
-        height: auto;
-        min-height: 0;
+        height: 100%;
         display: flex;
         flex-direction: column;
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        padding: 0 0 20px 0;
     }
     
     .app-card .card-image {
-        flex: 1;
-        min-height: 0;
-        height: auto;
+        position: relative;
+        width: calc(100% - 40px); /* Match heading padding */
+        height: 220px;
+        overflow: hidden;
+        margin: 0 20px 15px; /* Match heading margins */
+        padding: 0;
+        box-sizing: border-box;
     }
     
     .app-card .card-image img {
+        width: 100%;
         height: 100%;
         object-fit: contain;
+        object-position: center top;
     }
 
     .card-image img {
@@ -502,12 +521,29 @@
         margin-bottom: 15px;
     }
 
+    .app-card h3 {
+        font-size: 1.5rem;
+        margin: 20px 20px 12px;
+        color: #1a1a1a;
+        line-height: 1.3;
+        padding: 0;
+    }
+
     .service-card p {
         font-size: 14px;
         font-weight: 300;
         color: #666;
         margin-bottom: 20px;
         flex-grow: 1;
+    }
+
+    .app-card p {
+        margin: 0 20px 15px; /* Match heading horizontal margins */
+        color: #666;
+        line-height: 1.5;
+        flex-grow: 1;
+        font-size: 15px;
+        padding: 0;
     }
 
     /* Button */

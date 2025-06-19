@@ -97,7 +97,6 @@
 <style>
 .faq-section {
     padding: 80px 0;
-    background-color: #f9f9f9;
     width: 100%;
     box-sizing: border-box;
 }

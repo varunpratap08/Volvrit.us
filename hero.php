@@ -27,7 +27,7 @@
     }
 </style>
 
-<div class="grid-bg">
+<div >
     <div class="container">
         
         <div class="hero-section">
@@ -49,8 +49,11 @@
                     Let's plan your project
                 </a>
             </div>
-            <div class="hero-image-container fade-in">
-                <img src="assets/images/Hero%20section%20image.png" alt="Hero Image" class="hero-image">
+            <div class="hero-images-wrapper">
+                <div class="hero-image-container fade-in">
+                    <img src="assets/images/Hero%20section%20image.png" alt="Hero Image" class="hero-image">
+                </div>
+               
             </div>
         </div>
     </div>
