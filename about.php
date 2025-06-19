@@ -27,24 +27,22 @@ require_once 'includes/header.php';
             background-color: #F9FAFB;
         }
 
-        /* Import Poppins font */
+        /* Import Fonts */
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
         /* Hero Section Styling */
         .hero-section {
             position: relative;
-            height: 80vh;
-            min-height: 600px;
-            background: url('assets/images/Hero Section.jpg');
+            min-height: 70vh;
+            background: url('assets/images/about_us.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 20px;
+            padding: 80px 5% 40px; /* Reduced top padding to move content up */
             overflow: hidden;
         }
         
@@ -53,8 +51,9 @@ require_once 'includes/header.php';
             width: 100%;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            padding: 0 20px;
+            align-items: flex-start; /* Align content to the left */
+            padding: 0;
+            margin: 0;
         }
 
         .hero-section .section-label {
@@ -72,15 +71,15 @@ require_once 'includes/header.php';
             font-family: 'Poppins', sans-serif;
             font-size: 48px;
             font-weight: 600;
-            line-height: 48px;
+            line-height: 1.2;
             letter-spacing: 0;
             color: #2563EB;
             margin: 0 0 24px 0;
             max-width: 800px;
             z-index: 2;
-            text-align: center;
+            text-align: left;
             width: 100%;
-            padding: 0 20px;
+            padding: 0;
         }
 
         .hero-section p {
@@ -89,11 +88,10 @@ require_once 'includes/header.php';
             line-height: 1.6;
             margin: 0 0 40px 0;
             max-width: 600px;
-            width: 100%;
-            padding: 0 20px;
             z-index: 2;
-            text-align: center;
+            text-align: left;
             width: 100%;
+            padding: 0;
         }
 
         .hero-section .btn {
@@ -122,9 +120,8 @@ require_once 'includes/header.php';
          /* Responsive Design */
          @media (max-width: 1024px) {
             .hero-section {
-                height: 70vh;
-                min-height: 500px;
-                padding: 100px 5% 60px;
+                min-height: auto;
+                padding: 70px 5% 40px; /* Adjusted padding for tablet */
             }
 
             .hero-section h1 {
@@ -142,17 +139,18 @@ require_once 'includes/header.php';
 
         @media (max-width: 768px) {
             .hero-section {
-                height: auto;
-                min-height: 450px;
-                padding: 80px 0 40px;
-                padding-left: max(5%, calc((100% - 1200px) / 2));
-                padding-right: 5%;
-                text-align: center;
-                align-items: center;
+                min-height: auto;
+                padding: 60px 5% 30px; /* Adjusted padding for mobile */
+                text-align: left;
+                align-items: flex-start;
             }
-            .hero-section h1,
+            .hero-section h1 {
+                font-size: 36px;
+                line-height: 1.2;
+            }
             .hero-section p {
-                text-align: center;
+                font-size: 16px;
+                text-align: left;
             }
             
 
@@ -176,19 +174,17 @@ require_once 'includes/header.php';
 
         @media (max-width: 480px) {
             .hero-section {
-                height: auto;
-                min-height: 400px;
-                padding: 60px 0 30px;
-                padding-left: max(5%, calc((100% - 1200px) / 2));
-                padding-right: 5%;
+                padding: 50px 5% 20px; /* Further reduced padding for small screens */
             }
 
             .hero-section h1 {
-                font-size: 24px;
+                font-size: 28px;
+                line-height: 1.3;
             }
 
             .hero-section p {
-                font-size: 12px;
+                font-size: 16px;
+                line-height: 1.5;
             }
 
            
@@ -539,67 +535,6 @@ require_once 'includes/header.php';
             color: #6a6a6a;
         }
 
-        /* Tech Stack Section */
-        .tech-stack-section {
-            padding: 60px 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .tech-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 30px;
-        }
-        /* About Section 
-        .about-section {
-        margin: 40px 0;
-        overflow: hidden;
-    }
-    
-    .about-container {
-        display: flex;
-        align-items: center;
-        gap: 40px;
-    }
-    
-    .about-text {
-        flex: 1;
-        opacity: 0;
-        transform: translateX(-100px);
-        transition: transform 0.8s ease-out, opacity 0.8s ease-out;
-        transition-delay: 0.3s;
-    }
-    
-    .animate .about-text {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    
-    .about-badge {
-        display: inline-flex;
-        align-items: center;
-        border: 1px solid #e0e0e0;
-        border-radius: 20px;
-        padding: 4px 15px;
-        margin-bottom: 15px;
-        color: #959595;
-        font-size: 14px;
-    }
-    
-    .about-badge svg {
-        margin-right: 8px;
-        flex-shrink: 0;
-    }
-    
-    .about-heading {
-        font-size: 32px;
-        line-height: 1.3;
-        margin: 15px 0;
-    }
-    */
-
 
 /* Section Title */
 .section-title {
@@ -884,6 +819,169 @@ require_once 'includes/header.php';
     margin: 0 auto;
 }
 
+/* About Badge Styling */
+.about-badge {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    padding: 4px 15px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    color: #959595;
+    font-size: 14px;
+}
+
+.about-badge svg path {
+    fill: green;
+}
+
+.about-badge svg path[stroke] {
+    stroke: green;
+}
+
+/* About Section Heading Styles */
+.about-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 4px; /* Reduced from 10px to 4px */
+    margin: 0 0 16px 0; /* Reduced bottom margin */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 1.2; /* Slightly reduced line height */
+}
+
+.about-heading .heading-line {
+    display: block;
+}
+
+.about-heading .heading-line:first-child {
+    color: #000000;
+    font-size: 32px;
+}
+
+.about-heading .gradient-text {
+    background: linear-gradient(90deg, #2563EB 0%, #2AB7B7 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 32px;
+    display: inline-block;
+}
+
+/* About Section Paragraph Styling */
+.about-text > p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: 0%;
+    color: #4B5563;
+    margin: 8px 0 0 0;
+}
+
+@media (max-width: 768px) {
+    .about-text > p {
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-text > p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+/* Stair Cards Styling */
+.stair-cards-container {
+    position: relative;
+    width: 100%;
+    max-width: 1350px;
+    margin: 40px auto 0; /* Reduced top margin from 100px to 40px */
+    height: 700px; /* Reduced height from 800px */
+    padding-top: 20px; /* Reduced padding from 50px to 20px */
+}
+
+.stair-card {
+    position: absolute;
+    background: #f4f4f4;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.card-1 {
+    width: 413px;
+    height: 357px;
+    top: 200px; /* Increased from 100px to push down further */
+    left: 0;
+    border: 1px solid #D3D3D3;
+    border-right: none;
+}
+
+.card-2 {
+    width: 414px;
+    height: 457px;
+    top: 100px; /* Increased from 0 to push down */
+    left: 413px; /* 513px - 100px (container padding) */
+    border: 1px solid #D3D3D3;
+    border-right: none;
+}
+
+.card-3 {
+    width: 413px;
+    height: 557px;
+    top: 0; /* Changed from -100px to 0 */
+    left: 827px; /* 927px - 100px */
+    border: 1px solid #D3D3D3;
+}
+
+.card-content h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #2D3748;
+}
+
+.card-content p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4A5568;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .stair-cards-container {
+        height: 900px;
+    }
+    
+    .stair-card {
+        position: relative;
+        width: 100% !important;
+        height: auto !important;
+        top: auto !important;
+        left: auto !important;
+        margin-bottom: 30px;
+        border: 1px solid #D3D3D3 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-heading .heading-line:first-child,
+    .about-heading .gradient-text {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-heading .heading-line:first-child,
+    .about-heading .gradient-text {
+        font-size: 24px;
+    }
+}
+
 @media (max-width: 768px) {
     .large-centered-text {
         font-size: 32px;
@@ -932,7 +1030,8 @@ require_once 'includes/header.php';
             </p>
         </div>
     </section>
-    <!-- About Section -->
+    <!-- What we Believe-->
+    <section>
     <div class="container">
     <div class="about-section">
         <div class="about-container">
@@ -945,7 +1044,8 @@ require_once 'includes/header.php';
                     <span>Who we are</span>
                 </div>
                 <h2 class="fade-in about-heading">
-                    From vision to launch, from startups to scale ups we create digital solutions that drive business forward
+                    <span class="heading-line">From idea to execution</span>
+                    <span class="heading-line gradient-text">We simplify, build, and scale</span>
                 </h2>
                 <p class="fade-in" style="animation-delay: 0.2s; margin: 20px 0;">
                     There are many variations of passages of Lorem ipsum available but the majority have suffered alteration in some form, by injected humour, or randomised words which don't even look slightly believable. If you are going to use a passage of Lorem ipsum.
@@ -954,22 +1054,64 @@ require_once 'includes/header.php';
                 </div>
                 </div>
                 </div>
+                </section>
+  <section>
+  <div class="container">
+    <div class="about-section">
+        <div class="about-container">
+            <div class="about-text">
+                <div class="about-badge">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2L3 9L12 16L21 9L12 2Z" fill="#28a745"/>
+                        <path d="M3 13L12 20L21 13" stroke="#28a745" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>What We Believe</span>
+                </div>
+                <h2 class="fade-in about-heading">
+                    <span class="heading-line">From idea to execution</span>
+                    <span class="heading-line gradient-text">We simplify, build, and scale</span>
+                </h2>
+                <p class="fade-in" style="animation-delay: 0.2s; margin: 20px 0 40px 0;">
+                    There are many variations of passages of Lorem ipsum available but the majority have suffered alteration in some form, by injected humour, or randomised words which don't even look slightly believable. If you are going to use a passage of Lorem ipsum.
+                </p>
+                
+                <!-- Stair-like Cards Section -->
+                <div class="stair-cards-container">
+                    <!-- Card 1 -->
+                    <div class="stair-card card-1">
+                        <div class="card-content">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="stair-card card-2">
+                        <div class="card-content">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 3 -->
+                    <div class="stair-card card-3">
+                        <div class="card-content">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                
+                </div>
+                </div>
+                </div>
+                <div style="margin-top: 40px;"></div>
   <section>
     <?php include 'process_home.php'; ?>
   </section>
 
-  <!-- Tech Stack Section (What We Use) -->
-  <section class="tech-stack-section section">
-        <div class="container">
-            <h2 class="section-title">
-                Turn clicks into customers with
-                <span class="gradient-text">Smart web development</span>
-            </h2>
-            <div class="tech-mindmap">
-                <img src="assets/images/web_development_techstackimg.png" alt="Tech Stack Mindmap" class="mindmap-image">
-            </div>
-        </div>
-    </section>
+
 <section>
     <?php include 'home_expertise.php'; ?>
 </section>  

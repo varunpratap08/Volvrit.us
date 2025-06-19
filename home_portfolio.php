@@ -52,17 +52,22 @@
 
     .portfolio-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         gap: 30px;
         width: 100%;
+        max-width: 1300px;
+        margin: 0 auto;
     }
 
     .portfolio-card {
-        background: #fff;
-        border-radius: 12px;
+        background: #F4F4F4;
+        border-radius: 20px;
+        border: 1px solid #D3D3D3;
         overflow: hidden;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        width: 403px;
+        height: 444px;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
     }
 
     .portfolio-card:hover {
@@ -72,13 +77,55 @@
 
     .portfolio-image {
         width: 100%;
-        height: 200px;
+        height: 100%;
         object-fit: cover;
-        border-radius: 12px 12px 0 0;
+        border-radius: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
     }
 
     .portfolio-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
         padding: 20px;
+        background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+        z-index: 2;
+        color: white;
+        border-radius: 0 0 20px 20px;
+    }
+    
+    .portfolio-title {
+        color: white !important;
+        margin: 0 0 10px 0;
+        font-size: 20px;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+    
+    .tech-tags {
+        display: flex;
+        gap: 8px;
+        margin-top: 8px;
+        flex-wrap: wrap;
+    }
+    
+    .tech-tag {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 103px;
+        height: 32px;
+        border: 0.79px solid #cccccc;
+        border-radius: 23.65px;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px);
+        color: white;
+        font-size: 12px;
+        font-weight: 400;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.3);
     }
 
     .portfolio-title {
@@ -89,7 +136,18 @@
     }
 
     /* Responsive Styles */
-    @media (max-width: 1199.98px) {
+    @media (max-width: 1250px) {
+        .portfolio-grid {
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            max-width: 900px;
+        }
+        
+        .portfolio-card {
+            width: 100%;
+            max-width: 403px;
+        }
+        
         .section-title {
             font-size: 28px;
         }
@@ -115,6 +173,19 @@
         }
     }
 
+    @media (max-width: 900px) {
+        .portfolio-grid {
+            grid-template-columns: 1fr;
+            max-width: 403px;
+        }
+        
+        .portfolio-card {
+            width: 100%;
+            max-width: 403px;
+            height: 444px;
+        }
+    }
+    
     @media (max-width: 767.98px) {
         .portfolio-section {
             padding: 50px 0;
@@ -140,8 +211,17 @@
         }
         
         .portfolio-grid {
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
+            grid-template-columns: 1fr;
+            gap: 25px;
+            max-width: 100%;
+            padding: 0 15px;
+        }
+        
+        .portfolio-card {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            aspect-ratio: 403/444;
         }
     }
 
@@ -188,23 +268,60 @@
         
         <div class="portfolio-grid">
             <div class="portfolio-card fade-in">
-                <img src="https://via.placeholder.com/600x400?text=Finch+1" alt="Finch 1" class="portfolio-image">
+                <img src="assets/images/portfolio(1).jpg" alt="Finch 1" class="portfolio-image">
                 <div class="portfolio-content">
-                    <h3 class="portfolio-title">Finch Locks</h3>
+                    <h3 class="portfolio-title">Kallakuri Foods</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
                 </div>
             </div>
             
             <div class="portfolio-card fade-in" style="animation-delay: 0.2s">
-                <img src="https://via.placeholder.com/600x400?text=Finch+2" alt="Finch 2" class="portfolio-image">
+                <img src="assets/images/portfolio(2).jpg" alt="Finch 2" class="portfolio-image">
                 <div class="portfolio-content">
                     <h3 class="portfolio-title">Finch Locks</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
                 </div>
             </div>
             
             <div class="portfolio-card fade-in" style="animation-delay: 0.4s">
-                <img src="https://via.placeholder.com/600x400?text=Finch+3" alt="Finch 3" class="portfolio-image">
+                <img src="assets/images/portfolio(3).jpg" alt="Finch 3" class="portfolio-image">
                 <div class="portfolio-content">
                     <h3 class="portfolio-title">Finch Locks</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card fade-in" style="animation-delay: 0.4s">
+                <img src="assets/images/portfolio(4).jpg" alt="Finch 4" class="portfolio-image">
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Finch Locks</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card fade-in" style="animation-delay: 0.4s">
+                <img src="assets/images/portfolio(5).jpg" alt="Finch 5" class="portfolio-image">
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Finch Locks</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
                 </div>
             </div>
         </div>
