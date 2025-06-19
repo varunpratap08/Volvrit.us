@@ -13,7 +13,7 @@
         /* Header Styles */
         header {
             /* background-image: url('assets/images/background_grid.png'); */
-           background-color: #F5F7FA;
+          /* background-color: #F5F7FA; */
             padding: 5px 0;
             position: fixed;
             width: 100%;

@@ -83,7 +83,9 @@
 <footer>
     <div class="footer-container">
         <div class="footer-logo">
+            <a href="index.php">
             <img src="assets/images/evolvix logo.png" alt="Evolvix Logo">
+            </a>
             <p>Lorem ipsum has been the industry's standard dummy text making it.</p>
             <div class="social-icons">
                 <a href="https://www.facebook.com/yourpage" target="_blank" aria-label="Facebook">
@@ -114,9 +116,9 @@
         </div>
         <div class="footer-contact">
             <h4>Contact Us</h4>
-            <p>📞 +1 223 456 7890</p>
+            <p>📞 +1 516 779 1394</p>
             <p>📧 evolvix@gmail.com</p>
-            <p>📍 2212 4th Street NY, USA</p>
+            <p>📍 41 Wingate Road,Valley Stream, NY 11581</p>
         </div>
     </div>
 </footer>

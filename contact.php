@@ -13,90 +13,73 @@ require_once 'includes/header.php';
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: 'Arial', sans-serif;
-        background-repeat: repeat;
-        background-size: auto;
+        font-family: 'Roboto', sans-serif;
     }
 
     body {
         background-image: url('https://www.transparenttextures.com/patterns/grid-me.png');
+        line-height: 1.6;
+        color: #333;
     }
+
 
     /* Hero Section */
     .hero-section {
         position: relative;
-        height: 80vh;
         min-height: 600px;
-        background: linear-gradient(
-                to bottom,
-                rgba(255, 255, 255, 0.9) 0%,
-                rgba(255, 255, 255, 0.8) 100%
-            ),
-            url('assets/images/about_usbg.png');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        background: url('assets/images/contact_hero.jpg') center/cover no-repeat;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        text-align: left;
-        padding: 120px 0 80px;
+        padding: 120px 5% 80px;
         padding-left: max(5%, calc((100% - 1200px) / 2));
-        padding-right: 5%;
-        overflow: hidden;
     }
 
     .hero-section h1 {
         font-family: 'Poppins', sans-serif;
-        font-size: 56px;
+        font-size: clamp(2rem, 5vw, 3.5rem);
         font-weight: 700;
         line-height: 1.2;
         color: #2563EB;
-        margin: 0 0 24px 0;
+        margin: 0 0 1.5rem 0;
         max-width: 800px;
-        z-index: 2;
-        text-align: left;
         width: 100%;
     }
 
     .hero-section p {
-        font-size: 18px;
+        font-size: clamp(0.875rem, 2vw, 1.125rem);
         color: #4B5563;
-        line-height: 1.6;
-        margin: 0 0 40px 0;
+        margin: 0 0 2.5rem 0;
         max-width: 600px;
-        z-index: 2;
-        text-align: left;
         width: 100%;
     }
 
-    .hero-section .btn {
-        z-index: 2;
+    .btn {
         background-color: #2563EB;
         color: white;
-        padding: 12px 28px;
-        border-radius: 24px;
+        padding: 0.75rem 1.75rem;
+        border-radius: 1.5rem;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 1rem;
         text-decoration: none;
         transition: all 0.3s ease;
         border: none;
         cursor: pointer;
         display: inline-flex;
         align-items: center;
-        gap: 10px;
+        gap: 0.625rem;
     }
 
-    .hero-section .btn-icon {
-        width: 20px;
-        height: 20px;
-    }
-
-    .hero-section .btn:hover {
+    .btn:hover {
         background-color: #1D4ED8;
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+    }
+
+    .btn-icon {
+        width: 1.25rem;
+        height: 1.25rem;
     }
 
     .tech-icons {
@@ -112,297 +95,161 @@ require_once 'includes/header.php';
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
-        gap: 20px;
+        gap: 1.25rem;
     }
 
     .tech-icons img {
-        position: relative;
-        width: 100px;
-        height: 100px;
+        width: 6.25rem;
+        height: 6.25rem;
         object-fit: contain;
-        transition: all 0.4s ease;
-        margin: 10px 0;
-    }
-
-    /* Responsive adjustments for tech icons */
-    @media (max-width: 1024px) {
-        .tech-icons {
-            width: 50%;
-            right: 2%;
-        }
-        .tech-icons img {
-            width: 80px;
-            height: 80px;
-        }
-    }
-
-    /* Responsive Design */
-    @media (max-width: 1024px) {
-        .hero-section {
-            height: 70vh;
-            min-height: 500px;
-            padding: 100px 5% 60px;
-        }
-
-        .hero-section h1 {
-            font-size: 44px;
-            max-width: 600px;
-        }
-
-        .hero-section p {
-            font-size: 16px;
-            max-width: 500px;
-        }
-
-        .tech-icons img {
-            width: 100px;
-            height: 100px;
-        }
-    }
-
-    @media (max-width: 768px) {
-        .hero-section {
-            height: auto;
-            min-height: 450px;
-            padding: 80px 0 40px;
-            padding-left: max(5%, calc((100% - 1200px) / 2));
-            padding-right: 5%;
-            text-align: center;
-            align-items: center;
-        }
-        .hero-section h1,
-        .hero-section p {
-            text-align: center;
-        }
-        .tech-icons {
-            position: relative;
-            width: 100%;
-            right: 0;
-            flex-direction: row;
-            justify-content: center;
-            margin-top: 30px;
-            opacity: 0.6;
-        }
-
-        .hero-section h1 {
-            font-size: 32px;
-            max-width: 90%;
-        }
-
-        .hero-section p {
-            font-size: 14px;
-            max-width: 90%;
-        }
-
-        .hero-section .btn {
-            padding: 10px 20px;
-            font-size: 14px;
-        }
+        transition: transform 0.3s ease;
+        margin: 0.625rem 0;
     }
 
     /* Contact Form Styling */
     .contact-section {
-        padding: 80px 0;
+        padding: 5rem 0;
         background-color: #fff;
     }
 
     .contact-form-container {
-        max-width: 1200px;
+        max-width: 75rem;
         margin: 0 auto;
-        padding: 0 40px;
-        display: flex;
-        justify-content: flex-start;
+        padding: 0 2.5rem;
     }
 
     .contact-form {
         background: #fff;
         width: 100%;
-        max-width: 600px;
-        margin: 0;
-        padding: 0;
+        max-width: 37.5rem;
     }
 
     .form-group {
-        margin-bottom: 24px;
-        text-align: left;
+        margin-bottom: 1.5rem;
     }
 
     .form-group label {
         display: block;
         font-family: 'Roboto', sans-serif;
-        font-size: 16px;
+        font-size: 1rem;
         font-weight: 500;
         color: #333;
-        margin-bottom: 8px;
+        margin-bottom: 0.5rem;
     }
 
     .form-group input,
     .form-group textarea {
         width: 100%;
-        padding: 12px 16px;
+        padding: 0.75rem 1rem;
         border: 1px solid #e5e7eb;
-        border-radius: 8px;
+        border-radius: 0.5rem;
         font-family: 'Roboto', sans-serif;
-        font-size: 16px;
+        font-size: 1rem;
         color: #111827;
         background: #f9fafb;
-        transition: border-color 0.2s;
+        transition: all 0.3s ease;
+    }
+
+    .form-group textarea {
+        min-height: 7.5rem;
+        resize: vertical;
     }
 
     .form-group input:focus,
     .form-group textarea:focus {
-        outline: none;
         border-color: #2563eb;
         background: #fff;
         box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-    }
-
-    .form-submit-btn {
-        background: #2563eb;
-        color: white;
-        border: none;
-        border-radius: 8px;
-        padding: 12px 28px;
-        font-family: 'Roboto', sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        cursor: pointer;
-        transition: all 0.2s;
-    }
-
-    .form-submit-btn:hover {
-        background: #1d4ed8;
-        transform: translateY(-1px);
-    }
-
-    @media (max-width: 768px) {
-        .contact-form-container {
-            padding: 0 24px;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-    }
-
-    .form-group {
-        margin-bottom: 20px;
-    }
-
-    .form-group label {
-        display: block;
-        font-size: 14px;
-        color: #333;
-        font-weight: 500;
-        margin-bottom: 8px;
-    }
-
-    .form-group input,
-    .form-group textarea {
-        width: 100%;
-        padding: 12px;
-        border: 1px solid #ddd;
-        border-radius: 6px;
-        font-size: 16px;
-        color: #333;
-        background: #fafafa;
-        transition: border-color 0.3s ease;
-    }
-
-    .form-group input:focus,
-    .form-group textarea:focus {
-        border-color: #2563eb;
         outline: none;
-        background: #fff;
-    }
-
-    .form-group textarea {
-        resize: vertical;
-        min-height: 120px;
     }
 
     .form-submit-btn {
         background: #2563eb;
         color: white;
-        padding: 12px 28px;
+        padding: 0.75rem 1.75rem;
         border: none;
-        border-radius: 6px;
-        font-size: 16px;
+        border-radius: 0.5rem;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
         font-weight: 500;
         cursor: pointer;
         transition: all 0.3s ease;
     }
 
     .form-submit-btn:hover {
-        background: #1D4ED8;
+        background: #1d4ed8;
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
     }
 
     /* Responsive Design */
-    @media (max-width: 768px) {
-        .contact-form {
-            padding: 20px;
-            margin: 0 15px;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            font-size: 14px;
-        }
-
-        .form-group label {
-            font-size: 14px;
-        }
-
-        .form-submit-btn {
-            font-size: 14px;
-            padding: 10px 20px;
-        }
-    }
-
     @media (max-width: 1024px) {
         .hero-section {
-            height: 70vh;
             min-height: 500px;
-            padding: 100px 20px 60px;
+            padding: 6.25rem 5% 3.75rem;
         }
-
-        .hero-section h1 {
-            font-size: 44px;
-            max-width: 600px;
+        
+        .tech-icons {
+            width: 50%;
+            right: 2%;
         }
-
-        .hero-section p {
-            font-size: 16px;
-            max-width: 500px;
-        }
-
+        
         .tech-icons img {
-            width: 100px;
-            height: 100px;
+            width: 5rem;
+            height: 5rem;
         }
     }
 
     @media (max-width: 768px) {
         .hero-section {
-            height: 60vh;
             min-height: 450px;
-            padding: 80px 15px 40px;
+            padding: 5rem 1.25rem 2.5rem;
+            text-align: center;
+            align-items: center;
         }
 
-        .hero-section h1 {
-            font-size: 32px;
-            max-width: 90%;
-        }
-
+        
+        .hero-section h1,
         .hero-section p {
-            font-size: 14px;
+            text-align: center;
             max-width: 90%;
         }
+        
+        .tech-icons {
+            position: relative;
+            width: 100%;
+            right: 0;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 1.875rem;
+            opacity: 0.6;
+        }
 
-        .hero-section .btn {
-            padding: 10px 20px;
+        .contact-form-container {
+            padding: 0 1.5rem;
+        }
+        
+        .contact-form {
+            padding: 1.25rem;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .hero-section h1 {
+            font-size: 2rem;
+        }
+        
+        .btn,
+        .form-submit-btn {
+            width: 100%;
+            justify-content: center;
+        }
+    }
             font-size: 14px;
         }
 
@@ -598,13 +445,6 @@ require_once 'includes/header.php';
 
 <!-- Hero Section -->
 <section class="hero-section">
-    <div class="tech-icons">
-        <img src="assets/images/react 2.svg" alt="React" loading="lazy">
-        <img src="assets/images/php 2.svg" alt="PHP" loading="lazy">
-        <img src="assets/images/js 2.svg" alt="JavaScript" loading="lazy">
-        <img src="assets/images/figma 2.svg" alt="Figma" loading="lazy">
-        <img src="assets/images/chatgpt 3.svg" alt="ChatGpt" loading="lazy">
-    </div>
     <div class="container">
         <h1>We evolve ideas into intelligent digital products.</h1>
         <p>Industry dummy ipsum has been the industry's standard dummy text. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>

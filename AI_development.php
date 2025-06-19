@@ -115,42 +115,9 @@ require_once 'includes/header.php';
             box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
         }
 
-        .tech-icons {
-            position: absolute;
-            width: 40%;
-            height: 100%;
-            top: 0;
-            right: 5%;
-            pointer-events: none;
-            z-index: 1;
-            opacity: 0.8;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-end;
-            gap: 20px;
-        }
+       
+       
 
-        .tech-icons img {
-            position: relative;
-            width: 100px;
-            height: 100px;
-            object-fit: contain;
-            transition: all 0.4s ease;
-            margin: 10px 0;
-        }
-
-        /* Responsive adjustments for tech icons */
-        @media (max-width: 1024px) {
-            .tech-icons {
-                width: 50%;
-                right: 2%;
-            }
-            .tech-icons img {
-                width: 80px;
-                height: 80px;
-            }
-        }
          /* Responsive Design */
          @media (max-width: 1024px) {
             .hero-section {
@@ -169,10 +136,7 @@ require_once 'includes/header.php';
                 max-width: 500px;
             }
 
-            .tech-icons img {
-                width: 100px;
-                height: 100px;
-            }
+           
         }
 
         @media (max-width: 768px) {
@@ -189,15 +153,7 @@ require_once 'includes/header.php';
             .hero-section p {
                 text-align: center;
             }
-            .tech-icons {
-                position: relative;
-                width: 100%;
-                right: 0;
-                flex-direction: row;
-                justify-content: center;
-                margin-top: 30px;
-                opacity: 0.6;
-            }
+           
 
             .hero-section h1 {
                 font-size: 32px;
@@ -214,17 +170,7 @@ require_once 'includes/header.php';
                 font-size: 14px;
             }
 
-            .tech-icons img {
-                width: 80px;
-                height: 80px;
-                opacity: 0.6;
-            }
-
-            .tech-icons img:nth-child(1) { top: 10%; left: 5%; }
-            .tech-icons img:nth-child(2) { top: 15%; right: 5%; }
-            .tech-icons img:nth-child(3) { bottom: 15%; left: 5%; }
-            .tech-icons img:nth-child(4) { bottom: 10%; right: 5%; }
-        }
+          
 
         @media (max-width: 480px) {
             .hero-section {
@@ -243,10 +189,7 @@ require_once 'includes/header.php';
                 font-size: 12px;
             }
 
-            .tech-icons img {
-                width: 60px;
-                height: 60px;
-            }
+            
         }
 
         /* Intro Section with Scrolling Text */
