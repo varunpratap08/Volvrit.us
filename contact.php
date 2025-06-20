@@ -82,29 +82,7 @@ require_once 'includes/header.php';
         height: 1.25rem;
     }
 
-    .tech-icons {
-        position: absolute;
-        width: 40%;
-        height: 100%;
-        top: 0;
-        right: 5%;
-        pointer-events: none;
-        z-index: 1;
-        opacity: 0.8;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-        gap: 1.25rem;
-    }
-
-    .tech-icons img {
-        width: 6.25rem;
-        height: 6.25rem;
-        object-fit: contain;
-        transition: transform 0.3s ease;
-        margin: 0.625rem 0;
-    }
+   
 
     /* Contact Form Styling */
     .contact-section {
@@ -189,15 +167,7 @@ require_once 'includes/header.php';
             padding: 6.25rem 5% 3.75rem;
         }
         
-        .tech-icons {
-            width: 50%;
-            right: 2%;
-        }
-        
-        .tech-icons img {
-            width: 5rem;
-            height: 5rem;
-        }
+       
     }
 
     @media (max-width: 768px) {
@@ -391,8 +361,8 @@ require_once 'includes/header.php';
 
     .service-option input[type="radio"] {
         margin: 0 0 0 12px;
-        width: 16px;
-        height: 16px;
+        width: 12px;
+        height: 12px;
         accent-color: #007bff;
         -webkit-appearance: none;
         -moz-appearance: none;

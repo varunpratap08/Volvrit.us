@@ -282,7 +282,7 @@
             <div class="portfolio-card fade-in" style="animation-delay: 0.2s">
                 <img src="assets/images/portfolio(2).jpg" alt="Finch 2" class="portfolio-image">
                 <div class="portfolio-content">
-                    <h3 class="portfolio-title">Finch Locks</h3>
+                    <h3 class="portfolio-title">Saturn Advertisement</h3>
                     <div class="tech-tags">
                         <span class="tech-tag">React</span>
                         <span class="tech-tag">Node.js</span>
@@ -294,7 +294,7 @@
             <div class="portfolio-card fade-in" style="animation-delay: 0.4s">
                 <img src="assets/images/portfolio(3).jpg" alt="Finch 3" class="portfolio-image">
                 <div class="portfolio-content">
-                    <h3 class="portfolio-title">Finch Locks</h3>
+                    <h3 class="portfolio-title">Pdf Scanner</h3>
                     <div class="tech-tags">
                         <span class="tech-tag">React</span>
                         <span class="tech-tag">Node.js</span>
@@ -304,6 +304,39 @@
             </div>
             <div class="portfolio-card fade-in" style="animation-delay: 0.4s">
                 <img src="assets/images/portfolio(4).jpg" alt="Finch 4" class="portfolio-image">
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Dostkicar</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card fade-in" style="animation-delay: 0.4s">
+                <img src="assets/images/portfolio(5).jpg" alt="Finch 5" class="portfolio-image">
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Finch Locks</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card fade-in" style="animation-delay: 0.4s">
+                <img src="assets/images/portfolio(5).jpg" alt="Finch 5" class="portfolio-image">
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Amit Sales</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-card fade-in" style="animation-delay: 0.4s">
+                <img src="assets/images/portfolio(5).jpg" alt="Finch 5" class="portfolio-image">
                 <div class="portfolio-content">
                     <h3 class="portfolio-title">Finch Locks</h3>
                     <div class="tech-tags">
