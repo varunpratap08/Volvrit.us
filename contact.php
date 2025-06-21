@@ -412,6 +412,220 @@ require_once 'includes/header.php';
         }
     }
 </style>
+<style>
+/* Scrolling Text Styles */
+.scrolling-text-section {
+    background-color: #2563EB;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+}
+
+.scrolling-text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.scrolling-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    will-change: transform;
+    display: inline-block;
+    padding: 0;
+    animation: scroll-left 20s linear infinite;
+    animation-play-state: running;
+    opacity: 1 !important;
+    visibility: visible !important;
+    min-width: 100%;
+}
+
+.scrolling-text.paused {
+    animation-play-state: paused;
+}
+
+.scrolling-text .text-segment {
+    color: white !important;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1;
+    white-space: nowrap;
+    display: inline-block;
+    padding: 0 40px;
+    position: relative;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0) translateY(-50%);
+    }
+    100% {
+        transform: translateX(-33.33%) translateY(-50%);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .scrolling-text-section {
+        height: 40px;
+    }
+    
+    .scrolling-text span {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .scrolling-text-section {
+        height: 35px;
+    }
+    
+    .scrolling-text span {
+        font-size: 12px;
+        padding: 0 15px;
+    }
+}
+</style>
+
+<script src="js/scrolling-text.js"></script>
+
+<style>
+/* Scrolling Text Styles */
+.scrolling-text-section {
+    background-color: #2563EB;
+    overflow: hidden;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    z-index: 10;
+}
+
+.scrolling-text-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.scrolling-text-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.scrolling-text {
+    display: inline-flex;
+    white-space: nowrap;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    animation: scroll-left 20s linear infinite;
+    will-change: transform;
+}
+
+.scrolling-text.paused {
+    animation-play-state: paused;
+}
+
+.scrolling-text span {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    padding: 0 40px;
+    line-height: 1;
+    display: inline-block;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .scrolling-text-section {
+        height: 40px;
+    }
+    
+    .scrolling-text span {
+        font-size: 14px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .scrolling-text-section {
+        height: 35px;
+    }
+    
+    .scrolling-text span {
+        font-size: 12px;
+        padding: 0 15px;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize scrolling text
+    const scrollingText = document.querySelector('.scrolling-text');
+    const container = document.querySelector('.scrolling-text-container');
+    
+    if (!scrollingText || !container) return;
+    
+    // Create a clone of the text for seamless looping
+    const textContent = scrollingText.innerHTML;
+    scrollingText.innerHTML = textContent + ' ' + textContent; // Duplicate content for seamless loop
+    
+    // Pause on hover
+    container.addEventListener('mouseenter', () => {
+        scrollingText.classList.add('paused');
+    });
+    
+    container.addEventListener('mouseleave', () => {
+        scrollingText.classList.remove('paused');
+    });
+    
+    // Handle window resize
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+            // Force reflow to reset animation
+            scrollingText.style.animation = 'none';
+            scrollingText.offsetHeight; // Trigger reflow
+            scrollingText.style.animation = 'scroll-left 20s linear infinite';
+        }, 100);
+    });
+});
+</script>
 
 <!-- Hero Section -->
 <section class="hero-section">
@@ -423,6 +637,18 @@ require_once 'includes/header.php';
             <span>Let's plan your project</span>
         </a>
     </div>
+</section>
+<!-- Scrolling Text Section -->
+<section>
+<div class="scrolling-text-section">
+    <div class="scrolling-text-container">
+        <div class="scrolling-text">
+            <span class="text-segment">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
+            <span class="text-segment" aria-hidden="true">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
+            <span class="text-segment" aria-hidden="true">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
+        </div>
+    </div>
+</div>
 </section>
 <section class="section">
     <div class="container">

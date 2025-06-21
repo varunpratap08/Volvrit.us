@@ -8,11 +8,11 @@
         <span class="section-label">Why Choose us</span>
     </div>
     <h2 class="fade-in expertise-heading">
-        <span class="heading-line">From idea to execution</span>
-        <span class="gradient-text">We simplify, build, and scale</span>
+        <span class="heading-line">From Concept to launch</span>
+        <span class="gradient-text">We make it simple, scalable and successful</span>
     </h2>
     <p class="fade-in" style="animation-delay: 0.2s; margin-bottom: 40px;">
-        There are many variations of passages of Lorem ipsum available but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t even look slightly believable.
+    Choosing the right tech partner matters. At the heart of our IT solutions NYC, we combine innovation, skill, and strategy to help your business grow.
     </p>
     <div class="expertise-grid">
         <!-- First Row -->
@@ -24,7 +24,7 @@
                     <span class="deco-dot deco-dot-orange"></span>
                 </div>
                 <h3>Future Ready Solution</h3>
-                <p>There are many variations of passages of Lorem ipsum available but the majority have suffered alteration.</p>
+                <p>We develop modern, scalable systems built to support future upgrades ideal for growing startups and enterprises. Our IT consulting experts in New York ensure long-term value for your business.</p>
             </div>
             <!-- Growth-Ready Architecture Card (Larger) -->
             <div class="expertise-card fade-in large-card" style="animation-delay: 0.2s;">
@@ -33,7 +33,7 @@
                     <span class="deco-line deco-line-blue"></span>
                 </div>
                 <h3>Growth-Ready Architecture</h3>
-                <p>There are many variations of passages of Lorem ipsum available but the majority have suffered alteration.</p>
+                <p>Our solutions are built with long-term growth in mind—ensuring your tech can handle tomorrow’s demand. We align tech with business goals to create high-performing platforms.</p>
             </div>
         </div>
         <!-- Second Row -->
@@ -45,7 +45,7 @@
                     <span class="deco-dot deco-dot-purple"></span>
                 </div>
                 <h3>Professional and Skilled Team</h3>
-                <p>There are many variations of passages of Lorem ipsum available but the majority have suffered alteration.</p>
+                <p>Work with experienced developers, designers, and strategists who bring the best IT services in New York right to your project. We’re with you every step of the way from initial planning to launch and ongoing support.</p>
             </div>
             <!-- Full-Stack Expertise Card (Larger) -->
             <div class="expertise-card fade-in large-card" style="animation-delay: 0.6s;">
@@ -54,7 +54,7 @@
                     <span class="deco-dot deco-dot-green"></span>
                 </div>
                 <h3>Full-Stack Expertise</h3>
-                <p>There are many variations of passages of Lorem ipsum available but the majority have suffered alteration.</p>
+                <p>From frontend design to backend systems, we handle it all. Our full-stack team delivers fast, secure, and custom solutions tailored to your business needs.</p>
             </div>
         </div>
     </div>
@@ -191,17 +191,52 @@
         background: #fff;
         padding: 20px;
         border-radius: 10px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         display: flex;
         flex-direction: column;
         text-align: center;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        overflow: hidden;
+        border: 1px solid rgba(0,0,0,0.05);
+    }
+    
+    .expertise-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        border-color: rgba(0,0,0,0.1);
+    }
+    
+    .expertise-card::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(90deg, #2563EB 0%, #2AB7B7 100%);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .expertise-card:hover::after {
+        transform: scaleX(1);
     }
 
     /* Card Image */
     .card-image {
         position: relative;
-        margin: -20px -20px 15px -20px;
-        height: 150px; /* Fixed height for consistency */
+        margin-bottom: 20px;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .expertise-card:hover .card-image {
+        transform: scale(1.1);
     }
 
     .card-image img {
@@ -255,18 +290,26 @@
 
     /* Card Content */
     .expertise-card h3 {
-        font-size: 20px;
-        font-weight: 600;
+        font-size: 18px;
+        margin: 10px 0;
         color: #333;
-        margin: 15px 0;
+        transition: color 0.3s ease-in-out;
+    }
+    
+    .expertise-card:hover h3 {
+        color: #2563EB;
     }
 
     .expertise-card p {
         font-size: 14px;
-        font-weight: 300;
         color: #666;
-        line-height: 1.5;
-        margin: 0 0 15px;
+        line-height: 1.6;
+        margin: 0;
+        transition: color 0.3s ease-in-out;
+    }
+    
+    .expertise-card:hover p {
+        color: #555;
     }
 
     /* Responsive Adjustments */

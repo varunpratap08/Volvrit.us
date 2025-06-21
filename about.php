@@ -35,7 +35,7 @@ require_once 'includes/header.php';
         .hero-section {
             position: relative;
             min-height: 70vh;
-            background: url('assets/images/about_us.jpg');
+            background: url('');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -705,34 +705,7 @@ require_once 'includes/header.php';
     color: #6a6a6a;
 }
 
-/* Tech Stack Section */
-.tech-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-}
 
-.tech-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.column-title {
-    font-size: 20px;
-    font-weight: 600;
-    color: #2a2a2a;
-    margin-bottom: 15px;
-}
-
-.tech-list {
-    list-style: none;
-}
-
-.tech-list li {
-    font-size: 16px;
-    color: #6a6a6a;
-    margin-bottom: 10px;
-}
 /* Responsive Design */
 @media (max-width: 1024px) {
     .section-title {

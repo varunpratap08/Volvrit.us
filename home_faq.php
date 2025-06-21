@@ -15,68 +15,68 @@
         <div class="faq-list">
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>What kind of services is Evolve offering?</span>
+                    <span>What kind of services is Evolvix offering?</span>
                     <svg class="arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15 1L8 8L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
                 <div class="faq-answer">
-                    <p>Evolve offers services such as web development, mobile app design, custom solutions, SEO, and digital marketing.</p>
+                    <p>Evolvix delivers complete IT solutions in NYC, including website and mobile app design, custom web development, digital marketing, SEO, and exhibition display services. We’re known for providing reliable and scalable tech with the help of our IT consulting New York experts. </p>
                 </div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>What makes Evolve different from other agencies?</span>
+                    <span>How long would it take to deliver a website design project? </span>
                     <svg class="arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15 1L8 8L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
                 <div class="faq-answer">
-                    <p>Our unique approach combines cutting-edge technology with creative solutions, ensuring your business stands out in the digital landscape.</p>
+                    <p>Timelines vary by project, but most website design work is delivered within 3 to 6 weeks. With our structured process, we ensure fast turnaround without compromising quality. </p>
                 </div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>How long would it take to deliver a website design project?</span>
+                    <span>Are you offering fully responsive website design? </span>
                     <svg class="arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15 1L8 8L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
                 <div class="faq-answer">
-                    <p>It typically takes 4-6 weeks depending on the complexity of the project.</p>
+                    <p>Yes. Every project we build is fully responsive optimized for mobile, tablet, and desktop—to ensure your users have the best experience on all devices. </p>
                 </div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>How can I get a fully responsive website design?</span>
+                    <span>Do you provide SEO and how can I rank higher? </span>
                     <svg class="arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15 1L8 8L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
                 <div class="faq-answer">
-                    <p>Our team ensures all designs are responsive using modern frameworks and testing across devices.</p>
+                    <p>Absolutely. As part of our best IT services in New York, we offer smart SEO strategies, including keyword planning, content optimization, and performance tracking—to help your business rank higher and reach the right audience. </p>
                 </div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>How to improve SEO and how can I rank higher?</span>
+                    <span>How is custom web development different from an off-the-shelf template? </span>
                     <svg class="arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15 1L8 8L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
                 <div class="faq-answer">
-                    <p>We optimize your site with SEO best practices, including keyword research, meta tags, and fast loading speeds.</p>
+                    <p>Custom development means we create exactly what your business needs from the ground up. Unlike templates, it’s built for high performance, matches your brand, and supports long-term growth. It’s how we deliver personalized IT solutions in NYC.. </p>
                 </div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>How is custom web development different from an off-the-shelf template?</span>
+                    <span>What type of businesses do you handle? </span>
                     <svg class="arrow-icon" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M15 1L8 8L1 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
                 <div class="faq-answer">
-                    <p>Custom development is tailored to your needs, offering unique features and scalability, unlike templates.</p>
+                    <p>We work with startups, SMEs, and enterprise clients across various industries from retail and tech to healthcare and events. Whether you’re scaling up or starting fresh, our IT consulting New York services adapt to your unique business needs. </p>
                 </div>
             </div>
             <div class="faq-item">

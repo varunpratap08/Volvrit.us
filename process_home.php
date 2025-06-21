@@ -8,11 +8,11 @@
             <span>How we do it</span>
         </div>
         <h2 class="process-heading">
-            <span class="heading-line">From idea to execution</span>
-            <span class="gradient-text">We simplify, build, and scale</span>
+            <span class="heading-line">How We Deliver Smart</span>
+            <span class="gradient-text">Scalable IT Solutions NYC Can Rely On.</span>
         </h2>
         <p class="subtitle">
-            There are many variations of passages of Lorem ipsum available but the majority have suffered alteration in some form, by injected humour, or randomised words which don't even look slightly believable.
+        We follow a proven process to simplify, build, and scale digital products with precision. As your partner in IT consulting New York, we offer the best IT services in New York to guide your growth at every step.
         </p>
     </div>
     <div class="process-grid">
@@ -22,7 +22,7 @@
                     <img src="assets/images/process_icon1.svg" alt="Discover Icon">
                 </div>
                 <h3>Discover</h3>
-                <p>Drive your business goals, create the strategy and achieve them with our help.</p>
+                <p>Understand your business goals, user expectations, and market challenges to lay a strong foundation.</p>
             </div>
         </div>
         <div class="process-card fade-in">
@@ -31,7 +31,7 @@
                     <img src="assets/images/process_icon2.svg" alt="Strategize Icon">
                 </div>
                 <h3>Strategize</h3>
-                <p>Create a clear roadmap to achieve your goals and achieve them with our help.</p>
+                <p>Map out the right tech stack, timelines, and roadmap with expert guidance tailored for your business.</p>
             </div>
         </div>
         <div class="process-card fade-in">
@@ -40,7 +40,7 @@
                     <img src="assets/images/process_icon3.svg" alt="Design & Develop Icon">
                 </div>
                 <h3>Design & Develop</h3>
-                <p>Launch your product, iterate and achieve your goals with our help.</p>
+                <p>Map out the right tech stack, timelines, and roadmap with expert guidance tailored for your business.</p>
             </div>
         </div>
         <div class="process-card fade-in">
@@ -49,7 +49,7 @@
                     <img src="assets/images/process_icon4.svg" alt="Deploy & Evolve Icon">
                 </div>
                 <h3>Deploy & Evolve</h3>
-                <p>Launch your product, iterate and achieve your goals with our help.</p>
+                <p>Map out the right tech stack, timelines, and roadmap with expert guidance tailored for your business.</p>
             </div>
         </div>
     </div>

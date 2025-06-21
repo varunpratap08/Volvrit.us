@@ -15,17 +15,37 @@
     .footer-container {
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
         width: 90%;
         max-width: 1200px;
         margin: 0 auto;
         flex-wrap: wrap;
+        gap: 30px;
+    }
+    .footer-logo {
+        flex: 1;
+        min-width: 250px;
+        max-width: 300px;
     }
     .footer-logo img {
         max-width: 150px;
     }
+    .footer-logo p {
+        margin: 20px 0;
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #555;
+    }
+    .footer-links, .footer-services, .footer-contact {
+        flex: 1;
+        min-width: 150px;
+        margin: 0 10px;
+    }
     .footer-links h4, .footer-services h4, .footer-contact h4 {
         font-size: 18px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
+        color: #333;
     }
     .footer-links a, .footer-services a {
         display: block;
@@ -42,21 +62,14 @@
     .footer-links a:hover, .footer-services a:hover {
         color: #007BFF;
     }
-    .footer-logo p {
-        margin-bottom: 20px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 24px;
-        letter-spacing: 0%;
-    }
+
     .footer-contact p {
         margin-bottom: 10px;
         font-family: 'Roboto', sans-serif;
         font-weight: 400;
-        font-size: 18px;
-        line-height: 24px;
-        letter-spacing: 0%;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #555;
     }
     .social-icons {
         display: flex;
@@ -86,7 +99,7 @@
             <a href="index.php">
             <img src="assets/images/evolvix logo.png" alt="Evolvix Logo">
             </a>
-            <p>Lorem ipsum has been the industry's standard dummy text making it.</p>
+            <p>At Evolvix, we deliver smart, scalable IT solutions in NYC that help businesses grow with confidence. From startups to enterprises, our team blends technology and strategy to solve real world problems making us one of the best IT services in New York.</p>
             <div class="social-icons">
                 <a href="https://www.facebook.com/yourpage" target="_blank" aria-label="Facebook">
                     <i class="fab fa-facebook-f"></i>

@@ -361,8 +361,7 @@
                         <img src="assets/images/profile_icon.svg" alt="User" class="user-avatar">
                         <div class="testimonial-text">
                             <p class="fade-in" style="animation-delay: 0.4s;">
-                                "Contrary to popular belief, Lorem ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over."
-                            </p>
+                            Evolvix delivers truly customized IT solutions in NYC that helped us move from outdated systems to seamless digital workflows.                            </p>
                         </div>
                     </div>
                 </div>

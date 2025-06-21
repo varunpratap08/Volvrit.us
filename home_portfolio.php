@@ -258,13 +258,12 @@
         </div>
         
         <h2 class="section-title">
-            <div class="heading-line">From idea to execution</div>
-            <div class="gradient-text">We simplify, build and scale</div>
+            <div class="heading-line">Delivering Smart IT Solutions</div>
+            <div class="gradient-text">NYC Businesses Trust</div>
         </h2>
         
         <p class="portfolio-description fade-in" style="animation-delay: 0.2s;">
-            There are many variations of passages of Lorem ipsum available but the majority have suffered alteration in some form, by injected humour, or randomised words which don't even look slightly believable.
-        </p>
+        We build powerful websites and secure mobile apps that make a real difference. Finch Locks is one of our success stories. where we combined design, development, and strategy to create a smart, scalable solution With our IT consulting New York experience and modern tools, we deliver reliable and custom IT solutions in NYC that help businesses grow.        </p>
         
         <div class="portfolio-grid">
             <div class="portfolio-card fade-in">

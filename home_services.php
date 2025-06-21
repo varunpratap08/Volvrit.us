@@ -10,11 +10,10 @@
         </div>
         <h2 class="services-heading">
             <span class="heading-line">From idea to execution</span>
-            <span class="gradient-text">We simplify, build, and scale</span>
+            <span class="gradient-text">Custom IT Solutions NYC That Work for You</span>
         </h2>
         <p class="fade-in" style="animation-delay: 0.2s; margin-bottom: 40px;">
-            There are many variations of passages of Lorem ipsum available but the majority have suffered alteration in some form, by injected humour, or randomised words which don’t even look slightly believable.
-        </p>
+        We simplify, build, and scale digital platforms helping you grow smarter with reliable tech. As a leader in IT consulting New York, we offer the best IT services in New York designed to match your business goals.        </p>
         <div class="services-grid">
             <!-- App Development Card -->
             <div class="service-card app-card fade-in">
@@ -26,7 +25,7 @@
                     <span class="deco-dot deco-dot-3"></span>
                 </div>
                 <h3>App Development</h3>
-                <p>There are many variations of passages of Lorem ipsum available but the majority have suffered alteration in some form, by injected.</p>
+                <p>Build powerful mobile apps with intuitive design and reliable performance—tailored for business success.</p>
                 <a href="contact.php" class="btn">Contact Us</a>
             </div>
             <!-- Right Column Wrapper for Other Cards -->
@@ -39,7 +38,7 @@
                             <img src="assets/images/home_webdevelopment.png" alt="Web Development">
                         </div>
                         <h3>Web Development</h3>
-                        <p>There are many variations of passages of Lorem ipsum available but the majority have suffered alteration in some form, by injected.</p>
+                        <p>Create responsive, secure websites that drive engagement and deliver results.</p>
                         <a href="contact.php" class="btn">Contact Us</a>
                     </div>
                     <!-- UI/UX Design Card -->
@@ -47,8 +46,8 @@
                         <div class="card-image">
                             <img src="assets/images/home_services_card.png" alt="UI/UX Design">
                         </div>
-                        <h3>UI/UX Design</h3>
-                        <p>There are many variations of passages of Lorem ipsum available but the majority have suffered alteration in some form, by injected.</p>
+                        <h3>CRM Development</h3>
+                        <p>Create responsive, secure websites that drive engagement and deliver results.</p>
                         <a href="contact.php" class="btn">Contact Us</a>
                     </div>
                 </div>
@@ -59,7 +58,7 @@
                         <div class="ai-card-content">
                             <div class="ai-text-content">
                                 <h3>AI Development</h3>
-                                <p>There are many variations of passages of Lorem ipsum available but the majority have suffered alteration in some form, by injected.</p>
+                                <p>Unlock the future with smart AI-driven tools that enhance operations and decision-making.</p>
                                 <a href="contact.php" class="btn">Contact Us</a>
                             </div>
                             <div class="ai-card-image">
