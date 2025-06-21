@@ -34,7 +34,10 @@
             <div class="hero-content">
                 <div class="hero-tagline fade-in">
                     <h2>You Evolve</h2>
-                    <img src="assets/images/evolve-gif.gif" alt="Evolution" class="tagline-gif">
+                    <video autoplay loop muted playsinline class="tagline-gif">
+                        <source src="assets/images/home_gif.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
                 <h1 class="hero-title fade-in">
                     <span class="highlight">WE</span> 
