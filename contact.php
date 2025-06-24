@@ -918,7 +918,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Clean the phone number (remove any non-numeric characters)
                 const cleanNumber = phoneNumber.replace(/\D/g, '');
                 // Create the WhatsApp URL with the cleaned number
-                const whatsappUrl = `https://wa.me/${cleanNumber}?text=Hello%20Volvrit%2C%20I%20have%20a%20question`;
+                const whatsappUrl = `https://wa.me/${cleanNumber}?text=Hey%20Evolvix%2C%20I%20have%20a%20question`;
                 // Set the href attribute
                 whatsappBtn.href = whatsappUrl;
                 // For debugging - you can remove this in production

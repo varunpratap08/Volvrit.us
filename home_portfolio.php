@@ -337,7 +337,7 @@
             <div class="portfolio-card fade-in" style="animation-delay: 0.4s">
                 <img src="assets/images/portfolio(5).jpg" alt="Finch 5" class="portfolio-image">
                 <div class="portfolio-content">
-                    <h3 class="portfolio-title">Finch Locks</h3>
+                    <h3 class="portfolio-title">Cricket Academy</h3>
                     <div class="tech-tags">
                         <span class="tech-tag">React</span>
                         <span class="tech-tag">Node.js</span>
@@ -348,7 +348,7 @@
             <div class="portfolio-card fade-in" style="animation-delay: 0.4s">
                 <img src="assets/images/portfolio(5).jpg" alt="Finch 5" class="portfolio-image">
                 <div class="portfolio-content">
-                    <h3 class="portfolio-title">Finch Locks</h3>
+                    <h3 class="portfolio-title">C2C</h3>
                     <div class="tech-tags">
                         <span class="tech-tag">React</span>
                         <span class="tech-tag">Node.js</span>

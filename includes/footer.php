@@ -205,7 +205,7 @@
             const phoneNumber = whatsappBtn.getAttribute('data-phone');
             if (phoneNumber) {
                 const cleanNumber = phoneNumber.replace(/\D/g, '');
-                const whatsappUrl = `https://wa.me/${cleanNumber}?text=Hello%20Volvrit%2C%20I%20have%20a%20question`;
+                const whatsappUrl = `https://wa.me/${cleanNumber}?text=Hey%20Evolvix%2C%20I%20have%20a%20question`;
                 
                 // Set the href attribute
                 whatsappBtn.href = whatsappUrl;

@@ -35,7 +35,7 @@ require_once 'includes/header.php';
         .hero-section {
             position: relative;
             min-height: 70vh;
-            background: url('');
+            background: url('assets/images/about_hero.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
