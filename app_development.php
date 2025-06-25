@@ -884,8 +884,8 @@ require_once 'includes/header.php';
     <section class="hero-section">
         
         <div class="container">
-        <h1>We turn ideas into intelligent, high-performance applications.</h1>
-        <p>From MVPs to enterprise-grade systems, our US-based team builds custom mobile, web, and cloud-native apps that are secure, scalable, and ready to grow with your business.</p>
+        <h1 >We turn ideas into intelligent, high-performance applications.</h1>
+        <p class="item-text">From MVPs to enterprise-grade systems, our US-based team builds custom mobile, web, and cloud-native apps that are secure, scalable, and ready to grow with your business.</p>
             <a href="contact.php" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
@@ -908,7 +908,7 @@ require_once 'includes/header.php';
         <div class="container">
             <h1 class="section-title">From Concept to Code, We Deliver Results That Matter</h1>
             <div class="section-content">
-                <p>At Evolvix, we specialize in full-cycle app development services tailored for businesses across the United States. Based in New York, we help startups, SMBs, and enterprises transform ideas into impactful digital products—built to perform and evolve. Our agile team designs and develops robust mobile applications, cross-platform solutions, and complex enterprise apps that deliver seamless performance, secure integrations, and outstanding user experiences. Whether it’s your first app or your next big upgrade—we make it future-ready.</p>
+                <p class="item-text">At Evolvix, we specialize in full-cycle app development services tailored for businesses across the United States. Based in New York, we help startups, SMBs, and enterprises transform ideas into impactful digital products—built to perform and evolve. Our agile team designs and develops robust mobile applications, cross-platform solutions, and complex enterprise apps that deliver seamless performance, secure integrations, and outstanding user experiences. Whether it’s your first app or your next big upgrade—we make it future-ready.</p>
             </div>
         </div>
         <style>
@@ -1022,6 +1022,7 @@ require_once 'includes/header.php';
     </section>
 
     <!-- Business Value Section -->
+    <section class="section">
         <div class="container">
             <div class="offer-tag">
                 <span class="offer-icon">
@@ -1031,22 +1032,38 @@ require_once 'includes/header.php';
                 </span>
                 <span class="offer-text">Business Value</span>
             </div>
-            <h2 class="section-title" style="margin-top: 16px">
-            Rooted in Innovation, Built on Integrity
-            </h2>
+            <h2 class="section-title">Rooted in Innovation, Built on Integrity</h2>
             
-                    <div>
-                        <p class="item-text">At Evolvix, we prioritize transparency, agility, and client-centric thinking in every app we build. From ideation to launch, our values ensure every application delivers real business value while staying ethically sound and user-focused.</p>
-                       <h3>At Evolvix, we don’t just code—we collaborate. Our values shape everything we do</h3>
-                        <ul class="sub-list">
-                            <li>Client-Centric: We treat your goals as our mission and build with your users in mind.</li>
-                            <li>Transparent Communication: We keep you informed at every step, from idea to deployment.</li>
-                            <li>Agile & Accountable: We iterate quickly and deliver reliably—on time and within budget.</li>
-                            <li>Innovation-Led: We use the latest tech to keep your app ahead of trends and competition.</li>
-                            <li>US-Based Team: Get local expertise with global standards from our office in New York.</li>
-                        </ul>
-                    </div>
+            <div class="section-content">
+                <p class="item-text" style="margin-bottom: 24px;">At Evolvix, we prioritize transparency, agility, and client-centric thinking in every app we build. From ideation to launch, our values ensure every application delivers real business value while staying ethically sound and user-focused.</p>
+                
+                <h3 class="subtitle" style="margin-bottom: 16px; font-weight: 600; font-size: 20px; color: #2a2a2a;">At Evolvix, we don't just code—we collaborate. Our values shape everything we do</h3>
+                
+                <ul class="value-list" style="list-style: none; padding-left: 0;">
+                    <li class="value-item" style="display: flex; align-items: flex-start; margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid #eee;">
+                        <span style="color: #28A745; margin-right: 12px; font-weight: bold;">•</span>
+                        <span class="item-text" style="margin: 0;"><strong>Client-Centric:</strong> We treat your goals as our mission and build with your users in mind.</span>
+                    </li>
+                    <li class="value-item" style="display: flex; align-items: flex-start; margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid #eee;">
+                        <span style="color: #28A745; margin-right: 12px; font-weight: bold;">•</span>
+                        <span class="item-text" style="margin: 0;"><strong>Transparent Communication:</strong> We keep you informed at every step, from idea to deployment.</span>
+                    </li>
+                    <li class="value-item" style="display: flex; align-items: flex-start; margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid #eee;">
+                        <span style="color: #28A745; margin-right: 12px; font-weight: bold;">•</span>
+                        <span class="item-text" style="margin: 0;"><strong>Agile & Accountable:</strong> We iterate quickly and deliver reliably—on time and within budget.</span>
+                    </li>
+                    <li class="value-item" style="display: flex; align-items: flex-start; margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid #eee;">
+                        <span style="color: #28A745; margin-right: 12px; font-weight: bold;">•</span>
+                        <span class="item-text" style="margin: 0;"><strong>Innovation-Led:</strong> We use the latest tech to keep your app ahead of trends and competition.</span>
+                    </li>
+                    <li class="value-item" style="display: flex; align-items: flex-start;">
+                        <span style="color: #28A745; margin-right: 12px; font-weight: bold;">•</span>
+                        <span class="item-text" style="margin: 0;"><strong>US-Based Team:</strong> Get local expertise with global standards from our office in New York.</span>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </section>
     </section>
       <!-- What you get section -->
       <section class="business-value-section section">
