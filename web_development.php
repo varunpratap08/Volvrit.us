@@ -827,8 +827,25 @@ require_once 'includes/header.php';
     <section class="hero-section">
      
         <div class="container">
-            <h1>We evolve ideas into<br><span style="display: inline-block;">Intelligent digital products</span></h1>
-            <p>Industry dummy ipsum has been the industry's standard dummy text. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <h1>Our Web Development<br><span style="display: inline-block;">Services At a Glance</span></h1>
+            <p class="hero-description">Smart. Scalable. SEO-Optimized. Evolvix builds powerful <br> websites tailored to your business goals.</p>
+            <style>
+                .hero-section p.hero-description {
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 30px;
+                    letter-spacing: 0;
+                    text-align: center;
+                    margin: 16px 0 24px 0;
+                }
+                @media (max-width: 768px) {
+                    .hero-section p.hero-description {
+                        font-size: 18px;
+                        line-height: 28px;
+                    }
+                }
+            </style>
             <a href="contact.php" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
@@ -840,11 +857,74 @@ require_once 'includes/header.php';
         <div class="scrolling-text-container">
             <div class="scrolling-text-wrapper">
                 <div class="scrolling-text" id="scrollingText">
-                    <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
-                  <!-- <span aria-hidden="true">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span> -->
+                    <span>Transforming ideas into powerful digital growth</span>
+                  <!-- <span aria-hidden="true">Transforming ideas into powerful digital growth</span> -->
                 </div>
             </div>
         </div>
+    </section>
+    <section class="custom-dev-section section">
+        <div class="container">
+            <h1 class="section-title">Custom Web Development Services Tailored to Your Vision</h1>
+            <div class="section-content">
+                <p>At Evolvix, we offer custom web development solutions that are built to deliver results—whether you're a startup, enterprise, or anything in between. From responsive websites and dynamic web apps to e-commerce platforms and portal systems, we design and develop scalable, secure, and SEO-friendly solutions. Based in New York, we blend cutting-edge technology with deep industry insight to create websites that do more than look good—they drive traffic, engage users, and convert leads into loyal customers.</p>
+            </div>
+        </div>
+        <style>
+            .custom-dev-section {
+                padding: 60px 0;
+                background-color: #fff;
+            }
+            .custom-dev-section .section-title {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 44px;
+                letter-spacing: 0;
+                margin-bottom: 24px;
+                color: #1a1a1a;
+                text-align: left;
+            }
+            .custom-dev-section .section-content {
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .custom-dev-section p {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 36px;
+                letter-spacing: 0;
+                color: #4a4a4a;
+                margin: 0;
+                text-align: left;
+            }
+            @media (max-width: 768px) {
+                .custom-dev-section {
+                    padding: 40px 0;
+                }
+                .custom-dev-section .section-title {
+                    font-size: 26px;
+                    line-height: 36px;
+                    margin-bottom: 20px;
+                }
+                .custom-dev-section p {
+                    font-size: 18px;
+                    line-height: 32px;
+                }
+            }
+            @media (max-width: 480px) {
+                .custom-dev-section .section-title {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                .custom-dev-section p {
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+            }
+        </style>
     </section>
     
     <section class="section">
@@ -863,14 +943,23 @@ require_once 'includes/header.php';
                
                     <div>
                         <h3 class="item-title">
-                            <span class="title-line">We Develop</span>
-                            <span class="subtitle-line">Robust, responsive, and ready to scale.</span>
+                            <span class="title-line">Complete Web Solutions by the Best Web Development Company in NYC, USA</span>
+                           <!-- <span class="subtitle-line">Robust, responsive, and ready to scale.</span>-->
                         </h3>
-                        <p class="item-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        <p class="item-text">From responsive websites to complex web applications, Evolvix delivers full-cycle web development tailored to your goals. As the best web development company in NYC, USA, we build scalable, secure, and performance-driven digital experiences.</p>
+                        <h3>We provide a wide range of web development services in the United States, including</h3>
                         <ul class="sub-list">
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+                            <li>Custom Website Development (B2B, B2C, D2C)</li>
+                            <li>E-commerce Development (Shopify, WooCommerce, Magento)</li>
+                            <li>Web Application Development (SaaS, portals, dashboards)</li>
+                            <li>Responsive Design for all screen sizes and devices</li>
+                            <li>Content Management Systems (WordPress, Headless CMS)</li>
+                            <li>Landing Page Design & Development</li>
+                            <li>Website Redesign & Optimization</li>
+                            <li>Third-Party API Integration</li>
+                            <li>Performance, Security & SEO Audits</li>
+                            
+
                         </ul>
                     </div>
             </ul>
@@ -889,17 +978,81 @@ require_once 'includes/header.php';
                 <span class="offer-text">Business Value</span>
             </div>
             <h2 class="section-title" style="margin-top: 16px">
-                Turn clicks into customers with
-                <span class="gradient-text">Smart web development</span>
+            Core Principles Behind Our Trusted <br>Web Development Process
             </h2>
             
                     <div>
-                        <p class="item-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        <p class="item-text">Our web development process is guided by integrity, transparency, and innovation at every step. At Evolvix, we blend technical excellence with client-first values to build websites that deliver lasting impact.</p>
+                        <h3>At Evolvix, we believe the best websites are built on strong values</h3>
                         <ul class="sub-list">
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+                            <li>Transparency: We keep communication clear, honest, and consistent.</li>
+                            <li>Innovation: We combine creative vision with cutting-edge tech.</li>
+                            <li>Client-First Focus: Your success is our success. We listen and deliver.</li>
+                            <li>Agility: We adapt quickly to your evolving needs and goals.</li>
+                            <li>Integrity: We honor deadlines, respect budgets, and never compromise on quality.</li>
                         </ul>
+                        <span class="values-tagline">These values shape how we build websites—and how we build trust.</span>
+                        <style>
+                            .values-tagline {
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 400;
+                                font-size: 20px;
+                                line-height: 36px;
+                                letter-spacing: 0;
+                                display: block;
+                                margin-top: 16px;
+                            }
+                            @media (max-width: 768px) {
+                                .values-tagline {
+                                    font-size: 18px;
+                                    line-height: 32px;
+                                }
+                            }
+                        </style>
+                    </div>
+        </div>
+    </section>
+     <!-- What you get section -->
+     <section class="business-value-section section">
+        <div class="container">
+            <div class="offer-tag">
+                <span class="offer-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" fill="#28A745"/>
+                    </svg>
+                </span>
+                <span class="offer-text">What you get</span>
+            </div>
+            <h2 class="section-title" style="margin-top: 16px">
+            High-Performance Websites Built for Speed, SEO, and User Engagement            </h2>
+            
+                    <div>
+                        <p class="item-text">Get a fully customized website that’s fast, secure, mobile-responsive, and built to convert. From SEO optimization to seamless UX, we deliver websites that grow with your business.</p>
+                        <ul class="sub-list">
+                            <li>A responsive, SEO-optimized website designed for fast loading and excellent UX</li>
+                            <li>Custom UI/UX tailored to your audience and brand</li>
+                            <li>Integration with tools like Google Analytics, Mailchimp, CRM platforms, and more</li>
+                            <li>On-page SEO, schema markup, and keyword-focused content structure</li>
+                            <li>Full support post-launch, including monitoring, maintenance, and enhancements</li>
+                        </ul>
+                        <span class="values-tagline">You'll walk away with a clean, scalable website that performs beautifully and drives measurable business growth.</span>
+                        <style>
+                            .values-tagline {
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 400;
+                                font-size: 20px;
+                                line-height: 36px;
+                                letter-spacing: 0;
+                                display: block;
+                                margin-top: 16px;
+                            }
+                            @media (max-width: 768px) {
+                                .values-tagline {
+                                    font-size: 18px;
+                                    line-height: 32px;
+                                }
+                            }
+                        </style>
                     </div>
         </div>
     </section>
@@ -910,9 +1063,16 @@ require_once 'includes/header.php';
   <!-- Tech Stack Section (What We Use) -->
   <section class="tech-stack-section section">
         <div class="container">
+        <div class="offer-tag">
+                <span class="offer-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" fill="#28A745"/>
+                    </svg>
+                </span>
+                <span class="offer-text">What we use</span>
+            </div>
             <h2 class="section-title">
-                Turn clicks into customers with
-                <span class="gradient-text">Smart web development</span>
+            Tools, Languages, and <br> Frameworks We Excel In
             </h2>
             <div class="tech-mindmap">
                 <img src="assets/images/web_development_techstackimg.png" alt="Tech Stack Mindmap" class="mindmap-image">

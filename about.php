@@ -977,7 +977,7 @@ require_once 'includes/header.php';
      
         <div class="container">
             <h1>We evolve ideas into<br><span style="display: inline-block;">Intelligent digital products</span></h1>
-            <p>Industry dummy ipsum has been the industry's standard dummy text. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <p>We bridge business strategy with next-gen technology to build scalable, secure, and user-focused digital solutions. Based in New York, we deliver excellence in Web Development, AI, Blockchain, APIs, and Digital Marketing across the United States.</p>
             <a href="contact.php" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
@@ -989,8 +989,8 @@ require_once 'includes/header.php';
         <div class="scrolling-text-container">
             <div class="scrolling-text-wrapper">
                 <div class="scrolling-text" id="scrollingText">
-                    <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
-                  <!-- <span aria-hidden="true">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span> -->
+                    <span>Transforming ideas into powerful digital growth</span>
+                  <!-- <span aria-hidden="true">Transforming ideas into powerful digital growth</span> -->
                 </div>
             </div>
         </div>
@@ -999,8 +999,7 @@ require_once 'includes/header.php';
     <section class="content-paragraph">
         <div class="container">
             <p class="large-centered-text">
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-            </p>
+            Evolvix is a full-service IT and Digital Solutions company in New York helping businesses thrive in the digital age. Whether you're launching a mobile app, automating operations through custom APIs, or looking to scale your brand through digital marketing, we are your trusted partner for growth.            </p>
         </div>
     </section>
     <!-- What we Believe-->
@@ -1017,12 +1016,11 @@ require_once 'includes/header.php';
                     <span>Who we are</span>
                 </div>
                 <h2 class="fade-in about-heading">
-                    <span class="heading-line">From idea to execution</span>
-                    <span class="heading-line gradient-text">We simplify, build, and scale</span>
+                    <span class="heading-line">A team of tech creators,</span>
+                    <span class="heading-line gradient-text">problem-solvers and growth enablers</span>
                 </h2>
                 <p class="fade-in" style="animation-delay: 0.2s; margin: 20px 0;">
-                    There are many variations of passages of Lorem ipsum available but the majority have suffered alteration in some form, by injected humour, or randomised words which don't even look slightly believable. If you are going to use a passage of Lorem ipsum.
-                </p>
+                At our core, Evolvix is a team of experienced developers, designers, digital marketers, and product thinkers. Founded in New York, our mission is to deliver future-ready, scalable digital solutions across every business vertical.                </p>
                 </div>
                 </div>
                 </div>
@@ -1045,32 +1043,36 @@ require_once 'includes/header.php';
                     <span class="heading-line gradient-text">We simplify, build, and scale</span>
                 </h2>
                 <p class="fade-in" style="animation-delay: 0.2s; margin: 20px 0 40px 0;">
-                    There are many variations of passages of Lorem ipsum available but the majority have suffered alteration in some form, by injected humour, or randomised words which don't even look slightly believable. If you are going to use a passage of Lorem ipsum.
-                </p>
+                We believe that technology should empower, not overwhelm. That’s why our services are designed to scale with you — from MVP to enterprise. Every product and campaign we build is grounded in clarity, transparency, and real-world results.                </p>
                 
                 <!-- Stair-like Cards Section -->
                 <div class="stair-cards-container">
                     <!-- Card 1 -->
                     <div class="stair-card card-1">
                         <div class="card-content">
-                            <h3></h3>
-                            <p></p>
+                            <h3>Our Vision</h3>
+                            <p>To be a global leader in digital transformation by combining innovation, strategy, and technology.</p>
                         </div>
                     </div>
                     
                     <!-- Card 2 -->
                     <div class="stair-card card-2">
                         <div class="card-content">
-                            <h3></h3>
-                            <p></p>
+                            <h3>Our Mission</h3>
+                            <p>To deliver intelligent, scalable, and result-driven digital solutions that empower businesses across the United States to grow faster and smarter.</p>
                         </div>
                     </div>
                     
                     <!-- Card 3 -->
                     <div class="stair-card card-3">
                         <div class="card-content">
-                            <h3></h3>
-                            <p></p>
+                            <h3>Our Values</h3>
+                            <ul>
+                                <li>Integrity First</li>
+                                <li>Innovation-Led</li>
+                                <li>Client-Centric</li>
+                                <li>Result-Driven</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

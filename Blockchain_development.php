@@ -884,8 +884,8 @@ require_once 'includes/header.php';
     <section class="hero-section">
        
         <div class="container">
-        <h1>We evolve ideas into<br><span style="display: inline-block;">Intelligent digital products</span></h1>
-        <p>Industry dummy ipsum has been the industry's standard dummy text. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <h1>We evolve ideas into<br><span style="display: inline-block;">Intelligent Blockchain Products</span></h1>
+        <p>From secure smart contracts to tokenized ecosystems, we build scalable blockchain solutions that unlock trust and transparency in the digital age. Whether you're a startup or enterprise, we help you go from idea to execution—with speed, precision, and innovation.</p>
             <a href="contact.php" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
@@ -897,13 +897,75 @@ require_once 'includes/header.php';
         <div class="scrolling-text-container">
             <div class="scrolling-text-wrapper">
                 <div class="scrolling-text" id="scrollingText">
-                    <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
-                  <!-- <span aria-hidden="true">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span> -->
+                    <span>Transforming ideas into powerful digital growth</span>
+                  <!-- <span aria-hidden="true">Transforming ideas into powerful digital growth</span> -->
                 </div>
             </div>
         </div>
     </section>
-    
+    <section class="custom-dev-section section">
+        <div class="container">
+            <h1 class="section-title">Innovative Blockchain Development <br>for Modern Businesses</h1>
+            <div class="section-content">
+                <p>At Evolvix, we specialize in crafting secure, scalable, and custom blockchain solutions that empower businesses to innovate and grow. Based in New York, we serve startups, enterprises, and tech-driven organizations across the United States looking to leverage the transformative power of blockchain. Whether you're building a decentralized application (dApp), launching a token, or implementing smart contracts, our expert team ensures that your blockchain project is efficient, secure, and built to scale.</p>
+            </div>
+        </div>
+        <style>
+            .custom-dev-section {
+                padding: 60px 0;
+                background-color: #fff;
+            }
+            .custom-dev-section .section-title {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 44px;
+                letter-spacing: 0;
+                margin-bottom: 24px;
+                color: #1a1a1a;
+                text-align: left;
+            }
+            .custom-dev-section .section-content {
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .custom-dev-section p {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 36px;
+                letter-spacing: 0;
+                color: #4a4a4a;
+                margin: 0;
+                text-align: left;
+            }
+            @media (max-width: 768px) {
+                .custom-dev-section {
+                    padding: 40px 0;
+                }
+                .custom-dev-section .section-title {
+                    font-size: 26px;
+                    line-height: 36px;
+                    margin-bottom: 20px;
+                }
+                .custom-dev-section p {
+                    font-size: 18px;
+                    line-height: 32px;
+                }
+            }
+            @media (max-width: 480px) {
+                .custom-dev-section .section-title {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                .custom-dev-section p {
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+            }
+        </style>
+    </section>
     <section class="section">
         <div class="container">
             <ul class="intro-list">
@@ -920,15 +982,34 @@ require_once 'includes/header.php';
                
                     <div>
                         <h3 class="item-title">
-                            <span class="title-line">We Develop</span>
-                            <span class="subtitle-line">Robust, responsive, and ready to scale.</span>
+                            <span class="title-line">Our Blockchain Solutions Include</span>
                         </h3>
-                        <p class="item-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                         <ul class="sub-list">
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+                            <li>Smart Contract Development</li>
+                            <li>Private & Public Blockchain Setup</li>
+                            <li>dApp (Decentralized App) Development</li>
+                            <li>NFT Integration & Tokenization</li>
+                            <li>Blockchain Consulting & Architecture</li>
+                            <li>Wallet & Exchange Development</li>
                         </ul>
+                        <span class="values-tagline">We work with leading blockchain technologies including Ethereum, Hyperledger, Polygon, Solana, and more—matching each project with the right tech stack.</span>
+                        <style>
+                            .values-tagline {
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 400;
+                                font-size: 20px;
+                                line-height: 36px;
+                                letter-spacing: 0;
+                                display: block;
+                                margin-top: 16px;
+                            }
+                            @media (max-width: 768px) {
+                                .values-tagline {
+                                    font-size: 18px;
+                                    line-height: 32px;
+                                }
+                            }
+                        </style>
                     </div>
             </ul>
         </div>
@@ -946,17 +1027,42 @@ require_once 'includes/header.php';
                 <span class="offer-text">Business Value</span>
             </div>
             <h2 class="section-title" style="margin-top: 16px">
-                Turn clicks into customers with
-                <span class="gradient-text">Smart web development</span>
+            Transform trust into technology with<br> Powerful Blockchain Development
             </h2>
             
                     <div>
-                        <p class="item-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        <p class="item-text">Blockchain isn't just about decentralization — it's about redefining trust, transparency, and traceability in business. At Evolvix, we harness blockchain to build secure, scalable, and efficient systems that solve real-world challenges for modern organizations. Whether you're a startup launching an NFT ecosystem or an enterprise automating contracts, our blockchain solutions are built to maximize security, minimize operational friction, and unlock new value chains.</p>
                         <ul class="sub-list">
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+                            <li>Increase operational transparency across all stakeholders</li>
+                            <li>Automate trust with secure, self-executing smart contracts</li>
+                            <li>Improve data integrity and reduce reconciliation errors</li>
                         </ul>
+                    </div>
+        </div>
+    </section>
+    <!-- What you get section -->
+    <section class="business-value-section section">
+        <div class="container">
+            <div class="offer-tag">
+                <span class="offer-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" fill="#28A745"/>
+                    </svg>
+                </span>
+                <span class="offer-text">What you get</span>
+            </div>
+            <h2 class="section-title" style="margin-top: 16px">
+            Turn innovation into impact with <br>Smart Blockchain Development         <div>
+                        <p class="item-text">Blockchain is more than just a trend—it’s a tool for creating long-term value, security, and operational efficiency. At Evolvix, we deliver custom blockchain solutions that help your business scale smarter, transact faster, and build with trust.</p>
+                        <h4>Here’s what you get when you work with us</h4>
+                        <p class="item-text">From tokenization to smart contracts, we make complex technology feel seamless, intuitive, and secure.</p>
+                        <ul class="sub-list">
+                            <li>Security-Driven Architecture: Every solution is built to resist vulnerabilities and protect digital assets at scale.</li>
+                            <li>End-to-End Customization: Fully tailored smart contracts, dApps, and backends—no templates, just precision.</li>
+                            <li>Business-Ready Results: Faster time to market, reduced inefficiencies, and improved stakeholder trust through blockchain-powered systems.</li>
+                            
+                        </ul>
+                       
                     </div>
         </div>
     </section>
@@ -964,12 +1070,11 @@ require_once 'includes/header.php';
     <?php include 'process_home.php'; ?>
   </section>
 
-  <!-- Tech Stack Section (What We Use) -->
-  <section class="tech-stack-section section">
+ <!-- Tech Stack Section (What We Use) -->
+ <section class="tech-stack-section section">
         <div class="container">
             <h2 class="section-title">
-                Turn clicks into customers with
-                <span class="gradient-text">Smart web development</span>
+            Tools, Languages, and <br>Frameworks We Excel In
             </h2>
             <div class="tech-mindmap">
                 <img src="assets/images/web_development_techstackimg.png" alt="Tech Stack Mindmap" class="mindmap-image">

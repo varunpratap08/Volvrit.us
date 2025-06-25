@@ -884,8 +884,8 @@ require_once 'includes/header.php';
     <section class="hero-section">
         
         <div class="container">
-        <h1>We evolve ideas into<br><span style="display: inline-block;">Intelligent digital products</span></h1>
-        <p>Industry dummy ipsum has been the industry's standard dummy text. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <h1>We turn ideas into intelligent, high-performance applications.</h1>
+        <p>From MVPs to enterprise-grade systems, our US-based team builds custom mobile, web, and cloud-native apps that are secure, scalable, and ready to grow with your business.</p>
             <a href="contact.php" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
@@ -897,11 +897,74 @@ require_once 'includes/header.php';
         <div class="scrolling-text-container">
             <div class="scrolling-text-wrapper">
                 <div class="scrolling-text" id="scrollingText">
-                    <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
-                  <!-- <span aria-hidden="true">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span> -->
+                    <span>Transforming ideas into powerful digital growth</span>
+                  <!-- <span aria-hidden="true">Transforming ideas into powerful digital growth</span> -->
                 </div>
             </div>
         </div>
+    </section>
+    <section class="custom-dev-section section">
+        <div class="container">
+            <h1 class="section-title">From Concept to Code, We Deliver Results That Matter</h1>
+            <div class="section-content">
+                <p>At Evolvix, we specialize in full-cycle app development services tailored for businesses across the United States. Based in New York, we help startups, SMBs, and enterprises transform ideas into impactful digital products—built to perform and evolve. Our agile team designs and develops robust mobile applications, cross-platform solutions, and complex enterprise apps that deliver seamless performance, secure integrations, and outstanding user experiences. Whether it’s your first app or your next big upgrade—we make it future-ready.</p>
+            </div>
+        </div>
+        <style>
+            .custom-dev-section {
+                padding: 60px 0;
+                background-color: #fff;
+            }
+            .custom-dev-section .section-title {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 44px;
+                letter-spacing: 0;
+                margin-bottom: 24px;
+                color: #1a1a1a;
+                text-align: left;
+            }
+            .custom-dev-section .section-content {
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .custom-dev-section p {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 36px;
+                letter-spacing: 0;
+                color: #4a4a4a;
+                margin: 0;
+                text-align: left;
+            }
+            @media (max-width: 768px) {
+                .custom-dev-section {
+                    padding: 40px 0;
+                }
+                .custom-dev-section .section-title {
+                    font-size: 26px;
+                    line-height: 36px;
+                    margin-bottom: 20px;
+                }
+                .custom-dev-section p {
+                    font-size: 18px;
+                    line-height: 32px;
+                }
+            }
+            @media (max-width: 480px) {
+                .custom-dev-section .section-title {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                .custom-dev-section p {
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+            }
+        </style>
     </section>
     
     <section class="section">
@@ -920,22 +983,44 @@ require_once 'includes/header.php';
                
                     <div>
                         <h3 class="item-title">
-                            <span class="title-line">We Develop</span>
-                            <span class="subtitle-line">Robust, responsive, and ready to scale.</span>
+                            <span class="title-line">Complete Web Solutions by the Best Web Development Company in NYC, USA</span>
                         </h3>
-                        <p class="item-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        <p class="item-text">We build powerful mobile and web applications that combine sleek user experiences with robust backend architecture. Whether it's a startup MVP or an enterprise solution, our apps are designed to scale seamlessly with your business.</p>
+                        <h3>We offer end-to-end app development services that blend creativity, performance, and functionality. 
+                        Our offerings include</h3>
                         <ul class="sub-list">
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+                            <li>iOS & Android App Development: Native apps built with Swift, Kotlin, and modern frameworks for optimal performance and device compatibility.</li>
+                            <li>Cross-Platform Development (Flutter / React Native): Code once, deploy everywhere. We build apps that work smoothly across iOS, Android, and the web.</li>
+                            <li>Progressive Web Apps (PWAs): Lightweight, responsive apps that behave like native apps on mobile and desktop.</li>
+                            <li>Enterprise Application Development: Secure, scalable, and modular systems designed to support complex workflows and data-heavy operations</li>
+                            <li>Cloud-Native Apps: Leveraging AWS, Azure, and Google Cloud for robust hosting, rapid scalability, and seamless integrations.</li>
+                            
                         </ul>
+                        <span class="values-tagline">We go beyond aesthetics—building applications that solve real problems, boost engagement, and drive measurable business growth.</span>
+                        <style>
+                            .values-tagline {
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 400;
+                                font-size: 20px;
+                                line-height: 36px;
+                                letter-spacing: 0;
+                                display: block;
+                                margin-top: 16px;
+                            }
+                  <section class="business-value-section section">
+              @media (max-width: 768px) {
+                                .values-tagline {
+                                    font-size: 18px;
+                                    line-height: 32px;
+                                }
+                            }
+                        </style>
                     </div>
             </ul>
         </div>
     </section>
 
     <!-- Business Value Section -->
-    <section class="business-value-section section">
         <div class="container">
             <div class="offer-tag">
                 <span class="offer-icon">
@@ -946,17 +1031,63 @@ require_once 'includes/header.php';
                 <span class="offer-text">Business Value</span>
             </div>
             <h2 class="section-title" style="margin-top: 16px">
-                Turn clicks into customers with
-                <span class="gradient-text">Smart web development</span>
+            Rooted in Innovation, Built on Integrity
             </h2>
             
                     <div>
-                        <p class="item-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        <p class="item-text">At Evolvix, we prioritize transparency, agility, and client-centric thinking in every app we build. From ideation to launch, our values ensure every application delivers real business value while staying ethically sound and user-focused.</p>
+                       <h3>At Evolvix, we don’t just code—we collaborate. Our values shape everything we do</h3>
                         <ul class="sub-list">
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+                            <li>Client-Centric: We treat your goals as our mission and build with your users in mind.</li>
+                            <li>Transparent Communication: We keep you informed at every step, from idea to deployment.</li>
+                            <li>Agile & Accountable: We iterate quickly and deliver reliably—on time and within budget.</li>
+                            <li>Innovation-Led: We use the latest tech to keep your app ahead of trends and competition.</li>
+                            <li>US-Based Team: Get local expertise with global standards from our office in New York.</li>
                         </ul>
+                    </div>
+        </div>
+    </section>
+      <!-- What you get section -->
+      <section class="business-value-section section">
+        <div class="container">
+            <div class="offer-tag">
+                <span class="offer-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" fill="#28A745"/>
+                    </svg>
+                </span>
+                <span class="offer-text">What you get</span>
+            </div>
+            <h2 class="section-title" style="margin-top: 16px">
+            Apps That Do More Than Just Work—They Win            <div>
+                        <p class="item-text">Get high-performance, scalable applications that combine sleek design with robust functionality. We deliver mobile and web apps that drive engagement, enhance efficiency, and scale with your business across the United States.</p>
+                        <h4>Our custom-built applications are designed to perform under pressure, scale with demand, and deliver value</h4>
+                        <ul class="sub-list">
+                            <li>Pixel-Perfect UI/UX tailored for usability and conversion</li>
+                            <li>Robust Architecture optimized for performance and scalability</li>
+                            <li>Seamless Integrations with third-party APIs, CRMs, and ERPs</li>
+                            <li>Real-Time Analytics for data-driven insights and decisions</li>
+                            <li>Post-Launch Support to monitor, update, and scale with confidence</li>
+                            <li>Fully Customizable Features that align with your business model</li>
+                        </ul>
+                        <span class="values-tagline">With Evolvix, you get apps that are intuitive, secure, and ready for growth—from the first launch to the next big update.</span>
+                        <style>
+                            .values-tagline {
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 400;
+                                font-size: 20px;
+                                line-height: 36px;
+                                letter-spacing: 0;
+                                display: block;
+                                margin-top: 16px;
+                            }
+                            @media (max-width: 768px) {
+                                .values-tagline {
+                                    font-size: 18px;
+                                    line-height: 32px;
+                                }
+                            }
+                        </style>
                     </div>
         </div>
     </section>
@@ -968,8 +1099,7 @@ require_once 'includes/header.php';
   <section class="tech-stack-section section">
         <div class="container">
             <h2 class="section-title">
-                Turn clicks into customers with
-                <span class="gradient-text">Smart web development</span>
+            Tools, Languages, and <br> Frameworks We Excel In
             </h2>
             <div class="tech-mindmap">
                 <img src="assets/images/web_development_techstackimg.png" alt="Tech Stack Mindmap" class="mindmap-image">

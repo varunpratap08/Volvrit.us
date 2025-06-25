@@ -403,8 +403,8 @@ document.addEventListener('DOMContentLoaded', function() {
     <section class="hero-section">
        
         <div class="container">
-            <h1>We evolve ideas into Intelligent digital products.</h1>
-            <p>Industry dummy ipsum has been the industry's standard dummy text. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <h1>Solutions Engineered for Impact</h1>
+            <p>Explore a showcase of our most impactful projects—crafted with innovation, precision, and a focus on real-world results.</p>
             <a href="contact.php" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
@@ -416,9 +416,9 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="scrolling-text-section">
     <div class="scrolling-text-container">
         <div class="scrolling-text">
-            <span class="text-segment">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
-            <span class="text-segment" aria-hidden="true">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
-            <span class="text-segment" aria-hidden="true">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
+            <span class="text-segment">Transforming ideas into powerful digital growth</span>
+            <span class="text-segment" aria-hidden="true">Transforming ideas into powerful digital growth</span>
+            <span class="text-segment" aria-hidden="true">Transforming ideas into powerful digital growth</span>
         </div>
     </div>
 </div>

@@ -820,8 +820,8 @@ require_once 'includes/header.php';
     <section class="hero-section">
      
         <div class="container">
-            <h1>We evolve ideas into<br><span style="display: inline-block;">Intelligent digital products</span></h1>
-            <p>Industry dummy ipsum has been the industry's standard dummy text. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <h1>We Design Smart AI <br> That Works for You</h1>
+            <p>From machine learning to predictive analytics, Evolvix builds secure and scalable AI systems that empower smarter business decisions across industries.</p>
             <a href="contact.php" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
@@ -833,11 +833,74 @@ require_once 'includes/header.php';
         <div class="scrolling-text-container">
             <div class="scrolling-text-wrapper">
                 <div class="scrolling-text" id="scrollingText">
-                    <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
-                  <!-- <span aria-hidden="true">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span> -->
+                    <span>Transforming ideas into powerful digital growth</span>
+                  <!-- <span aria-hidden="true">Transforming ideas into powerful digital growth</span> -->
                 </div>
             </div>
         </div>
+    </section>
+    <section class="custom-dev-section section">
+        <div class="container">
+            <h1 class="section-title">AI That Drives Real-World Results</h1>
+            <div class="section-content">
+                <p>At Evolvix, we specialize in AI development that delivers performance, precision, and long-term value. Based in New York and serving clients across the United States, we design AI-powered tools that automate operations, enhance customer experiences, and unlock new revenue streams. Whether you're in healthcare, finance, logistics, or e-commerce, our AI systems are custom-built to meet your unique business needs.</p>
+            </div>
+        </div>
+        <style>
+            .custom-dev-section {
+                padding: 60px 0;
+                background-color: #fff;
+            }
+            .custom-dev-section .section-title {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 44px;
+                letter-spacing: 0;
+                margin-bottom: 24px;
+                color: #1a1a1a;
+                text-align: left;
+            }
+            .custom-dev-section .section-content {
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .custom-dev-section p {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 36px;
+                letter-spacing: 0;
+                color: #4a4a4a;
+                margin: 0;
+                text-align: left;
+            }
+            @media (max-width: 768px) {
+                .custom-dev-section {
+                    padding: 40px 0;
+                }
+                .custom-dev-section .section-title {
+                    font-size: 26px;
+                    line-height: 36px;
+                    margin-bottom: 20px;
+                }
+                .custom-dev-section p {
+                    font-size: 18px;
+                    line-height: 32px;
+                }
+            }
+            @media (max-width: 480px) {
+                .custom-dev-section .section-title {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                .custom-dev-section p {
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+            }
+        </style>
     </section>
     
     <section class="section">
@@ -856,14 +919,20 @@ require_once 'includes/header.php';
                
                     <div>
                         <h3 class="item-title">
-                            <span class="title-line">We Develop</span>
-                            <span class="subtitle-line">Robust, responsive, and ready to scale.</span>
+                            <span class="title-line">End-to-End AI Development Services</span>
+                          
                         </h3>
-                        <p class="item-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        <p class="item-text">We design and deliver custom AI solutions—from machine learning models to intelligent automation tools—that help businesses in the United States make smarter, faster, and data-driven decisions.</p>
+                        <h3>We offer a full suite of AI development services tailored to various industries and use cases</h3>
                         <ul class="sub-list">
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+                            <li>We offer a full suite of AI development services tailored to various industries and use cases</li>
+                            <li>Natural Language Processing (NLP): Build intelligent chatbots, sentiment analyzers, and language translation tools. </li>
+                            <li>Computer Vision: Enable facial recognition, object detection, and image classification.</li>
+                            <li>Predictive Analytics: Leverage AI to forecast trends, demand, and customer behavior.</li>
+                            <li>Recommendation Systems: Drive engagement and conversions with personalized content and product suggestions.</li>
+                            <li>AI-Powered Automation Tools: Eliminate repetitive tasks and improve workflow efficiency.</li>
+                            <li>Custom AI Integrations: Integrate AI with your existing software, CRM, ERP, or data pipeline.</li>
+                            <li>Cloud-Based AI Solutions: Deploy AI using platforms like AWS AI, Azure ML, and Google Cloud AI.</li>
                         </ul>
                     </div>
             </ul>
@@ -882,17 +951,78 @@ require_once 'includes/header.php';
                 <span class="offer-text">Business Value</span>
             </div>
             <h2 class="section-title" style="margin-top: 16px">
-                Turn clicks into customers with
-                <span class="gradient-text">Smart web development</span>
+            AI That’s Ethical, Transparent,<br> and Built to Scale
             </h2>
-            
-                    <div>
-                        <p class="item-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            <div>
+                        <p class="item-text">At Evolvix, we develop AI solutions rooted in responsibility—prioritizing fairness, data privacy, and explainability. Every model we build is scalable, secure, and aligned with your long-term business goals.</p>
+                       <h3>Our AI solutions aren’t just powerful—they’re responsible. At Evolvix, we emphasize</h3>
                         <ul class="sub-list">
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+                            <li>Ethical AI Design with fairness, explainability, and human-centric outcomes.</li>
+                            <li>Privacy-First Development with data encryption and regulation compliance.</li>
+                            <li>Scalability through modular architecture that evolves with your business.</li>
+                            <li>Performance-Driven Strategy that aligns AI investments with ROI.</li>
                         </ul>
+                        <span class="values-tagline">We help you integrate AI responsibly to unlock operational value while staying ahead of the competition.</span>
+                        <style>
+                            .values-tagline {
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 400;
+                                font-size: 20px;
+                                line-height: 36px;
+                                letter-spacing: 0;
+                                display: block;
+                                margin-top: 16px;
+                            }
+                            @media (max-width: 768px) {
+                                .values-tagline {
+                                    font-size: 18px;
+                                    line-height: 32px;
+                                }
+                            }
+                        </style>
+                    </div>
+        </div>
+    </section>
+         <!-- What you get section -->
+         <section class="business-value-section section">
+        <div class="container">
+            <div class="offer-tag">
+                <span class="offer-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" fill="#28A745"/>
+                    </svg>
+                </span>
+                <span class="offer-text">What you get</span>
+            </div>
+            <h2 class="section-title" style="margin-top: 16px">
+            Smarter Systems That Evolve With You</h2>
+            <div>
+                        <p class="item-text">We deliver AI solutions that learn, adapt, and scale—improving decision-making, automating workflows, and unlocking real-time insights. From predictive models to intelligent chatbots, our systems grow with your business needs.</p>
+                        <ul class="sub-list">
+                            <li>Custom-trained AI algorithms</li>
+                            <li>Automation that reduces manual workload</li>
+                            <li>Actionable analytics for better decision-making</li>
+                            <li>Post-launch support and model tuning</li>
+                            <li>Scalable architecture that grows with your business</li>
+                        </ul>
+                        <span class="values-tagline">Our AI systems integrate seamlessly with your existing software and workflows, helping your organization stay efficient, adaptable, and competitive.</span>
+                        <style>
+                            .values-tagline {
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 400;
+                                font-size: 20px;
+                                line-height: 36px;
+                                letter-spacing: 0;
+                                display: block;
+                                margin-top: 16px;
+                            }
+                            @media (max-width: 768px) {
+                                .values-tagline {
+                                    font-size: 18px;
+                                    line-height: 32px;
+                                }
+                            }
+                        </style>
                     </div>
         </div>
     </section>
@@ -904,8 +1034,7 @@ require_once 'includes/header.php';
   <section class="tech-stack-section section">
         <div class="container">
             <h2 class="section-title">
-                Turn clicks into customers with
-                <span class="gradient-text">Smart web development</span>
+            Tools, Languages, and <br> Frameworks We Excel In
             </h2>
             <div class="tech-mindmap">
                 <img src="assets/images/web_development_techstackimg.png" alt="Tech Stack Mindmap" class="mindmap-image">

@@ -332,9 +332,9 @@
 <div class="scrolling-text-section">
     <div class="scrolling-text-container">
         <div class="scrolling-text">
-            <span class="text-segment">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
-            <span class="text-segment" aria-hidden="true">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
-            <span class="text-segment" aria-hidden="true">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
+            <span class="text-segment">Transforming ideas into powerful digital growth</span>
+            <span class="text-segment" aria-hidden="true">Transforming ideas into powerful digital growth</span>
+            <span class="text-segment" aria-hidden="true">Transforming ideas into powerful digital growth</span>
         </div>
     </div>
 </div>

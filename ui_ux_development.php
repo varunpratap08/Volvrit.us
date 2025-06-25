@@ -884,8 +884,8 @@ require_once 'includes/header.php';
     <section class="hero-section">
        
         <div class="container">
-        <h1>We evolve ideas into<br><span style="display: inline-block;">Intelligent digital products</span></h1>
-        <p>Industry dummy ipsum has been the industry's standard dummy text. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <h1>Design That Feels Right and <br><span style="display: inline-block;">Works Flawlessly</span></h1>
+        <p>We craft intuitive and engaging user interfaces that deliver more than just visuals—they create seamless, memorable digital experiences. From web apps to mobile platforms, our New York-based team brings your vision to life through human-centered, pixel-perfect design.</p>
             <a href="contact.php" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
@@ -897,11 +897,74 @@ require_once 'includes/header.php';
         <div class="scrolling-text-container">
             <div class="scrolling-text-wrapper">
                 <div class="scrolling-text" id="scrollingText">
-                    <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
-                  <!-- <span aria-hidden="true">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span> -->
+                    <span>Transforming ideas into powerful digital growth</span>
+                  <!-- <span aria-hidden="true">Transforming ideas into powerful digital growth</span> -->
                 </div>
             </div>
         </div>
+    </section>
+    <section class="custom-dev-section section">
+        <div class="container">
+            <h1 class="section-title">Where Design Meets Functionality and User Delight</h1>
+            <div class="section-content">
+                <p>Your product’s success begins with how users experience it. At Evolvix, we blend user research, modern design tools, and conversion strategies to craft experiences that are not only beautiful—but purposeful. Whether you're launching a mobile app, web platform, or SaaS product, our UI/UX design services ensure clarity, consistency, and delight at every touchpoint.</p>
+            </div>
+        </div>
+        <style>
+            .custom-dev-section {
+                padding: 60px 0;
+                background-color: #fff;
+            }
+            .custom-dev-section .section-title {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 44px;
+                letter-spacing: 0;
+                margin-bottom: 24px;
+                color: #1a1a1a;
+                text-align: left;
+            }
+            .custom-dev-section .section-content {
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .custom-dev-section p {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 36px;
+                letter-spacing: 0;
+                color: #4a4a4a;
+                margin: 0;
+                text-align: left;
+            }
+            @media (max-width: 768px) {
+                .custom-dev-section {
+                    padding: 40px 0;
+                }
+                .custom-dev-section .section-title {
+                    font-size: 26px;
+                    line-height: 36px;
+                    margin-bottom: 20px;
+                }
+                .custom-dev-section p {
+                    font-size: 18px;
+                    line-height: 32px;
+                }
+            }
+            @media (max-width: 480px) {
+                .custom-dev-section .section-title {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                .custom-dev-section p {
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+            }
+        </style>
     </section>
     
     <section class="section">
@@ -920,15 +983,37 @@ require_once 'includes/header.php';
                
                     <div>
                         <h3 class="item-title">
-                            <span class="title-line">We Develop</span>
-                            <span class="subtitle-line">Robust, responsive, and ready to scale.</span>
+                            <span class="title-line">Pixel-Perfect Designs Aligned with Real User Needs</span>
                         </h3>
-                        <p class="item-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        <p class="item-text">Evolvix provides end-to-end UI/UX development services that cover the entire design lifecycle—ensuring your digital product is intuitive, responsive, and conversion-ready. We create visually stunning, user-intuitive interfaces backed by strategy and research. Every design is crafted to enhance usability, strengthen brand identity, and deliver meaningful user journeys—across web, mobile, and SaaS platforms.</p>
                         <ul class="sub-list">
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+                            <li>User Persona Creation</li>
+                            <li>Market & Competitor Analysis</li>
+                            <li>Wireframing & Mockups</li>
+                            <li>High-Fidelity UI Design</li>
+                            <li>Interactive Prototypes</li>
+                            <li>Usability Testing</li>
+                            <li>Design Iteration</li>
+                            <li>Web UI/UX Design</li>
                         </ul>
+                        <span class="values-tagline">Our designs are built using tools like Figma, Miro, and Framer, ensuring efficient developer handoffs and scalable product execution.</span>
+                        <style>
+                            .values-tagline {
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 400;
+                                font-size: 20px;
+                                line-height: 36px;
+                                letter-spacing: 0;
+                                display: block;
+                                margin-top: 16px;
+                            }
+                            @media (max-width: 768px) {
+                                .values-tagline {
+                                    font-size: 18px;
+                                    line-height: 32px;
+                                }
+                            }
+                        </style>
                     </div>
             </ul>
         </div>
@@ -946,17 +1031,80 @@ require_once 'includes/header.php';
                 <span class="offer-text">Business Value</span>
             </div>
             <h2 class="section-title" style="margin-top: 16px">
-                Turn clicks into customers with
-                <span class="gradient-text">Smart web development</span>
+            Design That Reflects Empathy, Purpose & Performance
             </h2>
             
                     <div>
-                        <p class="item-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        <p class="item-text">At Evolvix, we believe great design begins with understanding people. Our values center on empathy-driven UX, purposeful aesthetics, and performance-focused execution. We combine creativity with clarity to build experiences that are accessible, inclusive, and results-oriented.</p>
+                       <h3>We don’t just design screens—we create user journeys that solve problems. Our design process is guided by</h3>
                         <ul class="sub-list">
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+                            <li>User Empathy: We deeply understand your audience's goals and frustrations.</li>
+                            <li>Accessibility: Every product we build is designed for inclusivity and ease of use.</li>
+                            <li>Agility: Rapid iterations, continuous feedback loops, and client collaboration.</li>
+                            <li>Data-Backed Creativity: We combine creativity with behavioral insights and real-world testing.</li>
+                           
                         </ul>
+                        <span class="values-tagline">We believe great UI/UX is more than how it looks—it’s how it works and how it feels.</span>
+                        <style>
+                            .values-tagline {
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 400;
+                                font-size: 20px;
+                                line-height: 36px;
+                                letter-spacing: 0;
+                                display: block;
+                                margin-top: 16px;
+                            }
+                            @media (max-width: 768px) {
+                                .values-tagline {
+                                    font-size: 18px;
+                                    line-height: 32px;
+                                }
+                            }
+                        </style>
+                    </div>
+        </div>
+    </section>
+     <!-- What you get section -->
+     <section class="business-value-section section">
+        <div class="container">
+            <div class="offer-tag">
+                <span class="offer-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" fill="#28A745"/>
+                    </svg>
+                </span>
+                <span class="offer-text">What you get</span>
+            </div>
+            <h2 class="section-title" style="margin-top: 16px">
+            User-Driven Designs that Convert & Delight         <div>
+                        <p class="item-text">We deliver clean, responsive, and intuitive designs that drive user engagement, reduce friction, and elevate brand perception across all touchpoints.</p>
+                        <h4>Partnering with Evolvix means receiving digital products that are</h4>
+                        <ul class="sub-list">
+                            <li>Consistent across platforms and devices</li>
+                            <li>User-tested for real-world performance</li>
+                            <li>Built for retention, engagement, and conversions</li>
+                            <li>Accompanied by design systems, guidelines, and dev-ready assets</li>
+                            
+                        </ul>
+                        <span class="values-tagline">Whether you’re a startup building from scratch or an enterprise redesigning legacy software, we deliver experiences that increase retention, reduce churn, and build customer loyalty.</span>
+                        <style>
+                            .values-tagline {
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 400;
+                                font-size: 20px;
+                                line-height: 36px;
+                                letter-spacing: 0;
+                                display: block;
+                                margin-top: 16px;
+                            }
+                            @media (max-width: 768px) {
+                                .values-tagline {
+                                    font-size: 18px;
+                                    line-height: 32px;
+                                }
+                            }
+                        </style>
                     </div>
         </div>
     </section>
@@ -968,8 +1116,7 @@ require_once 'includes/header.php';
   <section class="tech-stack-section section">
         <div class="container">
             <h2 class="section-title">
-                Turn clicks into customers with
-                <span class="gradient-text">Smart web development</span>
+            Tools, Languages, and <br>Frameworks We Excel In
             </h2>
             <div class="tech-mindmap">
                 <img src="assets/images/web_development_techstackimg.png" alt="Tech Stack Mindmap" class="mindmap-image">

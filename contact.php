@@ -116,16 +116,17 @@ require_once 'includes/header.php';
     }
 
     .form-group input,
-    .form-group textarea {
+    .form-group textarea,
+    .form-group select {
         width: 100%;
-        padding: 0.75rem 1rem;
-        border: 1px solid #e5e7eb;
-        border-radius: 0.5rem;
+        padding: 12px 16px;
+        border: 1px solid #D1D5DB;
+        border-radius: 8px;
+        font-size: 16px;
         font-family: 'Roboto', sans-serif;
-        font-size: 1rem;
-        color: #111827;
-        background: #f9fafb;
-        transition: all 0.3s ease;
+      /*  color: #111827;*/
+        background-color: transparent;
+        transition: border-color 0.3s, box-shadow 0.3s;
     }
 
     .form-group textarea {
@@ -134,11 +135,12 @@ require_once 'includes/header.php';
     }
 
     .form-group input:focus,
-    .form-group textarea:focus {
-        border-color: #2563eb;
-        background: #fff;
-        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    .form-group textarea:focus,
+    .form-group select:focus {
         outline: none;
+        border-color: #3B82F6;
+        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+        background-color: transparent;
     }
 
     .form-submit-btn {
@@ -360,31 +362,35 @@ require_once 'includes/header.php';
     }
 
     .service-option input[type="radio"] {
-        margin: 0 0 0 12px;
-        width: 12px;
-        height: 12px;
-        accent-color: #007bff;
+        appearance: none;
         -webkit-appearance: none;
         -moz-appearance: none;
-        appearance: none;
-        border: 2px solid #007bff;
+        width: 20px;
+        height: 20px;
+        min-width: 20px;
+        min-height: 20px;
+        border: 2px solid #D1D5DB;
         border-radius: 50%;
-        outline: none;
-        cursor: pointer;
+        margin-right: 8px;
         position: relative;
+        top: 4px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        padding: 0;
         flex-shrink: 0;
     }
 
     .service-option input[type="radio"]:checked::before {
         content: '';
         position: absolute;
-        width: 8px;
-        height: 8px;
-        background-color: #007bff;
-        border-radius: 50%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        width: 10px;
+        height: 10px;
+        background-color: #3B82F6;
+        border-radius: 50%;
+        box-sizing: border-box;
     }
 
     .service-option label {
@@ -630,8 +636,8 @@ document.addEventListener('DOMContentLoaded', function() {
 <!-- Hero Section -->
 <section class="hero-section">
     <div class="container">
-        <h1>We evolve ideas into intelligent digital products.</h1>
-        <p>Industry dummy ipsum has been the industry's standard dummy text. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <h1>Let’s Build Something Exceptional Together</h1>
+        <p>Whether you're a startup seeking a technology partner, an enterprise looking to scale your systems, or a brand aiming to grow online—Evolvix is here to help you take the next step.</p>
         <a href="#contact" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
@@ -643,13 +649,34 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="scrolling-text-section">
     <div class="scrolling-text-container">
         <div class="scrolling-text">
-            <span class="text-segment">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
-            <span class="text-segment" aria-hidden="true">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
-            <span class="text-segment" aria-hidden="true">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
+            <span class="text-segment">Transforming ideas into powerful digital growth</span>
+            <span class="text-segment" aria-hidden="true">Transforming ideas into powerful digital growth</span>
+            <span class="text-segment" aria-hidden="true">Transforming ideas into powerful digital growth</span>
         </div>
     </div>
 </div>
 </section>
+    <!-- Get in Touch section -->
+    <section>
+    <div class="container" style="margin-top: 80px;">
+            <div class="offer-tag">
+                <span class="offer-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" fill="#28A745"/>
+                    </svg>
+                </span>
+                <span class="offer-text">Get in touch</span>
+            </div>
+            <h2 class="section-title" style="margin-top: 16px">
+            Let’s Build Something Exceptional Together
+            </h2>
+            
+                    <div>
+                        <p class="item-text">Whether you're a startup seeking a technology partner, an enterprise looking to scale your systems, or a brand aiming to grow online—Evolvix is here to help you take the next step. Based in New York, we work with clients across the United States and beyond, offering tailored IT and Digital Marketing solutions that bring your vision to life. Let’s connect and craft something impactful, together.</p>
+
+                    </div>
+        </div>
+    </section>
 <section class="section">
     <div class="container">
         <ul class="intro-list">
@@ -660,20 +687,19 @@ document.addEventListener('DOMContentLoaded', function() {
                             <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" fill="#28A745"/>
                         </svg>
                     </span>
-                    <span class="offer-text">What we offer</span>
+                    <span class="offer-text">What you get</span>
                 </div>
             </li>
             <div>
                 <h3 class="item-title">
-                    <span class="title-line">We Develop</span>
-                    <span class="subtitle-line">Robust, responsive, and ready to scale.</span>
+                    <span class="title-line">How Can We Help You?</span>
                 </h3>
-                <p class="item-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-                <ul class="sub-list">
-                    <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                    <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                    <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                </ul>
+                <p class="item-text">Have a project idea?</p>
+                <p class="item-text">Need help scaling your marketing efforts? </p>
+                <p class="item-text">Want expert input on your technology roadmap?</p>
+                <div>
+                    <p class="item-text">Our team is here to provide expert consultation, technical insights, and customized solutions — no matter where you are in your journey.</p>
+                </div>
             </div>
         </ul>
     </div>
@@ -681,7 +707,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <!-- Contact Form Section -->
 <section class="section contact-section">
-    <div class="contact-form-container">
+    <div class="contact-section-inner">
+        <div class="contact-form-container">
+    <div class="offer-tag">
+                <span class="offer-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" fill="#28A745"/>
+                    </svg>
+                </span>
+                <span class="offer-text">Contact Us </span>
+            </div>
+            <h2 class="section-title" style="margin-top: 16px">
+            Let’s Get Started
+            </h2>
+            
+                    <div>
+                        <p class="item-text">Use the form below to tell us more about your needs, and our team will reach out within 24 hours.</p>
+
+                    </div>
         <form action="submit_contact.php" method="POST" class="contact-form">
             <div class="form-group">
                 <label for="name">Name</label>
@@ -736,7 +779,11 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="form-group" style="margin-top: 8px;">
                 <button type="submit" class="form-submit-btn">Send Message</button>
             </div>
-        </form>
+            </form>
+        </div>
+        <div class="contact-image-container">
+            <img src="assets/images/contact_form_img.png" alt="Contact Us" class="contact-image">
+        </div>
     </div>
 </section>
 
@@ -748,10 +795,63 @@ document.addEventListener('DOMContentLoaded', function() {
 <style>
     /* Section Styles */
     .section {
-        padding: 60px 20px;
+        padding: 60px 0;
         background-color: rgba(255, 255, 255, 0.9);
         position: relative;
         z-index: 1;
+    }
+    
+    .contact-section-inner {
+        display: flex;
+        flex-wrap: nowrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
+        border-radius: 12px;
+        overflow: hidden;
+        align-items: stretch;
+    }
+    
+    .contact-form-container {
+        flex: 1;
+        min-width: 300px;
+        padding: 40px;
+        background: #fff;
+    }
+    
+    .contact-image-container {
+        flex: 1;
+        min-width: 300px;
+      /*  background: #f8f9fa; */
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    .contact-image {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        object-position: center;
+        display: block;
+    }
+    
+    @media (max-width: 768px) {
+        .contact-section-inner {
+            flex-direction: column;
+        }
+        
+        .contact-image-container {
+            height: 300px;
+            order: -1;
+        }
+        
+        .contact-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 
     .container {

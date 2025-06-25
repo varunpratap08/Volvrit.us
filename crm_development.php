@@ -884,8 +884,8 @@ require_once 'includes/header.php';
     <section class="hero-section">
        
         <div class="container">
-        <h1>We evolve ideas into<br><span style="display: inline-block;">Intelligent digital products</span></h1>
-        <p>Industry dummy ipsum has been the industry's standard dummy text. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <h1>Streamline Customer Engagement with Smart CRM Solutions</h1>
+        <p> We develop scalable and secure CRM systems that empower your business to build stronger customer relationships, automate workflows, and increase efficiency. Headquartered in New York, we serve companies across the United States with tailored CRM solutions built for performance, integration, and growth.</p>
             <a href="contact.php" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
@@ -897,11 +897,74 @@ require_once 'includes/header.php';
         <div class="scrolling-text-container">
             <div class="scrolling-text-wrapper">
                 <div class="scrolling-text" id="scrollingText">
-                    <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
-                  <!-- <span aria-hidden="true">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span> -->
+                    <span>Transforming ideas into powerful digital growth</span>
+                  <!-- <span aria-hidden="true">Transforming ideas into powerful digital growth</span> -->
                 </div>
             </div>
         </div>
+    </section>
+    <section class="custom-dev-section section">
+        <div class="container">
+            <h1 class="section-title">Connecting People, Data, and Growth through Custom CRM Development</h1>
+            <div class="section-content">
+                <p>At Evolvix, we design and develop custom CRM solutions that simplify operations, automate sales and support, and centralize customer data. Based in New York and serving businesses across the United States, our CRM development services are tailored to help you improve retention, streamline communication, and scale with confidence. In today’s data-driven world, a well-designed CRM is key to success. At Evolvix, we specialize in building powerful CRM platforms that centralize customer data, automate interactions, and simplify your operations. Whether you’re enhancing an existing solution or starting from scratch, our expert team ensures a system that aligns with your business goals and scales with your growth.</p>
+            </div>
+        </div>
+        <style>
+            .custom-dev-section {
+                padding: 60px 0;
+                background-color: #fff;
+            }
+            .custom-dev-section .section-title {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 44px;
+                letter-spacing: 0;
+                margin-bottom: 24px;
+                color: #1a1a1a;
+                text-align: left;
+            }
+            .custom-dev-section .section-content {
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .custom-dev-section p {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 36px;
+                letter-spacing: 0;
+                color: #4a4a4a;
+                margin: 0;
+                text-align: left;
+            }
+            @media (max-width: 768px) {
+                .custom-dev-section {
+                    padding: 40px 0;
+                }
+                .custom-dev-section .section-title {
+                    font-size: 26px;
+                    line-height: 36px;
+                    margin-bottom: 20px;
+                }
+                .custom-dev-section p {
+                    font-size: 18px;
+                    line-height: 32px;
+                }
+            }
+            @media (max-width: 480px) {
+                .custom-dev-section .section-title {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                .custom-dev-section p {
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+            }
+        </style>
     </section>
     
     <section class="section">
@@ -920,15 +983,38 @@ require_once 'includes/header.php';
                
                     <div>
                         <h3 class="item-title">
-                            <span class="title-line">We Develop</span>
-                            <span class="subtitle-line">Robust, responsive, and ready to scale.</span>
+                            <span class="title-line">Custom CRM Development Services That Work for You</span>
                         </h3>
-                        <p class="item-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        <p class="item-text">We design custom CRM systems that streamline communication, boost productivity, and enhance customer experiences. From sales pipelines to support ticketing, our CRM development services are flexible, scalable, and tailored for businesses across the United States—making Evolvix your go-to CRM development company in New York.</p>
+                        <h3>From idea to execution, we build CRMs that work the way your business does. Our full-suite CRM offerings include</h3>
                         <ul class="sub-list">
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+                            <li>Custom CRM Development & Implementation</li>
+                            <li>CRM Consulting & Process Mapping</li>
+                            <li>Sales & Marketing Automation</li>
+                            <li>Customer Support & Helpdesk Integration</li>
+                            <li>Third-Party CRM Integration (Salesforce, HubSpot, Zoho, etc.)</li>
+                            <li>Role-Based Dashboards & Reporting</li>
+                            <li>Mobile-Responsive CRM Interfaces</li>
+                            <li>Ongoing Support, Optimization & Maintenance</li>
                         </ul>
+                        <span class="values-tagline">Our goal is to help your teams sell smarter, support better, and scale faster — all while keeping your customers at the center.</span>
+                        <style>
+                            .values-tagline {
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 400;
+                                font-size: 20px;
+                                line-height: 36px;
+                                letter-spacing: 0;
+                                display: block;
+                                margin-top: 16px;
+                            }
+                            @media (max-width: 768px) {
+                                .values-tagline {
+                                    font-size: 18px;
+                                    line-height: 32px;
+                                }
+                            }
+                        </style>
                     </div>
             </ul>
         </div>
@@ -946,17 +1032,81 @@ require_once 'includes/header.php';
                 <span class="offer-text">Business Value</span>
             </div>
             <h2 class="section-title" style="margin-top: 16px">
-                Turn clicks into customers with
-                <span class="gradient-text">Smart web development</span>
+            We Design CRM Solutions That Evolve with Your Business
             </h2>
             
                     <div>
-                        <p class="item-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        <p class="item-text">At Evolvix, we believe technology should simplify, not complicate. That’s why our CRM systems are built on the principles of user-friendliness, scalability, and transparency.</p>
+                        <h3>We uphold</h3>
                         <ul class="sub-list">
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+                            <li>Client-Centric Thinking – Your goals shape every function.</li>
+                            <li>Adaptability – Built to grow with you, not restrict you.</li>
+                            <li>Clear Communication – You’re always in the loop.</li>
+                            <li>Long-Term Vision – Designed for results, not just delivery.</li>
                         </ul>
+                        <span class="values-tagline">We don’t just code CRMs—we craft tools that connect, engage, and deliver value every day.</span>
+                        <style>
+                            .values-tagline {
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 400;
+                                font-size: 20px;
+                                line-height: 36px;
+                                letter-spacing: 0;
+                                display: block;
+                                margin-top: 16px;
+                            }
+                            @media (max-width: 768px) {
+                                .values-tagline {
+                                    font-size: 18px;
+                                    line-height: 32px;
+                                }
+                            }
+                        </style>
+                    </div>
+        </div>
+    </section>
+     <!-- What you get section -->
+     <section class="business-value-section section">
+        <div class="container">
+            <div class="offer-tag">
+                <span class="offer-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" fill="#28A745"/>
+                    </svg>
+                </span>
+                <span class="offer-text">What you get</span>
+            </div>
+            <h2 class="section-title" style="margin-top: 16px">
+            A Smarter Way to Manage Customers and Teams          <div>
+                        <p class="item-text">With Evolvix, you get a fully customized CRM solution that centralizes data, automates repetitive tasks, and enhances team collaboration. From lead tracking and contact management to real-time reporting and customer segmentation, our CRMs are built to drive smarter workflows, improve customer retention, and scale with your business—no matter your industry.</p>
+                        <h4>When you choose Evolvix for CRM development, you get more than just a tool—you get a solution built to deliver impact. Here’s what you can expect</h4>
+                        <ul class="sub-list">
+                            <li>Centralized Customer Data & Activity Tracking</li>
+                            <li>Sales Pipeline Visualization & Automation</li>
+                            <li>Marketing Campaign Management & Analytics</li>
+                            <li>Integrated Support Channels (Email, Chat, etc.)</li>
+                            <li>Real-Time Reporting with Custom Dashboards</li>
+                            <li>Secure Access Controls & Scalable Architecture</li>
+                            <li>Post-Launch Support, Monitoring & Updates</li>
+                        </ul>
+                        <span class="values-tagline">These features lead to better decisions, smoother workflows, and stronger customer loyalty.</span>
+                        <style>
+                            .values-tagline {
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 400;
+                                font-size: 20px;
+                                line-height: 36px;
+                                letter-spacing: 0;
+                                display: block;
+                                margin-top: 16px;
+                            }
+                            @media (max-width: 768px) {
+                                .values-tagline {
+                                    font-size: 18px;
+                                    line-height: 32px;
+                                }
+                            }
+                        </style>
                     </div>
         </div>
     </section>

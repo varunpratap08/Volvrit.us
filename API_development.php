@@ -884,8 +884,8 @@ require_once 'includes/header.php';
     <section class="hero-section">
        
         <div class="container">
-        <h1>We evolve ideas into<br><span style="display: inline-block;">Intelligent digital products</span></h1>
-        <p>Industry dummy ipsum has been the industry's standard dummy text. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <h1>We build APIs that connect, automate,<br> and scale your digital world</h1>
+        <p>From SaaS platforms and mobile apps to enterprise software and cloud systems—our custom API development solutions streamline operations and drive digital growth</p>
             <a href="contact.php" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
@@ -897,12 +897,76 @@ require_once 'includes/header.php';
         <div class="scrolling-text-container">
             <div class="scrolling-text-wrapper">
                 <div class="scrolling-text" id="scrollingText">
-                    <span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span>
-                  <!-- <span aria-hidden="true">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</span> -->
+                    <span>Transforming ideas into powerful digital growth</span>
+                  <!-- <span aria-hidden="true">Transforming ideas into powerful digital growth</span> -->
                 </div>
             </div>
         </div>
     </section>
+    <section class="custom-dev-section section">
+        <div class="container">
+            <h1 class="section-title">Smart, Scalable APIs for <br>Modern Digital Ecosystems</h1>
+            <div class="section-content">
+                <p>At Evolvix, we design powerful API solutions that seamlessly connect your digital platforms and elevate operational efficiency. From startups to enterprise-grade systems, our API development services are tailored to meet the demands of fast-moving businesses across New York and the United States. Based in New York, we collaborate with startups and enterprises across the USA, delivering high-performance APIs that power digital transformation. Whether you're building new integrations, streamlining backend workflows, or enabling secure data exchanges, we deliver future-ready APIs that ensure performance, speed, and flexibility.</p>
+            </div>
+        </div>
+        <style>
+            .custom-dev-section {
+                padding: 60px 0;
+                background-color: #fff;
+            }
+            .custom-dev-section .section-title {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 44px;
+                letter-spacing: 0;
+                margin-bottom: 24px;
+                color: #1a1a1a;
+                text-align: left;
+            }
+            .custom-dev-section .section-content {
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .custom-dev-section p {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 36px;
+                letter-spacing: 0;
+                color: #4a4a4a;
+                margin: 0;
+                text-align: left;
+            }
+            @media (max-width: 768px) {
+                .custom-dev-section {
+                    padding: 40px 0;
+                }
+                .custom-dev-section .section-title {
+                    font-size: 26px;
+                    line-height: 36px;
+                    margin-bottom: 20px;
+                }
+                .custom-dev-section p {
+                    font-size: 18px;
+                    line-height: 32px;
+                }
+            }
+            @media (max-width: 480px) {
+                .custom-dev-section .section-title {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                .custom-dev-section p {
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+            }
+        </style>
+    </section>
+    
     
     <section class="section">
         <div class="container">
@@ -920,15 +984,37 @@ require_once 'includes/header.php';
                
                     <div>
                         <h3 class="item-title">
-                            <span class="title-line">We Develop</span>
-                            <span class="subtitle-line">Robust, responsive, and ready to scale.</span>
+                            <span class="title-line">Future-Ready API Solutions</span>
+                            <span class="subtitle-line">Built for Performance</span>
                         </h3>
-                        <p class="item-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        <p class="item-text">Our end-to-end API development services are built with clean, scalable code and modern architectures that empower secure communication between systems.</p>
+                        <h3>Our API Development Capabilities Include</h3>
                         <ul class="sub-list">
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+                            <li>RESTful & SOAP API Development</li>
+                            <li>Third-Party API Integrations (CRM, ERP, Payment Gateways)</li>
+                            <li>Mobile & Web Application APIs</li>
+                            <li>Real-Time Data Synchronization APIs</li>
+                            <li>Secure Authentication & Access Management (OAuth2, JWT)</li>
+                            <li>API Documentation, Testing, and Version Control</li>
                         </ul>
+                        <span class="values-tagline">All our APIs are robust, easy to maintain, and designed with modular, secure logic—ensuring your systems stay connected now and in the future.</span>
+                        <style>
+                            .values-tagline {
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 400;
+                                font-size: 20px;
+                                line-height: 36px;
+                                letter-spacing: 0;
+                                display: block;
+                                margin-top: 16px;
+                            }
+                            @media (max-width: 768px) {
+                                .values-tagline {
+                                    font-size: 18px;
+                                    line-height: 32px;
+                                }
+                            }
+                        </style>
                     </div>
             </ul>
         </div>
@@ -946,17 +1032,48 @@ require_once 'includes/header.php';
                 <span class="offer-text">Business Value</span>
             </div>
             <h2 class="section-title" style="margin-top: 16px">
-                Turn clicks into customers with
-                <span class="gradient-text">Smart web development</span>
+            Connect Smarter, <br>Operate Faster, Scale Better
             </h2>
             
                     <div>
-                        <p class="item-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        <p class="item-text">Connect Smarter
+                        Operate Faster, Scale Better</p>
+                        <h3>With our expert API development services in NYC, you get</h3>
                         <ul class="sub-list">
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+                            <li>Seamless cross-platform system integration</li>
+                            <li>Automation that saves time and reduces manual tasks</li>
+                            <li>Reduced development costs through reusable components</li>
+                            <li>Scalable infrastructure that grows with your business</li>
+                            <li>Enhanced customer experience via fast and responsive platforms</li>
+                           
                         </ul>
+                    </div>
+        </div>
+    </section>
+       <!-- What you get section -->
+       <section class="business-value-section section">
+        <div class="container">
+            <div class="offer-tag">
+                <span class="offer-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" fill="#28A745"/>
+                    </svg>
+                </span>
+                <span class="offer-text">What you get</span>
+            </div>
+            <h2 class="section-title" style="margin-top: 16px">
+            Turn disconnected systems into
+            synchronized solutions</h2>
+            <div>
+                        <p class="item-text">When you choose Evolvix, you gain a trusted API development partner dedicated to building APIs that are</p>
+                        <ul class="sub-list">
+                            <li>Cleanly coded and fully documented</li>
+                            <li>Fast, lightweight, and scalable</li>
+                            <li>Compatible across platforms and devices</li>
+                            <li>Built with enterprise-grade security standards</li>
+                            <li>Easy to extend, version, and integrate with modern tech stacks</li>
+                        </ul>
+                        
                     </div>
         </div>
     </section>
@@ -967,9 +1084,8 @@ require_once 'includes/header.php';
   <!-- Tech Stack Section (What We Use) -->
   <section class="tech-stack-section section">
         <div class="container">
-            <h2 class="section-title">
-                Turn clicks into customers with
-                <span class="gradient-text">Smart web development</span>
+        <h2 class="section-title">
+            Tools, Languages, and <br> Frameworks We Excel In
             </h2>
             <div class="tech-mindmap">
                 <img src="assets/images/web_development_techstackimg.png" alt="Tech Stack Mindmap" class="mindmap-image">
