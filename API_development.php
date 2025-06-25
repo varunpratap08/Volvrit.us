@@ -897,8 +897,9 @@ require_once 'includes/header.php';
         <div class="scrolling-text-container">
             <div class="scrolling-text-wrapper">
                 <div class="scrolling-text" id="scrollingText">
-                    <span>Transforming ideas into powerful digital growth</span>
-                  <!-- <span aria-hidden="true">Transforming ideas into powerful digital growth</span> -->
+                <span class="text-segment">Transforming ideas into powerful digital growth</span>
+            <span class="text-segment" aria-hidden="true">Transforming ideas into powerful digital growth</span>
+            <span class="text-segment" aria-hidden="true">Transforming ideas into powerful digital growth</span>
                 </div>
             </div>
         </div>
@@ -1104,84 +1105,41 @@ require_once 'includes/header.php';
 <section>
     <?php include 'includes/footer.php'; ?>
 </section>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollingText = document.querySelector('.scrolling-text');
+    const container = document.querySelector('.scrolling-text-container');
+    
+    if (!scrollingText || !container) return;
+    
+    // Ensure smooth scrolling on all devices
+    scrollingText.style.willChange = 'transform';
+    
+    // Handle window resize
+    let resizeTimer;
+    const handleResize = () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+            // Force reflow to ensure smooth animation restart
+            if (scrollingText) {
+                scrollingText.style.animation = 'none';
+                scrollingText.offsetHeight; // Trigger reflow
+                scrollingText.style.animation = 'scroll-left 20s linear infinite';
+            }
+        }, 100);
+    };
+    
+    window.addEventListener('resize', handleResize);
+    
+    // Cleanup on page unload
+    window.addEventListener('beforeunload', () => {
+        window.removeEventListener('resize', handleResize);
+    });
+});
+</script>
 
 </body>
-    <script>
-        function initScrollingText() {
-            const scrollingWrapper = document.querySelector('.scrolling-text-wrapper');
-            const scrollingText = document.querySelector('.scrolling-text');
-            const textElement = document.getElementById('scrollingText');
+    
             
-            if (!scrollingWrapper || !scrollingText || !textElement) return;
-            
-            // Clear any existing clones
-            const existingClones = scrollingText.querySelectorAll('span[aria-hidden="true"]');
-            existingClones.forEach(clone => clone.remove());
-            
-            // Create a clone of the text
-            const clone = textElement.cloneNode(true);
-            clone.setAttribute('aria-hidden', 'true');
-            
-            // Add the clone to create a seamless loop
-            scrollingText.appendChild(clone);
-            
-            // Set initial styles
-            scrollingText.style.opacity = '1';
-            
-            // Handle window resize
-            let resizeTimer;
-            const updateAnimation = () => {
-                const textWidth = textElement.offsetWidth;
-                const containerWidth = scrollingWrapper.offsetWidth;
-                
-                // Only enable scrolling if text is wider than container
-                if (textWidth > containerWidth) {
-                    const duration = textWidth / 50; // Speed factor (pixels per second)
-                    scrollingText.style.width = textWidth * 2 + 'px';
-                    scrollingText.style.animation = `scroll-left ${duration}s linear infinite`;
-                    scrollingText.style.animationPlayState = 'paused';
-                } else {
-                    scrollingText.style.width = 'auto';
-                    scrollingText.style.animation = 'none';
-                }
-            };
-            
-            // Initial setup
-            updateAnimation();
-            
-            // Handle window resize
-            const handleResize = () => {
-                clearTimeout(resizeTimer);
-                resizeTimer = setTimeout(updateAnimation, 250);
-            };
-            
-            window.addEventListener('resize', handleResize);
-            
-            // Pause/play on hover
-            const container = document.querySelector('.scrolling-text-container');
-            container.addEventListener('mouseenter', () => {
-                if (scrollingText.style.animation) {
-                    scrollingText.style.animationPlayState = 'running';
-                }
-            });
-            
-            container.addEventListener('mouseleave', () => {
-                if (scrollingText.style.animation) {
-                    scrollingText.style.animationPlayState = 'paused';
-                    // Reset position when mouse leaves
-                    scrollingText.style.animation = 'none';
-                    scrollingText.style.transform = 'translateX(0)';
-                    scrollingText.offsetHeight; // Trigger reflow
-                    updateAnimation();
-                }
-            });
-        }
-        
-        // Run on DOMContentLoaded and when the page is fully loaded
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initScrollingText);
-        } else {
-            initScrollingText();
-        }
-    </script>
+           
 </html>

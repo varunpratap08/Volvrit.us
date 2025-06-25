@@ -884,8 +884,8 @@ require_once 'includes/header.php';
     <section class="hero-section">
        
         <div class="container">
-        <h1>We evolve ideas into<br><span style="display: inline-block;">Intelligent digital products</span></h1>
-        <p>Industry dummy ipsum has been the industry's standard dummy text. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <h1>Drive Results, Not Just Traffic<br><span style="display: inline-block;">With Performance-First Digital Marketing</span></h1>
+        <p>Transform your brand’s online presence with Evolvix’s data-driven, full-funnel digital marketing solutions. Based in New York, we help businesses across the United States grow smarter, rank faster, and convert better</p>
             <a href="contact.php" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
@@ -898,10 +898,74 @@ require_once 'includes/header.php';
             <div class="scrolling-text-wrapper">
                 <div class="scrolling-text" id="scrollingText">
                     <span>Transforming ideas into powerful digital growth</span>
-                  <!-- <span aria-hidden="true">Transforming ideas into powerful digital growth</span> -->
+                  <span>Transforming ideas into powerful digital growth</span>
+                    <span aria-hidden="true">Transforming ideas into powerful digital growth</span> -->
                 </div>
             </div>
         </div>
+    </section>
+    <section class="custom-dev-section section">
+        <div class="container">
+            <h1 class="section-title">Performance-Driven <br> Digital Marketing Solutions for Modern Brands</h1>
+            <div class="section-content">
+                <p>At Evolvix, we understand that digital marketing is more than just online visibility—it's about measurable growth. Our team combines strategic planning, creative execution, and analytics-driven decisions to ensure your brand doesn’t just compete but leads in your niche and delivers maximum ROI. We cater to both B2B and B2C clients across the United States, helping startups, SMEs, and enterprises create sustainable digital ecosystems with tailored marketing campaigns.</p>
+            </div>
+        </div>
+        <style>
+            .custom-dev-section {
+                padding: 60px 0;
+                background-color: #fff;
+            }
+            .custom-dev-section .section-title {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 44px;
+                letter-spacing: 0;
+                margin-bottom: 24px;
+                color: #1a1a1a;
+                text-align: left;
+            }
+            .custom-dev-section .section-content {
+                max-width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            .custom-dev-section p {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 36px;
+                letter-spacing: 0;
+                color: #4a4a4a;
+                margin: 0;
+                text-align: left;
+            }
+            @media (max-width: 768px) {
+                .custom-dev-section {
+                    padding: 40px 0;
+                }
+                .custom-dev-section .section-title {
+                    font-size: 26px;
+                    line-height: 36px;
+                    margin-bottom: 20px;
+                }
+                .custom-dev-section p {
+                    font-size: 18px;
+                    line-height: 32px;
+                }
+            }
+            @media (max-width: 480px) {
+                .custom-dev-section .section-title {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                .custom-dev-section p {
+                    font-size: 16px;
+                    line-height: 28px;
+                }
+            }
+        </style>
     </section>
     
     <section class="section">
@@ -920,14 +984,21 @@ require_once 'includes/header.php';
                
                     <div>
                         <h3 class="item-title">
-                            <span class="title-line">We Develop</span>
-                            <span class="subtitle-line">Robust, responsive, and ready to scale.</span>
+                            <span class="title-line">Comprehensive Digital Marketing Services in <br> NYC and across the United States</span>
+                           
                         </h3>
-                        <p class="item-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        <p class="item-text">At Evolvix, we offer tailored digital marketing strategies that combine creativity with performance. From SEO and PPC to content marketing, social media campaigns, and email automation, we help businesses across the United States increase visibility, generate qualified leads, and convert them into loyal customers — all through data-driven and channel-specific execution.</p>
+                        <h3 class="item-title">Our services include</h3>
                         <ul class="sub-list">
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+                            <li><span class="sub-list-text" style="color: black">Search Engine Optimization (SEO):</span> <p >We improve your website’s visibility on search engines like Google by optimizing your content, keywords, site structure, and speed. Our SEO strategies drive long-term organic traffic, helping your business rank higher, get discovered more easily, and reach the right audience.</p></li>
+                            <li><span class="sub-list-text" style="color: black">Social Media Marketing (SMM):</span> <p >We craft platform-specific strategies for Facebook, Instagram, LinkedIn, and more to help your brand grow its community, build engagement, and drive sales. From content creation to audience targeting, we turn social media into a revenue-generating channel for your business.</p></li>
+                            <li><span class="sub-list-text" style="color: black">Content Marketing:</span> <p >We create engaging, high-quality content that resonates with your audience and helps you build trust, authority, and visibility. Whether it's blog posts, videos, or infographics, our content marketing strategies are designed to keep your audience coming back for more.</p></li>
+                            <li><span class="sub-list-text" style="color: black">Email Marketing:</span> <p >We build and manage email campaigns that nurture leads and retain customers. From drip sequences to newsletters, our strategies personalize your outreach, boost open rates, and drive repeat sales through automation and timely communication.</p></li>
+                            <li><span class="sub-list-text" style="color: black">Pay-Per-Click (PPC):</span> <p >Through targeted ad campaigns on Google, Bing, and social platforms, we help you get instant visibility and measurable returns. Whether it’s search ads, display banners, or remarketing, our PPC experts optimize every click to maximize your ROI and conversions.</p></li>
+                            <li><span class="sub-list-text" style="color: black">Local SEO & GMB Optimization:</span> <p >Want to rank locally and attract nearby customers? We optimize your Google Business Profile, citations, reviews, and local keywords to help your business appear in local search results and maps — critical for brick-and-mortar or region-specific services.</p></li>
+                            <li><span class="sub-list-text" style="color: black">Web Analytics & Conversion Tracking:</span> <p >Using tools like Google Analytics, GA4, and Meta Pixel, we track every click, conversion, and campaign. Our team transforms data into actionable insights so you can see what’s working, where to improve, and how to grow smarter.</p></li>
+                            <li><span class="sub-list-text" style="color: black">CGI & 3D Visualization Services:</span> <p > We bring your ideas to life with hyper-realistic 3D renders, animations, and visual storytelling. From product visualizations and architectural walkthroughs to motion graphics for social media, our CGI experts craft immersive content that captures attention and drives engagement. Whether you're launching a new product or building brand presence, our 3D visuals enhance user experience, boost conversions, and make your digital presence unforgettable.</p></li>
+                            
                         </ul>
                     </div>
             </ul>
@@ -946,17 +1017,82 @@ require_once 'includes/header.php';
                 <span class="offer-text">Business Value</span>
             </div>
             <h2 class="section-title" style="margin-top: 16px">
-                Turn clicks into customers with
-                <span class="gradient-text">Smart web development</span>
+            Integrity, Innovation, Impact<br>The Foundation of Every Campaign We Build
+                
             </h2>
             
                     <div>
-                        <p class="item-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                        <p class="item-text">At Evolvix, we operate with complete transparency, clear communication, and measurable intent. Every campaign is backed by ethical marketing standards, continuous learning, and a deep understanding of user behavior. We don’t just follow trends — we create value-driven strategies that are honest, adaptable, and focused on long-term success for our clients in NYC and across the United States.</p>
+                       <h3>Our values drive more than just strategy—they shape results. We believe great marketing is built on trust, clarity, and adaptability. That’s why every campaign we deliver reflects who we are and how we work</h3>
                         <ul class="sub-list">
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
-                            <li>Contrary to popular belief, Lorem Ipsum is not simply random text</li>
+                            <li class="sub-list-text">Transparency in planning, execution, and reporting</li>
+                            <li class="sub-list-text">Data-driven strategies focused on measurable outcomes</li>
+                            <li class="sub-list-text">Ethical marketing that strengthens brand credibility</li>
+                            <li class="sub-list-text">Continuous learning to stay ahead of algorithm shifts</li>
                         </ul>
+                        <span class="values-tagline">Our mission is simple: to create lasting digital growth through honest, performance-led partnerships.</span>
+                        <style>
+                            .values-tagline {
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 400;
+                                font-size: 20px;
+                                line-height: 36px;
+                                letter-spacing: 0;
+                                display: block;
+                                margin-top: 16px;
+                            }
+                            @media (max-width: 768px) {
+                                .values-tagline {
+                                    font-size: 18px;
+                                    line-height: 32px;
+                                }
+                            }
+                        </style>
+                    </div>
+        </div>
+    </section>
+     <!-- What you get section -->
+     <section class="business-value-section section">
+        <div class="container">
+            <div class="offer-tag">
+                <span class="offer-icon">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z" fill="#28A745"/>
+                    </svg>
+                </span>
+                <span class="offer-text">What you get</span>
+            </div>
+            <h2 class="section-title" style="margin-top: 16px">
+            Measurable Growth. Real ROI</h2>
+            <div>
+                        <p class="item-text">With Evolvix, you gain more than just traffic—you gain traction. From improved search rankings and lead conversions to stronger brand engagement and customer retention, our digital marketing services are built to deliver tangible outcomes. Every strategy is crafted to fuel visibility, build credibility, and drive sustained business growth in NYC and across the United States.</p>
+                       
+                       <h3>Partnering with Evolvix means you gain</h3>
+                        <ul class="sub-list">
+                            <li class="sub-list-text">A dedicated team of certified digital marketers.</li>
+                            <li class="sub-list-text">Personalized marketing roadmap based on your industry.</li>
+                            <li class="sub-list-text">Growth-focused SEO and performance marketing strategies</li>
+                            <li class="sub-list-text">Monthly reports with actionable insights.</li>
+                            <li class="sub-list-text">Cross-platform expertise from search engines to social media</li>
+                        </ul>
+                        <span class="values-tagline">Whether it’s brand awareness or revenue growth, we deliver marketing that drives tangible business results.</span>
+                        <style>
+                            .values-tagline {
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 400;
+                                font-size: 20px;
+                                line-height: 36px;
+                                letter-spacing: 0;
+                                display: block;
+                                margin-top: 16px;
+                            }
+                            @media (max-width: 768px) {
+                                .values-tagline {
+                                    font-size: 18px;
+                                    line-height: 32px;
+                                }
+                            }
+                        </style> 
                     </div>
         </div>
     </section>
@@ -964,18 +1100,7 @@ require_once 'includes/header.php';
     <?php include 'process_home.php'; ?>
   </section>
 
-  <!-- Tech Stack Section (What We Use) -->
-  <section class="tech-stack-section section">
-        <div class="container">
-            <h2 class="section-title">
-                Turn clicks into customers with
-                <span class="gradient-text">Smart web development</span>
-            </h2>
-            <div class="tech-mindmap">
-                <img src="assets/images/web_development_techstackimg.png" alt="Tech Stack Mindmap" class="mindmap-image">
-            </div>
-        </div>
-    </section>
+  
 <section>
     <?php include 'home_expertise.php'; ?>
 </section>  
@@ -988,84 +1113,39 @@ require_once 'includes/header.php';
 <section>
     <?php include 'includes/footer.php'; ?>
 </section>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollingText = document.querySelector('.scrolling-text');
+    const container = document.querySelector('.scrolling-text-container');
+    
+    if (!scrollingText || !container) return;
+    
+    // Ensure smooth scrolling on all devices
+    scrollingText.style.willChange = 'transform';
+    
+    // Handle window resize
+    let resizeTimer;
+    const handleResize = () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+            // Force reflow to ensure smooth animation restart
+            if (scrollingText) {
+                scrollingText.style.animation = 'none';
+                scrollingText.offsetHeight; // Trigger reflow
+                scrollingText.style.animation = 'scroll-left 20s linear infinite';
+            }
+        }, 100);
+    };
+    
+    window.addEventListener('resize', handleResize);
+    
+    // Cleanup on page unload
+    window.addEventListener('beforeunload', () => {
+        window.removeEventListener('resize', handleResize);
+    });
+});
+</script>
 
 </body>
-    <script>
-        function initScrollingText() {
-            const scrollingWrapper = document.querySelector('.scrolling-text-wrapper');
-            const scrollingText = document.querySelector('.scrolling-text');
-            const textElement = document.getElementById('scrollingText');
-            
-            if (!scrollingWrapper || !scrollingText || !textElement) return;
-            
-            // Clear any existing clones
-            const existingClones = scrollingText.querySelectorAll('span[aria-hidden="true"]');
-            existingClones.forEach(clone => clone.remove());
-            
-            // Create a clone of the text
-            const clone = textElement.cloneNode(true);
-            clone.setAttribute('aria-hidden', 'true');
-            
-            // Add the clone to create a seamless loop
-            scrollingText.appendChild(clone);
-            
-            // Set initial styles
-            scrollingText.style.opacity = '1';
-            
-            // Handle window resize
-            let resizeTimer;
-            const updateAnimation = () => {
-                const textWidth = textElement.offsetWidth;
-                const containerWidth = scrollingWrapper.offsetWidth;
-                
-                // Only enable scrolling if text is wider than container
-                if (textWidth > containerWidth) {
-                    const duration = textWidth / 50; // Speed factor (pixels per second)
-                    scrollingText.style.width = textWidth * 2 + 'px';
-                    scrollingText.style.animation = `scroll-left ${duration}s linear infinite`;
-                    scrollingText.style.animationPlayState = 'paused';
-                } else {
-                    scrollingText.style.width = 'auto';
-                    scrollingText.style.animation = 'none';
-                }
-            };
-            
-            // Initial setup
-            updateAnimation();
-            
-            // Handle window resize
-            const handleResize = () => {
-                clearTimeout(resizeTimer);
-                resizeTimer = setTimeout(updateAnimation, 250);
-            };
-            
-            window.addEventListener('resize', handleResize);
-            
-            // Pause/play on hover
-            const container = document.querySelector('.scrolling-text-container');
-            container.addEventListener('mouseenter', () => {
-                if (scrollingText.style.animation) {
-                    scrollingText.style.animationPlayState = 'running';
-                }
-            });
-            
-            container.addEventListener('mouseleave', () => {
-                if (scrollingText.style.animation) {
-                    scrollingText.style.animationPlayState = 'paused';
-                    // Reset position when mouse leaves
-                    scrollingText.style.animation = 'none';
-                    scrollingText.style.transform = 'translateX(0)';
-                    scrollingText.offsetHeight; // Trigger reflow
-                    updateAnimation();
-                }
-            });
-        }
-        
-        // Run on DOMContentLoaded and when the page is fully loaded
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initScrollingText);
-        } else {
-            initScrollingText();
-        }
-    </script>
+   
 </html>

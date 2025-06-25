@@ -1,5 +1,5 @@
 <!-- hero.php -->
-<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/hero.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 
@@ -235,10 +235,11 @@
     .scrolling-text {
         position: absolute;
         top: 50%;
+        left: 0;
         transform: translateY(-50%);
         white-space: nowrap;
         will-change: transform;
-        display: inline-block;
+        display: flex;
         padding: 0;
         animation: scroll-left 20s linear infinite;
         animation-play-state: running;
@@ -247,7 +248,7 @@
         min-width: 100%;
     }
 
-    .scrolling-text.paused {
+    .scrolling-text-container:hover .scrolling-text {
         animation-play-state: paused;
     }
 
@@ -268,6 +269,11 @@
     @keyframes scroll-left {
         0% { transform: translateX(0) translateY(-50%); }
         100% { transform: translateX(-33.33%) translateY(-50%); }
+    }
+    
+    /* Ensure smooth scrolling */
+    .scrolling-text {
+        transition: transform 0.3s ease;
     }
 
     /* Responsive Design */
@@ -322,9 +328,9 @@
             <img src="assets/images/Hero%20section%20image.png" alt="Hero Image" class="hero-image">
             </div>
         </div>
-        <div class="hero-image-2-container">
+        <!--<div class="hero-image-2-container">
             <img src="assets/images/Hero Section (2).png" alt="Hero Image 2" class="hero-image-2">
-        </div>
+        </div>-->
     </div>
 </div>
 
@@ -346,20 +352,26 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (!scrollingText || !container) return;
     
-    const textContent = scrollingText.innerHTML;
-    scrollingText.innerHTML = textContent + ' ' + textContent;
+    // Ensure smooth scrolling on all devices
+    scrollingText.style.willChange = 'transform';
     
-    container.addEventListener('mouseenter', () => scrollingText.classList.add('paused'));
-    container.addEventListener('mouseleave', () => scrollingText.classList.remove('paused'));
-    
+    // Handle window resize
     let resizeTimer;
-    window.addEventListener('resize', () => {
+    const handleResize = () => {
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(() => {
+            // Force reflow to ensure smooth animation restart
             scrollingText.style.animation = 'none';
-            scrollingText.offsetHeight;
+            scrollingText.offsetHeight; // Trigger reflow
             scrollingText.style.animation = 'scroll-left 20s linear infinite';
         }, 100);
+    };
+    
+    window.addEventListener('resize', handleResize);
+    
+    // Cleanup on page unload
+    window.addEventListener('beforeunload', () => {
+        window.removeEventListener('resize', handleResize);
     });
 });
 

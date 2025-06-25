@@ -195,9 +195,77 @@ require_once 'includes/header.php';
             background-color: #2563EB;
             overflow: hidden;
             position: relative;
-            height: 50px;
+            height: 60px;
             display: flex;
             align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 0 20px;
+            margin: 40px 0;
+        }
+        
+        .scrolling-text-container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .scrolling-text-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        
+        .scrolling-text {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            white-space: nowrap;
+            will-change: transform;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 0;
+            animation: scroll-left 25s linear infinite;
+            animation-play-state: running;
+        }
+        
+        .scrolling-text-container:hover .scrolling-text {
+            animation-play-state: paused;
+        }
+        
+        .scrolling-text .text-segment {
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            white-space: nowrap;
+            display: inline-flex;
+            align-items: center;
+            padding: 0 50px;
+            height: 100%;
+            position: relative;
+        }
+        
+        @keyframes scroll-left {
+            0% { transform: translateX(0) translateY(-50%); }
+            100% { transform: translateX(-33.33%) translateY(-50%); }
+        }
+        
+        /* Ensure smooth scrolling */
+        .scrolling-text {
+            transition: transform 0.3s ease;
+        }
             justify-content: center;
         }
 
@@ -780,16 +848,38 @@ require_once 'includes/header.php';
     background-color: #fff;
 }
 
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
 .large-centered-text {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: 38px;
-    line-height: 74px;
-    letter-spacing: 0%;
+    font-size: 2rem; /* Increased size */
+    line-height: 1.3;
+    letter-spacing: 1.5px;
     text-align: center;
-    color: #333;
-    max-width: 1200px;
+    color: rgb(22, 22, 24);
     margin: 0 auto;
+    padding: 2rem 20px;
+    cursor: default;
+    transition: all 0.3s ease;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    animation: float 3s ease-in-out infinite;
+}
+
+.large-centered-text:hover {
+    animation-play-state: paused;
+    transform: scale(1.03);
+    font-weight: 500;
+    color: #1a365d;
 }
 
 /* About Badge Styling */
@@ -886,7 +976,7 @@ require_once 'includes/header.php';
 
 .card-1 {
     width: 413px;
-    height: 357px;
+    height: 257px;
     top: 200px; /* Increased from 100px to push down further */
     left: 0;
     border: 1px solid #D3D3D3;
@@ -895,7 +985,7 @@ require_once 'includes/header.php';
 
 .card-2 {
     width: 414px;
-    height: 457px;
+    height: 357px;
     top: 100px; /* Increased from 0 to push down */
     left: 413px; /* 513px - 100px (container padding) */
     border: 1px solid #D3D3D3;
@@ -904,17 +994,27 @@ require_once 'includes/header.php';
 
 .card-3 {
     width: 413px;
-    height: 557px;
+    height: 457px;
     top: 0; /* Changed from -100px to 0 */
     left: 827px; /* 927px - 100px */
     border: 1px solid #D3D3D3;
+}
+
+.card-content img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+    display: block;
 }
 
 .card-content h3 {
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
     margin-bottom: 15px;
-    color: #2D3748;
+    background: linear-gradient(90deg, #2563EB 0%, #2AB7B7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
 
 .card-content p {
@@ -977,7 +1077,7 @@ require_once 'includes/header.php';
      
         <div class="container">
             <h1>We evolve ideas into<br><span style="display: inline-block;">Intelligent digital products</span></h1>
-            <p>We bridge business strategy with next-gen technology to build scalable, secure, and user-focused digital solutions. Based in New York, we deliver excellence in Web Development, AI, Blockchain, APIs, and Digital Marketing across the United States.</p>
+            <p class="item-text">We bridge business strategy with next-gen technology to build scalable, secure, and user-focused digital solutions. Based in New York, we deliver excellence in Web Development, AI, Blockchain, APIs, and Digital Marketing across the United States.</p>
             <a href="contact.php" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
@@ -989,8 +1089,9 @@ require_once 'includes/header.php';
         <div class="scrolling-text-container">
             <div class="scrolling-text-wrapper">
                 <div class="scrolling-text" id="scrollingText">
-                    <span>Transforming ideas into powerful digital growth</span>
-                  <!-- <span aria-hidden="true">Transforming ideas into powerful digital growth</span> -->
+                <span class="text-segment">Transforming ideas into powerful digital growth</span>
+            <span class="text-segment" aria-hidden="true">Transforming ideas into powerful digital growth</span>
+            <span class="text-segment" aria-hidden="true">Transforming ideas into powerful digital growth</span>
                 </div>
             </div>
         </div>
@@ -998,8 +1099,11 @@ require_once 'includes/header.php';
     <!-- Main Content Paragraph Section -->
     <section class="content-paragraph">
         <div class="container">
-            <p class="large-centered-text">
-            Evolvix is a full-service IT and Digital Solutions company in New York helping businesses thrive in the digital age. Whether you're launching a mobile app, automating operations through custom APIs, or looking to scale your brand through digital marketing, we are your trusted partner for growth.            </p>
+            <div class="text-container" style="width: 100%; margin: 0 auto; max-width: 1400px; padding: 0 20px; box-sizing: border-box;">
+    <p class="large-centered-text">
+        Evolvix is a full-service IT and Digital Solutions company in New York helping businesses thrive in the digital age. Whether you're launching a mobile app, automating operations through custom APIs, or looking to scale your brand through digital marketing, we are your trusted partner for growth.
+    </p>
+</div>
         </div>
     </section>
     <!-- What we Believe-->
@@ -1050,28 +1154,31 @@ require_once 'includes/header.php';
                     <!-- Card 1 -->
                     <div class="stair-card card-1">
                         <div class="card-content">
+                            <img src="assets/images/Vector.png">
                             <h3>Our Vision</h3>
-                            <p>To be a global leader in digital transformation by combining innovation, strategy, and technology.</p>
+                            <p class="item-text">To be a global leader in digital transformation by combining innovation, strategy, and technology.</p>
                         </div>
                     </div>
                     
                     <!-- Card 2 -->
                     <div class="stair-card card-2">
                         <div class="card-content">
+                            <img src="assets/images/stash_target.png">
                             <h3>Our Mission</h3>
-                            <p>To deliver intelligent, scalable, and result-driven digital solutions that empower businesses across the United States to grow faster and smarter.</p>
+                            <p class="item-text">To deliver intelligent, scalable, and result-driven digital solutions that empower businesses across the United States to grow faster and smarter.</p>
                         </div>
                     </div>
                     
                     <!-- Card 3 -->
                     <div class="stair-card card-3">
                         <div class="card-content">
+                            <img src="assets/images/stash_target (1).png">
                             <h3>Our Values</h3>
                             <ul>
-                                <li>Integrity First</li>
-                                <li>Innovation-Led</li>
-                                <li>Client-Centric</li>
-                                <li>Result-Driven</li>
+                                <li class="item-text">Integrity First</li>
+                                <li class="item-text">Innovation-Led</li>
+                                <li class="item-text">Client-Centric</li>
+                                <li class="item-text">Result-Driven</li>
                             </ul>
                         </div>
                     </div>
@@ -1099,84 +1206,38 @@ require_once 'includes/header.php';
 <section>
     <?php include 'includes/footer.php'; ?>
 </section>
-
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollingText = document.querySelector('.scrolling-text');
+    const container = document.querySelector('.scrolling-text-container');
+    
+    if (!scrollingText || !container) return;
+    
+    // Ensure smooth scrolling on all devices
+    scrollingText.style.willChange = 'transform';
+    
+    // Handle window resize
+    let resizeTimer;
+    const handleResize = () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+            // Force reflow to ensure smooth animation restart
+            if (scrollingText) {
+                scrollingText.style.animation = 'none';
+                scrollingText.offsetHeight; // Trigger reflow
+                scrollingText.style.animation = 'scroll-left 20s linear infinite';
+            }
+        }, 100);
+    };
+    
+    window.addEventListener('resize', handleResize);
+    
+    // Cleanup on page unload
+    window.addEventListener('beforeunload', () => {
+        window.removeEventListener('resize', handleResize);
+    });
+});
+</script>
 </body>
-    <script>
-        function initScrollingText() {
-            const scrollingWrapper = document.querySelector('.scrolling-text-wrapper');
-            const scrollingText = document.querySelector('.scrolling-text');
-            const textElement = document.getElementById('scrollingText');
-            
-            if (!scrollingWrapper || !scrollingText || !textElement) return;
-            
-            // Clear any existing clones
-            const existingClones = scrollingText.querySelectorAll('span[aria-hidden="true"]');
-            existingClones.forEach(clone => clone.remove());
-            
-            // Create a clone of the text
-            const clone = textElement.cloneNode(true);
-            clone.setAttribute('aria-hidden', 'true');
-            
-            // Add the clone to create a seamless loop
-            scrollingText.appendChild(clone);
-            
-            // Set initial styles
-            scrollingText.style.opacity = '1';
-            
-            // Handle window resize
-            let resizeTimer;
-            const updateAnimation = () => {
-                const textWidth = textElement.offsetWidth;
-                const containerWidth = scrollingWrapper.offsetWidth;
-                
-                // Only enable scrolling if text is wider than container
-                if (textWidth > containerWidth) {
-                    const duration = textWidth / 50; // Speed factor (pixels per second)
-                    scrollingText.style.width = textWidth * 2 + 'px';
-                    scrollingText.style.animation = `scroll-left ${duration}s linear infinite`;
-                    scrollingText.style.animationPlayState = 'paused';
-                } else {
-                    scrollingText.style.width = 'auto';
-                    scrollingText.style.animation = 'none';
-                }
-            };
-            
-            // Initial setup
-            updateAnimation();
-            
-            // Handle window resize
-            const handleResize = () => {
-                clearTimeout(resizeTimer);
-                resizeTimer = setTimeout(updateAnimation, 250);
-            };
-            
-            window.addEventListener('resize', handleResize);
-            
-            // Pause/play on hover
-            const container = document.querySelector('.scrolling-text-container');
-            container.addEventListener('mouseenter', () => {
-                if (scrollingText.style.animation) {
-                    scrollingText.style.animationPlayState = 'running';
-                }
-            });
-            
-            container.addEventListener('mouseleave', () => {
-                if (scrollingText.style.animation) {
-                    scrollingText.style.animationPlayState = 'paused';
-                    // Reset position when mouse leaves
-                    scrollingText.style.animation = 'none';
-                    scrollingText.style.transform = 'translateX(0)';
-                    scrollingText.offsetHeight; // Trigger reflow
-                    updateAnimation();
-                }
-            });
-        }
-        
-        // Run on DOMContentLoaded and when the page is fully loaded
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initScrollingText);
-        } else {
-            initScrollingText();
-        }
-    </script>
+    
 </html>

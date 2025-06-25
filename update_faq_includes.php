@@ -15,7 +15,7 @@ $filesToUpdate = [
 ];
 
 // Pattern to search for
-$searchPattern = "/(include\s*\(?\s*['\"])home_faq\.php(['\"]\s*\)?\s*;?|include\s*['"]home_faq\.php['"]\s*;?)/i";
+$searchPattern = "/(include\s*\(?\s*['\"])home_faq\.php([\"'\\]\s*\)?\s*;?|include\s*[\"']home_faq\.[\"']\s*;?)/i";
 $replacement = "include 'faq.php';";
 
 // Process each file
