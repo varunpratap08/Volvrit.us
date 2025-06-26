@@ -888,7 +888,7 @@ require_once 'includes/header.php';
         <div class="container">
         <h1>We evolve ideas into<br><span style="display: inline-block;">Intelligent Blockchain Products</span></h1>
         <p>From secure smart contracts to tokenized ecosystems, we build scalable blockchain solutions that unlock trust and transparency in the digital age. Whether you're a startup or enterprise, we help you go from idea to execution—with speed, precision, and innovation.</p>
-            <a href="/contact" class="btn">
+            <a href="/contact.php" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
             </a>

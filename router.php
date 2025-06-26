@@ -14,10 +14,27 @@ function logMessage($message) {
     file_put_contents($logFile, "[$timestamp] $message\n", FILE_APPEND);
 }
 
-// Get the requested URL path
-$request_uri = isset($_SERVER['REQUEST_URI']) ? parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) : '/';
+// Get the requested URL path, preferring explicit rewrite param
+if (isset($_GET['uri'])) {
+    $request_uri = $_GET['uri'];
+} else {
+    $request_uri = isset($_SERVER['REQUEST_URI']) ? parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) : '/';
+}
 $request_uri = trim($request_uri, '/'); // Remove leading/trailing slashes
-logMessage("Requested URI: $request_uri");
+
+// Remove any query string from the URI
+if (($pos = strpos($request_uri, '?')) !== false) {
+    $request_uri = substr($request_uri, 0, $pos);
+}
+
+// Remove the base directory if present
+$base_dir = str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME']));
+if ($base_dir !== '/') {
+    $request_uri = preg_replace("#^" . preg_quote($base_dir, '#') . "#", '', $request_uri);
+}
+
+$request_uri = trim($request_uri, '/');
+logMessage("Processed URI: '$request_uri'");
 
 // Define your routes
 $routes = [

@@ -394,8 +394,8 @@
 
             <div class="nav-container">
                 <nav class="nav" id="mainNav">
-                    <a href="/" class="nav-link <?php echo $currentPage == 'home' ? 'active' : ''; ?>">Home</a>
-                    <a href="/about" class="nav-link <?php echo $currentPage == 'about' ? 'active' : ''; ?>">About Us</a>
+                    <a href="/index.php" class="nav-link <?php echo $currentPage == 'home' ? 'active' : ''; ?>">Home</a>
+                    <a href="/about.php" class="nav-link <?php echo $currentPage == 'about' ? 'active' : ''; ?>">About Us</a>
                     
                     <div class="services-dropdown">
                         <div class="services-toggle">
@@ -405,35 +405,35 @@
                         <div class="services-menu">
                             <h3>Our Services</h3>
                             <div class="services-grid">
-                                <a href="/web-development-services-nyc" class="service-item">
+                                <a href="/web_development.php" class="service-item">
                                     <span class="service-icon"><i class="fas fa-globe"></i></span>
                                     <span>Web Development</span>
                                 </a>
-                                <a href="/app-development-services-nyc" class="service-item">
+                                <a href="/app_development.php" class="service-item">
                                     <span class="service-icon"><i class="fas fa-mobile-alt"></i></span>
                                     <span>App Development</span>
                                 </a>
-                                <a href="/ui-ux-design-development-nyc" class="service-item">
+                                <a href="/ui_ux_development.php" class="service-item">
                                     <span class="service-icon"><i class="fas fa-paint-brush"></i></span>
                                     <span>UI/UX Design</span>
                                 </a>
-                                <a href="/digital-marketing-services-nyc" class="service-item">
+                                <a href="/digitalMarketing.php" class="service-item">
                                     <span class="service-icon"><i class="fas fa-bullhorn"></i></span>
                                     <span>Digital Marketing</span>
                                 </a>
-                                <a href="/crm-development-services-nyc" class="service-item">
+                                <a href="/crm_development.php" class="service-item">
                                     <span class="service-icon"><i class="fas fa-users"></i></span>
                                     <span>CRM Development</span>
                                 </a>
-                                <a href="/api-development-services-nyc" class="service-item">
+                                <a href="/API_development.php" class="service-item">
                                     <span class="service-icon"><i class="fas fa-plug"></i></span>
                                     <span>API Development</span>
                                 </a>
-                                <a href="/blockchain-development-services-nyc" class="service-item">
+                                <a href="/blockchain_development.php" class="service-item">
                                     <span class="service-icon"><i class="fas fa-link"></i></span>
                                     <span>Blockchain</span>
                                 </a>
-                                <a href="/ai-development-services-nyc" class="service-item">
+                                <a href="/AI_development.php" class="service-item">
                                     <span class="service-icon"><i class="fas fa-robot"></i></span>
                                     <span>AI Development</span>
                                 </a>
@@ -441,9 +441,9 @@
                         </div>
                     </div>
                     
-                    <a href="/portfolio" class="nav-link <?php echo $currentPage == 'portfolio' ? 'active' : ''; ?>">Portfolio</a>
+                    <a href="/portfolio.php" class="nav-link <?php echo $currentPage == 'portfolio' ? 'active' : ''; ?>">Portfolio</a>
                 </nav>
-                <a href="/contact" class="contact-btn">Contact Us</a>
+                <a href="/contact.php" class="contact-btn">Contact Us</a>
             </div>
         </div>
     </header>

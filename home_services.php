@@ -26,7 +26,7 @@
                 </div>
                 <h3>App Development</h3>
                 <p>Build powerful mobile apps with intuitive design and reliable performance—tailored for business success.</p>
-                <a href="/contact" class="btn">Contact Us</a>
+                <a href="/contact.php" class="btn">Contact Us</a>
             </div>
             <!-- Right Column Wrapper for Other Cards -->
             <div class="right-cards-wrapper">
@@ -39,7 +39,7 @@
                         </div>
                         <h3>Web Development</h3>
                         <p>Create responsive, secure websites that drive engagement and deliver results.</p>
-                        <a href="/contact" class="btn">Contact Us</a>
+                        <a href="/contact.php" class="btn">Contact Us</a>
                     </div>
                     <!-- UI/UX Design Card -->
                     <div class="service-card fade-in" style="animation-delay: 0.4s;">
@@ -48,7 +48,7 @@
                         </div>
                         <h3>CRM Development</h3>
                         <p>Create responsive, secure websites that drive engagement and deliver results.</p>
-                        <a href="/contact" class="btn">Contact Us</a>
+                        <a href="/contact.php" class="btn">Contact Us</a>
                     </div>
                 </div>
                 <!-- Bottom Row: AI Development -->
@@ -59,7 +59,7 @@
                             <div class="ai-text-content">
                                 <h3>AI Development</h3>
                                 <p>Unlock the future with smart AI-driven tools that enhance operations and decision-making.</p>
-                                <a href="/contact" class="btn">Contact Us</a>
+                                <a href="/contact.php" class="btn">Contact Us</a>
                             </div>
                             <div class="ai-card-image">
                                 <img src="assets/images/home_AIDevelopment.png" alt="AI Development">
@@ -210,88 +210,131 @@
         }
     }
     
-    /* Mobile (up to 599px) */
-    @media (max-width: 599px) {
+    /* Mobile (up to 767px) */
+    @media (max-width: 767px) {
         .container {
-            width: 95%;
-            padding: 20px 0;
+            width: 100%;
+            padding: 20px 15px;
+            box-sizing: border-box;
+        }
+        
+        .services-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
         
         .services-heading {
-            font-size: 22px;
+            font-size: 24px;
             line-height: 1.3;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .section-intro {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .service-card {
+            width: 100%;
+            margin: 0 0 20px 0;
+            padding: 20px;
+            box-sizing: border-box;
         }
         
         .top-cards {
-            grid-template-columns: 1fr;
+            display: flex;
+            flex-direction: column;
             gap: 20px;
+            margin: 0;
+            width: 100%;
+        }
+        
+        .right-cards-wrapper {
+            width: 100%;
+            margin: 0;
         }
         
         .ai-development-card .ai-card-content {
             flex-direction: column-reverse;
         }
         
-        .ai-card-image {
-            width: 100%;
+        .card-image {
             height: 200px;
+            margin: -20px -20px 20px -20px;
+            width: calc(100% + 40px);
             border-radius: 0;
             border-top-left-radius: 0.625rem;
             border-top-right-radius: 0.625rem;
         }
         
-        .card-image:not(.ai-card-image) {
-            height: 180px;
-        }
-        
-        .service-card {
-            padding: 1.25rem;
-            margin-bottom: 15px;
+        .ai-card-image {
+            height: 200px;
+            margin: -20px -20px 20px -20px;
+            width: calc(100% + 40px);
+            border-radius: 0;
+            border-top-left-radius: 0.625rem;
+            border-top-right-radius: 0.625rem;
         }
         
         .ai-text-content {
-            padding: 1.25rem;
-        }
-        
-        .btn {
-            padding: 10px 20px;
-            font-size: 14px;
-        }
-        
-        .app-card .btn {
-            margin: 15px 20px 0; /* Match other cards' button margin */
-            padding: 10px 20px; /* Match other cards' button padding */
-            font-size: 14px;
-            display: inline-block;
-            align-self: flex-start; /* Align to start like other cards */
-        }
-    }
-    
-    /* Extra Small Devices (up to 375px) */
-    @media (max-width: 375px) {
-        .container {
+            padding: 0;
             width: 100%;
-            padding: 15px;
-        }
-        
-        .services-heading {
-            font-size: 20px;
-        }
-        
-        .card-image:not(.ai-card-image) {
-            height: 160px;
-        }
-        
-        .ai-card-image {
-            height: 180px;
         }
         
         .service-card h3 {
-            font-size: 18px;
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        
+        .service-card p {
+            font-size: 15px;
+            line-height: 1.5;
+            margin: 0 0 15px 0;
+        }
+        
+        .btn {
+            width: 100%;
+            text-align: center;
+            padding: 12px 20px;
+            font-size: 15px;
+            margin-top: auto;
+        }
+        
+        .app-card .btn {
+            margin: 15px 0 0 0;
+            width: 100%;
+        }
+    }
+    
+    /* Small Mobile Devices (up to 375px) */
+    @media (max-width: 375px) {
+        .container {
+            padding: 15px 10px;
+        }
+        
+        .services-heading {
+            font-size: 22px;
+        }
+        
+        .service-card h3 {
+            font-size: 19px;
         }
         
         .service-card p {
             font-size: 14px;
-            margin: 10px 0;
+            line-height: 1.5;
+        }
+        
+        .card-image,
+        .ai-card-image {
+            height: 180px;
+        }
+        
+        .btn {
+            padding: 10px 15px;
+            font-size: 14px;
         }
     }
 

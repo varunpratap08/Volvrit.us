@@ -405,7 +405,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="container">
             <h1>Solutions Engineered for Impact</h1>
             <p>Explore a showcase of our most impactful projects—crafted with innovation, precision, and a focus on real-world results.</p>
-            <a href="/contact" class="btn">
+            <a href="/contact.php" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
             </a>

@@ -74,7 +74,7 @@ require_once 'includes/header.php';
     <div class="container">
         <h2>Ready to Start Your Project?</h2>
         <p>Contact us today to discuss how we can help bring your ideas to life.</p>
-        <a href="/contact/" class="btn btn-primary">Get in Touch</a>
+        <a href="/contact.php" class="btn btn-primary">Get in Touch</a>
     </div>
 </section>
 

@@ -114,7 +114,7 @@
             <a href="/">Home</a>
             <a href="/about">About Us</a>
             <a href="/portfolio">Portfolio</a>
-            <a href="/contact/">Contact Us</a>
+            <a href="/contact.php">Contact Us</a>
         </div>
         <div class="footer-services">
             <h4>Services</h4>

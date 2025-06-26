@@ -1080,7 +1080,7 @@ require_once 'includes/header.php';
         <div class="container">
             <h1>We evolve ideas into<br><span style="display: inline-block;">Intelligent digital products</span></h1>
             <p class="item-text">We bridge business strategy with next-gen technology to build scalable, secure, and user-focused digital solutions. Based in New York, we deliver excellence in Web Development, AI, Blockchain, APIs, and Digital Marketing across the United States.</p>
-            <a href="/contact" class="btn">
+            <a href="/contact.php" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
             </a>
