@@ -101,7 +101,7 @@
             </a>
             <p>At Evolvix, we deliver smart, scalable IT solutions in NYC that help businesses grow with confidence. From startups to enterprises, our team blends technology and strategy to solve real world problems making us one of the best IT services in New York.</p>
             <div class="social-icons">
-                <a href="https://www.facebook.com/yourpage" target="_blank" aria-label="Facebook">
+                <a href="https://www.facebook.com/people/Evolvix/61577887046469/" target="_blank" aria-label="Facebook">
                     <i class="fab fa-facebook-f"></i>
                 </a>
                 <a href="https://www.instagram.com/yourpage" target="_blank" aria-label="Instagram">
