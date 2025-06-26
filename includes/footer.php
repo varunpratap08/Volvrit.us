@@ -104,7 +104,7 @@
                 <a href="https://www.facebook.com/people/Evolvix/61577887046469/" target="_blank" aria-label="Facebook">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="https://www.instagram.com/yourpage" target="_blank" aria-label="Instagram">
+                <a href="https://www.instagram.com/evolvix.us/" target="_blank" aria-label="Instagram">
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>
@@ -114,7 +114,7 @@
             <a href="index.php">Home</a>
             <a href="about.php">About Us</a>
             <a href="portfolio.php">Portfolio</a>
-            <a href="contact.php">Contact Us</a>
+            <a href="/contact/">Contact Us</a>
         </div>
         <div class="footer-services">
             <h4>Services</h4>
@@ -134,6 +134,7 @@
             <p>📍 41 Wingate Road,Valley Stream, NY 11581</p>
         </div>
     </div>
+    </div> <!-- Close page-container -->
 </footer>
 
 <!-- Global WhatsApp Floating Button -->

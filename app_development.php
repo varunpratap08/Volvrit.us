@@ -880,13 +880,15 @@ require_once 'includes/header.php';
 </style>
 </head>
 <body>
+    <!-- Page container to prevent horizontal scrolling -->
+    <div class="page-container">
     <!-- Hero Section -->
     <section class="hero-section">
         
         <div class="container">
         <h1 >We turn ideas into intelligent, high-performance applications.</h1>
         <p class="item-text">From MVPs to enterprise-grade systems, our US-based team builds custom mobile, web, and cloud-native apps that are secure, scalable, and ready to grow with your business.</p>
-            <a href="contact.php" class="btn">
+            <a href="/contact/" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
             </a>
@@ -1169,6 +1171,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
+    </div><!-- Close page-container -->
 </body>
    
 </html>

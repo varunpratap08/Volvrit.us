@@ -210,7 +210,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </h2>
                 <p class="fade-in" style="animation-delay: 0.2s; margin: 20px 0;">
                 At every stage from startup launches to enterprise growth. we create digital solutions that power innovation. Our expert team blends great teamwork, the latest tech, and perfect analytics to help you scale with confidence. As a trusted name in IT consulting New York, we’re known for delivering the best IT services in New York, tailored to meet your goals.                </p>
-                <a href="contact.php" class="btn fade-in" style="animation-delay: 0.4s;">Contact Us</a>
+                <a href="/contact/" class="btn fade-in" style="animation-delay: 0.4s;">Contact Us</a>
             </div>
             <div class="about-image">
                 <img src="assets/images/home_about_image.png" alt="About Image" class="fade-in" style="animation-delay: 0.6s;">

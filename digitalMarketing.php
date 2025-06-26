@@ -880,13 +880,15 @@ require_once 'includes/header.php';
 </style>
 </head>
 <body>
+    <!-- Page container to prevent horizontal scrolling -->
+    <div class="page-container">
     <!-- Hero Section -->
     <section class="hero-section">
        
         <div class="container">
         <h1>Drive Results, Not Just Traffic<br><span style="display: inline-block;">With Performance-First Digital Marketing</span></h1>
         <p>Transform your brand’s online presence with Evolvix’s data-driven, full-funnel digital marketing solutions. Based in New York, we help businesses across the United States grow smarter, rank faster, and convert better</p>
-            <a href="contact.php" class="btn">
+            <a href="/contact/" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
             </a>
@@ -1146,6 +1148,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
+    </div><!-- Close page-container -->
 </body>
    
 </html>

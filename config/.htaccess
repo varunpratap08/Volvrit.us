@@ -1,11 +1,17 @@
-# Deny access to all files in this directory
-Order Deny,Allow
-Deny from all
+# Deny direct access to sensitive file types
+<FilesMatch "\.(php|inc|tpl|log|json|lock|md|gitignore|env|example|dist|config|yaml|yml|xml|sql|sh|bat|cmd)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
 
-# Allow access from localhost for development
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1$
-    RewriteCond %{REMOTE_ADDR} !^::1$
-    RewriteRule .* - [F]
-</IfModule>
+# Allow access to common web assets
+<FilesMatch "\.(css|js|jpg|jpeg|png|gif|ico|svg|woff|woff2|ttf|eot)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# Allow access to specific files if needed
+# <Files "some-public-file.json">
+#     Order Allow,Deny
+#     Allow from all
+# </Files>

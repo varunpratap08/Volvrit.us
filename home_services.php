@@ -26,7 +26,7 @@
                 </div>
                 <h3>App Development</h3>
                 <p>Build powerful mobile apps with intuitive design and reliable performance—tailored for business success.</p>
-                <a href="contact.php" class="btn">Contact Us</a>
+                <a href="/contact/" class="btn">Contact Us</a>
             </div>
             <!-- Right Column Wrapper for Other Cards -->
             <div class="right-cards-wrapper">
@@ -39,7 +39,7 @@
                         </div>
                         <h3>Web Development</h3>
                         <p>Create responsive, secure websites that drive engagement and deliver results.</p>
-                        <a href="contact.php" class="btn">Contact Us</a>
+                        <a href="/contact/" class="btn">Contact Us</a>
                     </div>
                     <!-- UI/UX Design Card -->
                     <div class="service-card fade-in" style="animation-delay: 0.4s;">
@@ -48,7 +48,7 @@
                         </div>
                         <h3>CRM Development</h3>
                         <p>Create responsive, secure websites that drive engagement and deliver results.</p>
-                        <a href="contact.php" class="btn">Contact Us</a>
+                        <a href="/contact/" class="btn">Contact Us</a>
                     </div>
                 </div>
                 <!-- Bottom Row: AI Development -->
@@ -59,7 +59,7 @@
                             <div class="ai-text-content">
                                 <h3>AI Development</h3>
                                 <p>Unlock the future with smart AI-driven tools that enhance operations and decision-making.</p>
-                                <a href="contact.php" class="btn">Contact Us</a>
+                                <a href="/contact/" class="btn">Contact Us</a>
                             </div>
                             <div class="ai-card-image">
                                 <img src="assets/images/home_AIDevelopment.png" alt="AI Development">

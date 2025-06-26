@@ -3,12 +3,23 @@
  * Simple Router for Clean URLs
  */
 
+// Enable error reporting for debugging
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+// Log function for debugging
+function logMessage($message) {
+    $logFile = __DIR__ . '/router.log';
+    $timestamp = date('Y-m-d H:i:s');
+    file_put_contents($logFile, "[$timestamp] $message\n", FILE_APPEND);
+}
+
 // Get the requested URL path
-$request_uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-$request_uri = trim($request_uri, '/');
+$request_uri = isset($_SERVER['REQUEST_URI']) ? parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH) : '/';
+$request_uri = trim($request_uri, '/'); // Remove leading/trailing slashes
+logMessage("Requested URI: $request_uri");
 
 // Define your routes
-// Define routes with their corresponding files and SEO-friendly slugs
 $routes = [
     // Main Pages
     '' => ['file' => 'index.php', 'seo_slug' => 'home'],
@@ -35,7 +46,7 @@ $routes = [
         'description' => 'Top-rated mobile app development company in NYC. We create custom iOS and Android applications that drive business growth and user engagement.',
         'canonical' => 'app-development-services-nyc'
     ],
-    
+    // ... (other service pages remain unchanged)
     'crm-development' => [
         'file' => 'crm_development.php',
         'seo_slug' => 'crm-development-services-nyc',
@@ -140,59 +151,69 @@ $routes = [
         'description' => 'Professional web development services in NYC. We create custom, responsive, and scalable websites tailored to your business needs.',
         'canonical' => 'web-development-services-nyc'
     ]
+
 ];
 
-// Function to redirect to the SEO-friendly URL if needed
-function redirectToSeoUrl($request_uri, $routes) {
+// Function to find route by SEO slug
+function findRouteBySeoSlug($request_uri, $routes) {
     foreach ($routes as $path => $route) {
-        if (isset($route['seo_slug']) && $route['seo_slug'] === $request_uri) {
-            // This is the SEO URL, no need to redirect
-            return false;
-        } elseif ($path === $request_uri && isset($route['seo_slug']) && $path !== $route['seo_slug']) {
-            // Redirect to the SEO-friendly URL
-            header("HTTP/1.1 301 Moved Permanently");
-            header("Location: /" . $route['seo_slug'] . "/");
-            exit();
+        if (isset($route['seo_slug']) && $request_uri === $route['seo_slug']) {
+            return ['path' => $path, 'route' => $route];
         }
     }
     return false;
 }
 
-// Check if we need to redirect to the SEO URL
-redirectToSeoUrl($request_uri, $routes);
+// Function to redirect to SEO-friendly URL if needed
+function redirectToSeoUrl($request_uri, $routes) {
+    foreach ($routes as $path => $route) {
+        // Redirect from non-SEO path to SEO slug
+        if ($request_uri === $path && isset($route['seo_slug']) && $route['seo_slug'] !== $path) {
+            $seo_url = '/' . $route['seo_slug'];
+            logMessage("Redirecting from $request_uri to $seo_url");
+            header("HTTP/1.1 301 Moved Permanently");
+            header("Location: $seo_url");
+            exit();
+        }
+    }
+}
 
-// Check if the requested route exists
-if (array_key_exists($request_uri, $routes)) {
+// Check for SEO slug match first
+$matched_route = findRouteBySeoSlug($request_uri, $routes);
+if ($matched_route) {
+    $route = $matched_route['route'];
+    $page = $route['file'];
+} elseif (array_key_exists($request_uri, $routes)) {
+    // If no SEO slug match, check for direct route match
     $route = $routes[$request_uri];
     $page = $route['file'];
-    
-    // Set SEO variables if they exist
-    if (isset($route['title'])) {
-        $GLOBALS['page_title'] = $route['title'];
-    }
-    if (isset($route['description'])) {
-        $GLOBALS['page_description'] = $route['description'];
-    }
-    if (isset($route['canonical'])) {
-        $GLOBALS['canonical_url'] = $route['canonical'];
-    }
-    
-    // Check if the file exists
-    if (file_exists($page)) {
-        include $page;
-    } else {
-        // If the file doesn't exist, show 404
-        header("HTTP/1.0 404 Not Found");
-        include '404.php';
-    }
+    // Redirect to SEO slug if necessary
+    redirectToSeoUrl($request_uri, $routes);
 } else {
-    // If route doesn't exist, check if it's a direct PHP file request
-    if (file_exists($request_uri . '.php')) {
-        include $request_uri . '.php';
-    } else {
-        // Show 404 page
-        header("HTTP/1.0 404 Not Found");
-        include '404.php';
-    }
+    // No route match, fall back to 404
+    $route = $routes['404'];
+    $page = $route['file'];
+    header("HTTP/1.0 404 Not Found");
+}
+
+// Set SEO variables if they exist
+if (isset($route['title'])) {
+    $GLOBALS['page_title'] = $route['title'];
+}
+if (isset($route['description'])) {
+    $GLOBALS['page_description'] = $route['description'];
+}
+if (isset($route['canonical'])) {
+    $GLOBALS['canonical_url'] = $route['canonical'];
+}
+
+// Check if the file exists
+if (file_exists($page)) {
+    logMessage("Including file: $page");
+    include $page;
+} else {
+    logMessage("File not found: $page");
+    header("HTTP/1.0 404 Not Found");
+    include '404.php';
 }
 ?>

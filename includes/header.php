@@ -27,16 +27,31 @@
     <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
     <link rel="stylesheet" href="css/style.min.css">
     <style>
+        /* Global Page Container */
+        body {
+            overflow-x: hidden; /* Prevent horizontal scrollbar */
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 100%;
+        }
+        
+        .page-container {
+            width: 100%;
+            max-width: 100%;
+            margin: 0 auto;
+            overflow: hidden; /* Prevent any content from overflowing */
+        }
+        
         /* Header Styles */
         header {
             /* background-image: url('assets/images/background_grid.png'); */
-          /* background-color: #F5F7FA; */
+            /* background-color: #F5F7FA; */
             padding: 5px 0;
-            position: fixed;
+            position: static; /* Changed from fixed to static */
             width: 100%;
-            top: 0;
             z-index: 1000;
-           /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); */
+            /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); */
         }
 
         .header-container {
@@ -62,6 +77,8 @@
         .logo img {
             height: 40px;
             width: auto;
+            background: transparent !important;
+            mix-blend-mode: multiply;
         }
 
         /* Navigation Container */
@@ -363,6 +380,8 @@
     </style>
 </head>
 <body>
+    <!-- Page container to prevent horizontal scrolling -->
+    <div class="page-container">
     <header>
         <div class="header-container">
             <a href="index.php" class="logo">

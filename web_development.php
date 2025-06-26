@@ -823,6 +823,8 @@ require_once 'includes/header.php';
 </style>
 </head>
 <body>
+    <!-- Page container to prevent horizontal scrolling -->
+    <div class="page-container">
     <!-- Hero Section -->
     <section class="hero-section">
      
@@ -846,7 +848,7 @@ require_once 'includes/header.php';
                     }
                 }
             </style>
-            <a href="contact.php" class="btn">
+            <a href="/contact/" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
             </a>
@@ -1125,6 +1127,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
+    </div><!-- Close page-container -->
 </body>
    
 </html>
