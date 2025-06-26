@@ -1,14 +1,14 @@
 <?php
 /**
  * Contact Form Submission Handler
- * Secured version with external configuration
+ * Secured version with environment-based configuration
  */
 
 // Load Composer's autoloader
 require __DIR__ . '/vendor/autoload.php';
 
 // Load email configuration
-$configFile = __DIR__ . '/config/email_config.php';
+$configFile = __DIR__ . '/config/email_config_new.php';
 if (!file_exists($configFile)) {
     error_log('Error: Email configuration file not found');
     header('HTTP/1.1 500 Internal Server Error');
