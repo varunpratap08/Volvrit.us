@@ -1,0 +1,11 @@
+# Deny access to all files in this directory
+Order Deny,Allow
+Deny from all
+
+# Allow access from localhost for development
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REMOTE_ADDR} !^127\.0\.0\.1$
+    RewriteCond %{REMOTE_ADDR} !^::1$
+    RewriteRule .* - [F]
+</IfModule>

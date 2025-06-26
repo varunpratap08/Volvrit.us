@@ -1,10 +1,27 @@
-<!-- header.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evolvix - <?php echo $pageTitle ?? 'Home'; ?></title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/evolvix_favicon.png">
+    <title><?php echo $GLOBALS['page_title'] ?? 'Evolvix - Web Development & Digital Solutions'; ?></title>
+    <meta name="description" content="<?php echo htmlspecialchars($GLOBALS['page_description'] ?? 'Evolvix provides professional web development, mobile apps, and digital solutions. Transform your business with our expert team.'); ?>">
+    <?php if (isset($GLOBALS['canonical_url'])): ?>
+    <link rel="canonical" href="https://evolvix.us/<?php echo htmlspecialchars($GLOBALS['canonical_url']); ?>/" />
+    <?php endif; ?>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://evolvix.us/<?php echo htmlspecialchars($GLOBALS['canonical_url'] ?? ''); ?>">
+    <meta property="og:title" content="<?php echo htmlspecialchars($GLOBALS['page_title'] ?? 'Evolvix - Web Development & Digital Solutions'); ?>">
+    <meta property="og:description" content="<?php echo htmlspecialchars($GLOBALS['page_description'] ?? 'Professional web development and digital solutions for your business.'); ?>">
+    <meta property="og:image" content="https://evolvix.us/assets/images/og-image.jpg">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://evolvix.us/<?php echo htmlspecialchars($GLOBALS['canonical_url'] ?? ''); ?>">
+    <meta property="twitter:title" content="<?php echo htmlspecialchars($GLOBALS['page_title'] ?? 'Evolvix - Web Development & Digital Solutions'); ?>">
+    <meta property="twitter:description" content="<?php echo htmlspecialchars($GLOBALS['page_description'] ?? 'Professional web development and digital solutions for your business.'); ?>">
+    <meta property="twitter:image" content="https://evolvix.us/assets/images/og-image.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>

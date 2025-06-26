@@ -1,8 +1,23 @@
 <?php
-// Load Composer's autoloader
-require 'vendor/autoload.php';
+/**
+ * Contact Form Submission Handler
+ * Secured version with external configuration
+ */
 
-// Import PHPMailer classes into the global namespace
+// Load Composer's autoloader
+require __DIR__ . '/vendor/autoload.php';
+
+// Load email configuration
+$configFile = __DIR__ . '/config/email_config.php';
+if (!file_exists($configFile)) {
+    error_log('Error: Email configuration file not found');
+    header('HTTP/1.1 500 Internal Server Error');
+    exit('Configuration error. Please try again later.');
+}
+
+$config = require $configFile;
+
+// Import PHPMailer classes
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
@@ -16,24 +31,36 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = trim($_POST['subject']);
     $message = trim($_POST['message']);
     
-    // Your email configuration
-    $to = "your-email@example.com"; // Change this to your email address
-    $from_name = "Evolvix Contact Form";
-    $from_email = "noreply@yourdomain.com"; // Change this to your domain
+    // Basic input validation
+    if (empty($name) || empty($email) || empty($message)) {
+        header('HTTP/1.1 400 Bad Request');
+        exit('Please fill in all required fields.');
+    }
+
+    // Validate email format
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        header('HTTP/1.1 400 Bad Request');
+        exit('Please provide a valid email address.');
+    }
+
+    // Sanitize inputs
+    $name = filter_var($name, FILTER_SANITIZE_STRING);
+    $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+    $phone = filter_var($phone, FILTER_SANITIZE_STRING);
+    $subject = filter_var($subject, FILTER_SANITIZE_STRING);
+    $message = filter_var($message, FILTER_SANITIZE_STRING);
+    $service_type = isset($_POST['service_type']) ? filter_var($_POST['service_type'], FILTER_SANITIZE_STRING) : 'Not specified';
     
-    // Email subject
-    $email_subject = "New Contact Form Submission: $subject";
-    
-    // Get the selected service type
-    $service_type = isset($_POST['service_type']) ? $_POST['service_type'] : 'Not specified';
+    // Prepare email
+    $email_subject = "New Contact Form Submission: " . (!empty($subject) ? $subject : 'No Subject');
     
     // Email body
     $email_body = "<h2>New Contact Form Submission</h2>".
-                 "<p><strong>Name:</strong> $name</p>".
-                 "<p><strong>Email:</strong> $email</p>".
-                 "<p><strong>Phone:</strong> $phone</p>".
-                 "<p><strong>Service Type:</strong> $service_type</p>".
-                 "<p><strong>Subject:</strong> $subject</p>".
+                 "<p><strong>Name:</strong> " . htmlspecialchars($name) . "</p>".
+                 "<p><strong>Email:</strong> " . htmlspecialchars($email) . "</p>".
+                 "<p><strong>Phone:</strong> " . htmlspecialchars($phone) . "</p>".
+                 "<p><strong>Service Type:</strong> " . htmlspecialchars($service_type) . "</p>".
+                 "<p><strong>Subject:</strong> " . htmlspecialchars($subject) . "</p>".
                  "<p><strong>Message:</strong><br>" . nl2br(htmlspecialchars($message)) . "</p>";
     
     // Create a new PHPMailer instance
@@ -42,16 +69,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // Server settings
         $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com'; // Change this to your SMTP server
+        $mail->Host = $config['smtp']['host'];
         $mail->SMTPAuth = true;
-        $mail->Username = 'your-email@gmail.com'; // Your Gmail address
-        $mail->Password = 'your-app-specific-password'; // Your Gmail app password
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable TLS encryption
-        $mail->Port = 587; // TCP port to connect to
+        $mail->Username = $config['smtp']['username'];
+        $mail->Password = $config['smtp']['password'];
+        $mail->SMTPSecure = $config['smtp']['encryption'];
+        $mail->Port = $config['smtp']['port'];
+        
+        // Enable verbose debug output (for testing)
+        // $mail->SMTPDebug = SMTP::DEBUG_SERVER;
         
         // Recipients
-        $mail->setFrom($from_email, $from_name);
-        $mail->addAddress($to); // Add a recipient
+        $mail->setFrom($config['smtp']['from_email'], $config['smtp']['from_name']);
+        $mail->addAddress($config['smtp']['admin_email']);
         $mail->addReplyTo($email, $name);
         
         // Content
