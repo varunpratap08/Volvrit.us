@@ -319,7 +319,7 @@
             <p class="hero-description fade-in">
                 Your growth needs more than support it requires a clear, strategic approach. We provide customized IT consulting in New York, delivering the best IT services to help your business stay competitive and future ready.
             </p>
-            <a href="/contact/" class="hero-button fade-in">
+            <a href="/contact" class="hero-button fade-in">
                 Let's plan your project
             </a>
         </div>

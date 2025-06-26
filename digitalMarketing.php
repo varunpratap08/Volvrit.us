@@ -888,7 +888,7 @@ require_once 'includes/header.php';
         <div class="container">
         <h1>Drive Results, Not Just Traffic<br><span style="display: inline-block;">With Performance-First Digital Marketing</span></h1>
         <p>Transform your brand’s online presence with Evolvix’s data-driven, full-funnel digital marketing solutions. Based in New York, we help businesses across the United States grow smarter, rank faster, and convert better</p>
-            <a href="/contact/" class="btn">
+            <a href="/contact" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
             </a>

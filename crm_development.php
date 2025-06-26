@@ -888,7 +888,7 @@ require_once 'includes/header.php';
         <div class="container">
         <h1>Streamline Customer Engagement with Smart CRM Solutions</h1>
         <p> We develop scalable and secure CRM systems that empower your business to build stronger customer relationships, automate workflows, and increase efficiency. Headquartered in New York, we serve companies across the United States with tailored CRM solutions built for performance, integration, and growth.</p>
-            <a href="/contact/" class="btn">
+            <a href="/contact" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
             </a>

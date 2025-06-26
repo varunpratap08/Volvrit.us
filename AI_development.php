@@ -824,7 +824,7 @@ require_once 'includes/header.php';
         <div class="container">
             <h1>We Design Smart AI <br> That Works for You</h1>
             <p>From machine learning to predictive analytics, Evolvix builds secure and scalable AI systems that empower smarter business decisions across industries.</p>
-            <a href="/contact/" class="btn">
+            <a href="/contact" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
             </a>

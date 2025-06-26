@@ -96,8 +96,8 @@
 <footer>
     <div class="footer-container">
         <div class="footer-logo">
-            <a href="index.php">
-            <img src="assets/images/evolvix logo.png" alt="Evolvix Logo">
+            <a href="/">
+                <img src="assets/images/evolvix logo.png" alt="Evolvix Logo" width="150">
             </a>
             <p>At Evolvix, we deliver smart, scalable IT solutions in NYC that help businesses grow with confidence. From startups to enterprises, our team blends technology and strategy to solve real world problems making us one of the best IT services in New York.</p>
             <div class="social-icons">
@@ -111,20 +111,20 @@
         </div>
         <div class="footer-links">
             <h4>Quick Links</h4>
-            <a href="index.php">Home</a>
-            <a href="about.php">About Us</a>
-            <a href="portfolio.php">Portfolio</a>
+            <a href="/">Home</a>
+            <a href="/about">About Us</a>
+            <a href="/portfolio">Portfolio</a>
             <a href="/contact/">Contact Us</a>
         </div>
         <div class="footer-services">
             <h4>Services</h4>
-            <a href="web_development.php">Web Development</a>
-            <a href="app_development.php">App Development</a>
-            <a href="crm_development.php">CRM Development</a>
-            <a href="ui_ux_development.php">UX Designing</a>
-            <a href="API_development.php">API Development</a>
-            <a href="AI_development.php">AI Development</a>
-            <a href="digitalMarketing.php">Digital Marketing</a>
+            <a href="/web-development-services-nyc">Web Development</a>
+            <a href="/app-development-services-nyc">App Development</a>
+            <a href="/crm-development-services-nyc">CRM Development</a>
+            <a href="/ui-ux-design-development-nyc">UX Designing</a>
+            <a href="/api-development-services-nyc">API Development</a>
+            <a href="/ai-development-services-nyc">AI Development</a>
+            <a href="/digital-marketing-services-nyc">Digital Marketing</a>
             
         </div>
         <div class="footer-contact">

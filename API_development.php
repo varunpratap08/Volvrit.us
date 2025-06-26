@@ -888,7 +888,7 @@ require_once 'includes/header.php';
         <div class="container">
         <h1>We build APIs that connect, automate,<br> and scale your digital world</h1>
         <p>From SaaS platforms and mobile apps to enterprise software and cloud systems—our custom API development solutions streamline operations and drive digital growth</p>
-            <a href="/contact/" class="btn">
+            <a href="/contact" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
             </a>

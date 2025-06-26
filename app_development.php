@@ -888,7 +888,7 @@ require_once 'includes/header.php';
         <div class="container">
         <h1 >We turn ideas into intelligent, high-performance applications.</h1>
         <p class="item-text">From MVPs to enterprise-grade systems, our US-based team builds custom mobile, web, and cloud-native apps that are secure, scalable, and ready to grow with your business.</p>
-            <a href="/contact/" class="btn">
+            <a href="/contact" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
             </a>
