@@ -111,20 +111,20 @@
         </div>
         <div class="footer-links">
             <h4>Quick Links</h4>
-            <a href="/">Home</a>
-            <a href="/about">About Us</a>
-            <a href="/portfolio">Portfolio</a>
-            <a href="/contact.php">Contact Us</a>
+            <a href="index.php">Home</a>
+            <a href="about.php">About Us</a>
+            <a href="portfolio.php">Portfolio</a>
+            <a href="contact.php">Contact Us</a>
         </div>
         <div class="footer-services">
             <h4>Services</h4>
-            <a href="/web-development-services-nyc">Web Development</a>
-            <a href="/app-development-services-nyc">App Development</a>
-            <a href="/crm-development-services-nyc">CRM Development</a>
-            <a href="/ui-ux-design-development-nyc">UX Designing</a>
-            <a href="/api-development-services-nyc">API Development</a>
-            <a href="/ai-development-services-nyc">AI Development</a>
-            <a href="/digital-marketing-services-nyc">Digital Marketing</a>
+            <a href="web_development.php">Web Development</a>
+            <a href="app_development.php">App Development</a>
+            <a href="crm_development.php">CRM Development</a>
+            <a href="ui_ux_design.php">UX Designing</a>
+            <a href="API_development.php">API Development</a>
+            <a href="AI_development.php">AI Development</a>
+            <a href="/digitalMarketing.php">Digital Marketing</a>
             
         </div>
         <div class="footer-contact">

@@ -226,18 +226,24 @@
 
         /* Contact Button */
         .contact-btn {
-            background: #2563EB;
-            color: white !important;
-            padding: 12px 24px 14px;
-            border-radius: 30px;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            white-space: nowrap;
-            border: 2px solid transparent;
-            line-height: 1;
-            margin: 0 0 0 10px;
-        }
+    background: #2563EB;
+    color: white !important;
+    padding: 12px 24px 14px;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    white-space: nowrap;
+    border: 2px solid transparent;
+    line-height: 1;
+    margin: 0 0 0 10px;
+}
+
+@media (max-width: 767px) {
+    .contact-btn {
+        padding: 7px 16px 6px;
+    }
+}
 
         .contact-btn:hover {
             background: #1D4ED8;
@@ -395,7 +401,7 @@
             <div class="nav-container">
                 <nav class="nav" id="mainNav">
                     <a href="/index.php" class="nav-link <?php echo $currentPage == 'home' ? 'active' : ''; ?>">Home</a>
-                    <a href="/about.php" class="nav-link <?php echo $currentPage == 'about' ? 'active' : ''; ?>">About Us</a>
+                    <a href="about.php" class="nav-link <?php echo $currentPage == 'about' ? 'active' : ''; ?>">About Us</a>
                     
                     <div class="services-dropdown">
                         <div class="services-toggle">
@@ -409,7 +415,7 @@
                                     <span class="service-icon"><i class="fas fa-globe"></i></span>
                                     <span>Web Development</span>
                                 </a>
-                                <a href="/app_development.php" class="service-item">
+                                <a href="app_development.php" class="service-item">
                                     <span class="service-icon"><i class="fas fa-mobile-alt"></i></span>
                                     <span>App Development</span>
                                 </a>
@@ -447,7 +453,7 @@
             </div>
         </div>
     </header>
-    <div style="padding-top: 80px;"></div> <!-- Spacer for fixed header -->
+    <div style="padding-top: 0px;"></div> <!-- Spacer for fixed header -->
 
     <script>
         // Mobile menu functionality

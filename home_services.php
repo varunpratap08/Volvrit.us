@@ -1,5 +1,5 @@
 <!-- services.php -->
-<div >
+<div>
     <div class="container">
         <div class="section-intro">
             <svg class="section-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +26,7 @@
                 </div>
                 <h3>App Development</h3>
                 <p>Build powerful mobile apps with intuitive design and reliable performance—tailored for business success.</p>
-                <a href="/contact.php" class="btn">Contact Us</a>
+                <a href="/contact.php" class="btnn">Contact Us</a>
             </div>
             <!-- Right Column Wrapper for Other Cards -->
             <div class="right-cards-wrapper">
@@ -197,8 +197,7 @@
     /* Small Tablets (600px - 767px) */
     @media (min-width: 600px) and (max-width: 767px) {
         .top-cards {
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
+            display: none;
         }
         
         .ai-card-image {
@@ -216,12 +215,17 @@
             width: 100%;
             padding: 20px 15px;
             box-sizing: border-box;
+            margin: 0 auto;
         }
         
         .services-grid {
             display: flex;
             flex-direction: column;
             gap: 20px;
+            width: 100%;
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
         }
         
         .services-heading {
@@ -238,22 +242,22 @@
         
         .service-card {
             width: 100%;
-            margin: 0 0 20px 0;
+            max-width: 100%;
+            margin: 0 0 25px 0;
             padding: 20px;
             box-sizing: border-box;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         }
         
         .top-cards {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            margin: 0;
-            width: 100%;
+            display: none;
         }
         
         .right-cards-wrapper {
             width: 100%;
             margin: 0;
+            padding: 0;
         }
         
         .ai-development-card .ai-card-content {
@@ -261,21 +265,23 @@
         }
         
         .card-image {
-            height: 200px;
+            height: 180px;
             margin: -20px -20px 20px -20px;
             width: calc(100% + 40px);
             border-radius: 0;
-            border-top-left-radius: 0.625rem;
-            border-top-right-radius: 0.625rem;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            overflow: hidden;
         }
         
         .ai-card-image {
-            height: 200px;
+            height: 180px;
             margin: -20px -20px 20px -20px;
             width: calc(100% + 40px);
             border-radius: 0;
-            border-top-left-radius: 0.625rem;
-            border-top-right-radius: 0.625rem;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            overflow: hidden;
         }
         
         .ai-text-content {
@@ -284,14 +290,16 @@
         }
         
         .service-card h3 {
-            font-size: 20px;
-            margin: 10px 0;
+            font-size: 18px;
+            margin: 0 0 10px 0;
+            line-height: 1.3;
         }
         
         .service-card p {
-            font-size: 15px;
+            font-size: 14px;
             line-height: 1.5;
-            margin: 0 0 15px 0;
+            margin: 0 0 20px 0;
+            color: #555;
         }
         
         .btn {
@@ -303,8 +311,11 @@
         }
         
         .app-card .btn {
-            margin: 15px 0 0 0;
-            width: 100%;
+            margin: 15px 0 0 20px;
+            width: calc(100% - 40px);
+            margin-right: 10px;
+            margin-bottom: 5px;
+            max-width: calc(100% - 40px);
         }
     }
     
@@ -380,13 +391,13 @@
     /* AI Development Card Styling */
     .ai-development-card {
         padding: 0;
-        max-width: 1000px; /* Reduced max width */
-        margin: 0 auto; /* Center the card */
+        max-width: 1000px;
+        margin: 0 auto;
     }
     
     .ai-card-content {
         display: flex;
-        align-items: stretch; /* Stretch children to full height */
+        align-items: stretch;
         height: 100%;
     }
     
@@ -485,10 +496,10 @@
     
     .app-card .card-image {
         position: relative;
-        width: calc(100% - 40px); /* Match heading padding */
+        width: calc(100% - 40px);
         height: 220px;
         overflow: hidden;
-        margin: 0 20px 15px; /* Match heading margins */
+        margin: 0 20px 15px;
         padding: 0;
         box-sizing: border-box;
     }
@@ -503,14 +514,14 @@
     .card-image img {
         width: 100%;
         height: 100%;
-        object-fit: contain; /* Changed back to contain to prevent cropping */
+        object-fit: contain;
         border-radius: 10px 10px 0 0;
         transition: transform 0.3s ease;
     }
     
     /* Center the image in App Development card */
     .app-card .card-image img {
-        max-width: 80%; /* Slightly smaller than container to ensure visibility */
+        max-width: 80%;
         height: auto;
         object-fit: contain;
     }
@@ -518,7 +529,7 @@
     /* Adjust Image Height for Other Cards */
     .top-cards .card-image,
     .bottom-card .card-image {
-        height: 180px; /* Increased height for other cards */
+        height: 180px;
     }
 
     /* Decorative Dots for App Development Card */
@@ -580,7 +591,7 @@
     }
 
     .app-card p {
-        margin: 0 20px 15px; /* Match heading horizontal margins */
+        margin: 0 20px 15px;
         color: #666;
         line-height: 1.5;
         flex-grow: 1;
@@ -649,6 +660,24 @@
         width: auto;
         min-width: 120px;
     }
+    .service-card .btnn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: #007BFF;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 400;
+        transition: background 0.3s ease, transform 0.2s ease;
+        align-self: flex-start;
+        margin-top: 15px;
+        width: auto;
+        min-width: 120px;
+        margin-left: 5%;
+    }
 
     .service-card .btn:hover {
         background: #0056b3;
@@ -665,13 +694,13 @@
 
     /* Responsive Image Heights */
     .card-image {
-        height: 12.5rem; /* 200px */
+        height: 12.5rem;
     }
     
     /* Small devices (576px and up) */
     @media (min-width: 576px) {
         .card-image {
-            height: 15.625rem; /* 250px */
+            height: 15.625rem;
         }
     }
     
@@ -679,7 +708,7 @@
     @media (min-width: 768px) {
         .top-cards .card-image,
         .bottom-card .card-image {
-            height: 11.25rem; /* 180px */
+            height: 11.25rem;
         }
         
         .app-card .card-image {
@@ -691,7 +720,7 @@
     @media (min-width: 992px) {
         .top-cards .card-image,
         .bottom-card .card-image {
-            height: 12.5rem; /* 200px */
+            height: 12.5rem;
         }
     }
     
@@ -699,67 +728,64 @@
     @media (min-width: 1200px) {
         .top-cards .card-image,
         .bottom-card .card-image {
-            height: 15.625rem; /* 250px */
+            height: 15.625rem;
         }
     }
 
-        .deco-dot-1 {
-            width: 0.9375rem; /* 15px */
-            height: 0.9375rem;
-            top: 0.3125rem;
-            left: 0.3125rem;
-        }
+    /* Decorative Dots for App Development Card */
+    .deco-dot-1 {
+        width: 0.9375rem;
+        height: 0.9375rem;
+        top: 0.3125rem;
+        left: 0.3125rem;
+    }
 
-        .deco-dot-2 {
-            width: 0.625rem; /* 10px */
-            height: 0.625rem;
-            top: 1.875rem;
-            left: 0.9375rem;
-        }
+    .deco-dot-2 {
+        width: 0.625rem;
+        height: 0.625rem;
+        top: 1.875rem;
+        left: 0.9375rem;
+    }
 
-        .deco-dot-3 {
-            width: 1.25rem; /* 20px */
-            height: 1.25rem;
-            bottom: 0.3125rem;
-            left: 1.25rem;
-        }
+    .deco-dot-3 {
+        width: 1.25rem;
+        height: 1.25rem;
+        bottom: 0.3125rem;
+        left: 1.25rem;
     }
 
     @media (max-width: 480px) {
         .container {
-            padding: 20px 0;
-        }
-
-        h2 {
-            font-size: 20px;
-        }
-
-        .card-image {
-height: 200px;
-        
-        .section-label {
-            font-size: 0.875rem; /* 14px */
-        }
-        
-        .card-image {
-            height: 10rem; /* 160px */
-            margin: -1.25rem -1.25rem 1rem -1.25rem;
-        }
-        
-        .app-card .card-image {
-            height: 15rem; /* 240px */
+            padding: 15px 10px;
         }
         
         .service-card {
-            padding: 1.25rem;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .card-image {
+            height: 150px;
+            margin: -15px -15px 15px -15px;
+            width: calc(100% + 30px);
+            border-top-left-radius: 8px !important;
+            border-top-right-radius: 8px !important;
+        }
+        
+        .ai-card-image {
+            height: 150px;
+            margin: -15px -15px 15px -15px;
+            width: calc(100% + 30px);
+            border-top-left-radius: 8px !important;
+            border-top-right-radius: 8px !important;
         }
         
         .service-card h3 {
-            font-size: 1.125rem; /* 18px */
+            font-size: 1.125rem;
         }
         
         .service-card p {
-            font-size: 0.875rem; /* 14px */
+            font-size: 0.875rem;
             margin-bottom: 1rem;
         }
         

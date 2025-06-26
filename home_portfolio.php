@@ -4,6 +4,7 @@
         padding: 80px 0;
         width: 100%;
         box-sizing: border-box;
+        overflow: hidden;
     }
 
     .portfolio-badge {
@@ -57,6 +58,8 @@
         width: 100%;
         max-width: 1300px;
         margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
     }
 
     .portfolio-card {
@@ -64,10 +67,12 @@
         border-radius: 20px;
         border: 1px solid #D3D3D3;
         overflow: hidden;
-        width: 403px;
+        width: 100%;
+        max-width: 403px;
         height: 444px;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         position: relative;
+        margin: 0 auto;
     }
 
     .portfolio-card:hover {
@@ -79,6 +84,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        object-position: center;
         border-radius: 20px;
         position: absolute;
         top: 0;
@@ -188,16 +194,20 @@
     
     @media (max-width: 767.98px) {
         .portfolio-section {
-            padding: 50px 0;
+            padding: 40px 0;
         }
         
         .section-title {
             font-size: 24px;
+            text-align: center;
+            padding: 0 15px;
         }
         
         .portfolio-badge {
             font-size: 13px;
             padding: 5px 14px;
+            margin: 0 auto 15px;
+            display: table;
         }
         
         .portfolio-badge svg {
@@ -208,41 +218,82 @@
         .portfolio-description {
             font-size: 14px;
             margin-bottom: 25px;
+            padding: 0 15px;
+            text-align: center;
+        }
+        
+        .portfolio-grid {
+            grid-template-columns: 1fr;
+            gap: 20px;
+            max-width: 100%;
+            padding: 0 15px;
+            margin: 0 auto;
+        }
+        
+        .portfolio-card {
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            aspect-ratio: 1/1.1;
+            margin: 0 auto;
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        .portfolio-section .container {
+            text-align: center;
+            padding: 0 15px;
+        }
+        
+        .portfolio-badge {
+            margin: 0 auto 15px;
+            display: inline-flex;
+            justify-content: center;
+        }
+        
+        .section-title {
+            font-size: 24px;
+            line-height: 1.3;
+            padding: 0;
+            margin: 15px auto 20px;
+            text-align: center;
+        }
+        
+        .heading-line {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .portfolio-description {
+            text-align: center;
+            margin: 0 auto 25px;
+            padding: 0 10px;
+        }
+        
+        .portfolio-badge {
+            font-size: 12px;
+            padding: 4px 16px;
         }
         
         .portfolio-grid {
             grid-template-columns: 1fr;
             gap: 25px;
+            padding: 0;
             max-width: 100%;
-            padding: 0 15px;
         }
         
         .portfolio-card {
             width: 100%;
             max-width: 100%;
-            height: auto;
-            aspect-ratio: 403/444;
-        }
-    }
-
-    @media (max-width: 575.98px) {
-        .section-title {
-            font-size: 22px;
-            line-height: 1.4;
+            aspect-ratio: 16/18;
         }
         
-        .portfolio-badge {
-            font-size: 12px;
-            padding: 4px 12px;
+        .portfolio-content {
+            padding: 15px;
         }
         
-        .portfolio-grid {
-            grid-template-columns: 1fr;
-            gap: 15px;
-        }
-        
-        .portfolio-image {
-            height: 180px;
+        .portfolio-title {
+            font-size: 18px;
         }
     }
 </style>
@@ -271,9 +322,9 @@
                 <div class="portfolio-content">
                     <h3 class="portfolio-title">Kallakuri Foods</h3>
                     <div class="tech-tags">
-                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">React Native</span>
                         <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">MongoDB</span>
+                        <!--<span class="tech-tag">MongoDB</span>-->
                     </div>
                 </div>
             </div>
@@ -285,7 +336,7 @@
                     <div class="tech-tags">
                         <span class="tech-tag">React</span>
                         <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">MongoDB</span>
+                        <!--<span class="tech-tag">MongoDB</span>-->
                     </div>
                 </div>
             </div>
@@ -295,9 +346,9 @@
                 <div class="portfolio-content">
                     <h3 class="portfolio-title">Pdf Scanner</h3>
                     <div class="tech-tags">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">React Native</span>
+                       <!-- <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>-->
                     </div>
                 </div>
             </div>
@@ -306,9 +357,9 @@
                 <div class="portfolio-content">
                     <h3 class="portfolio-title">Dostkicar</h3>
                     <div class="tech-tags">
-                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">React.js</span>
                         <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">MongoDB</span>
+                       <!-- <span class="tech-tag">MongoDB</span>-->
                     </div>
                 </div>
             </div>
@@ -317,42 +368,43 @@
                 <div class="portfolio-content">
                     <h3 class="portfolio-title">Finch Locks</h3>
                     <div class="tech-tags">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">PHP</span>
                     </div>
                 </div>
             </div>
             <div class="portfolio-card fade-in" style="animation-delay: 0.4s">
-                <img src="assets/images/portfolio(5).jpg" alt="Finch 5" class="portfolio-image">
+                <img src="assets/images/portfolio_image.png" alt="Finch 5" class="portfolio-image">
                 <div class="portfolio-content">
                     <h3 class="portfolio-title">Amit Sales</h3>
                     <div class="tech-tags">
-                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Flutter</span>
                         <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">MongoDB</span>
+                       <!-- <span class="tech-tag">MongoDB</span>-->
                     </div>
                 </div>
             </div>
             <div class="portfolio-card fade-in" style="animation-delay: 0.4s">
-                <img src="assets/images/portfolio(5).jpg" alt="Finch 5" class="portfolio-image">
+                <img src="assets/images/portfolio_cricket.png" alt="Finch 5" class="portfolio-image">
                 <div class="portfolio-content">
                     <h3 class="portfolio-title">Cricket Academy</h3>
                     <div class="tech-tags">
-                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Flutter</span>
                         <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">MongoDB</span>
+                       <!-- <span class="tech-tag">MongoDB</span>-->
                     </div>
                 </div>
             </div>
             <div class="portfolio-card fade-in" style="animation-delay: 0.4s">
-                <img src="assets/images/portfolio(5).jpg" alt="Finch 5" class="portfolio-image">
+                <img src="assets/images/portfolio_wallet.png" alt="Finch 5" class="portfolio-image">
                 <div class="portfolio-content">
                     <h3 class="portfolio-title">C2C</h3>
                     <div class="tech-tags">
-                        <span class="tech-tag">React</span>
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Laravel</span>
+                       <!-- <span class="tech-tag">MongoDB</span>-->
                     </div>
                 </div>
             </div>

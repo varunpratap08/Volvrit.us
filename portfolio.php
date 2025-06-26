@@ -15,7 +15,7 @@ require_once 'includes/header.php';
             position: relative;
             height: 80vh;
             min-height: 600px;
-            background: url('assets/images/portfolio_hero.jpg');
+            background: url('assets/images/Portfolio_hero.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;

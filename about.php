@@ -858,23 +858,46 @@ require_once 'includes/header.php';
 }
 
 .large-centered-text {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 2rem; /* Increased size */
-    line-height: 1.3;
+    font-size: 2rem;
+    line-height: 1.4;
     letter-spacing: 1.5px;
-    text-align: center;
+    text-align: left;
     color: rgb(22, 22, 24);
-    margin: 0 auto;
-    padding: 2rem 20px;
+    margin: 0;
+    padding: 0.5rem 0;
     cursor: default;
     transition: all 0.3s ease;
     display: block;
     width: 100%;
     box-sizing: border-box;
-    animation: float 3s ease-in-out infinite;
+    animation: float 2.5s ease-in-out infinite;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 767px) {
+    .large-centered-text {
+        font-family: 'Inter', 'Poppins', sans-serif;
+        font-size: 1.25rem;
+        letter-spacing: 1px;
+        padding: 0.5rem 1rem;
+        animation: float 1.3s ease-in-out infinite;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
 .large-centered-text:hover {
     animation-play-state: paused;
     transform: scale(1.03);
