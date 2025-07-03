@@ -2,10 +2,23 @@
 RewriteEngine On
 
 # Set the base directory (adjust if your site is in a subdirectory, e.g., /subfolder/)
-RewriteBase /
+RewriteBase /volvrit-website/
 
 # Enable FollowSymLinks
 Options +FollowSymLinks -Indexes
+
+# Hyphenated URLs mapped to underscore PHP files
+RewriteRule ^web-development$ web_development.php [L,QSA]
+RewriteRule ^app-development$ app_development.php [L,QSA]
+RewriteRule ^ai-development$ AI_development.php [L,QSA]
+RewriteRule ^blockchain-development$ Blockchain_development.php [L,QSA]
+RewriteRule ^crm-development$ crm_development.php [L,QSA]
+RewriteRule ^digital-marketing$ digitalMarketing.php [L,QSA]
+RewriteRule ^ui-ux-development$ ui_ux_development.php [L,QSA]
+RewriteRule ^about-us$ about.php [L,QSA]
+RewriteRule ^contact-us$ contact.php [L,QSA]
+RewriteRule ^portfolio$ portfolio.php [L,QSA]
+RewriteRule ^services$ services.php [L,QSA]
 
 # Remove .php extension from URLs (optional, for cleaner URLs)
 # RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
@@ -18,19 +31,19 @@ Options +FollowSymLinks -Indexes
 # Route all requests to their corresponding PHP files if they exist
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{DOCUMENT_ROOT}/$1.php -f
+RewriteCond %{DOCUMENT_ROOT}/volvrit-website/$1.php -f
 RewriteRule ^(.*)$ $1.php [L]
 
 # Handle index files for directories
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} /$ [NC]
-RewriteCond %{DOCUMENT_ROOT}/$1/index.php -f
+RewriteCond %{DOCUMENT_ROOT}/volvrit-website/$1/index.php -f
 RewriteRule ^(.*)/$ $1/index.php [L]
 
 # Custom error pages
-ErrorDocument 404 /404.php
-ErrorDocument 500 /500.php
+ErrorDocument 404 /volvrit-website/404.php
+ErrorDocument 500 /volvrit-website/500.php
 
 # Security headers
 <IfModule mod_headers.c>

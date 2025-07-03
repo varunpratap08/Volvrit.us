@@ -1,6 +1,6 @@
 <?php
 // Include header
-$page_title = 'Web Development - Volvrit';
+$page_title = 'Web Development - Evolvix';
 require_once 'includes/header.php';
 ?>
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ require_once 'includes/header.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Development - Volvrit</title>
+    <title>Web Development - Evolvix</title>
     <style>
         * {
             margin: 0;
@@ -848,7 +848,7 @@ require_once 'includes/header.php';
                     }
                 }
             </style>
-            <a href="/contact.php" class="btn">
+            <a href="/contact-us" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
             </a>
@@ -1030,7 +1030,7 @@ require_once 'includes/header.php';
             High-Performance Websites Built for Speed, SEO, and User Engagement            </h2>
             
                     <div>
-                        <p class="item-text">Get a fully customized website that’s fast, secure, mobile-responsive, and built to convert. From SEO optimization to seamless UX, we deliver websites that grow with your business.</p>
+                        <p class="item-text">Get a fully customized website that's fast, secure, mobile-responsive, and built to convert. From SEO optimization to seamless UX, we deliver websites that grow with your business.</p>
                         <ul class="sub-list">
                             <li>A responsive, SEO-optimized website designed for fast loading and excellent UX</li>
                             <li>Custom UI/UX tailored to your audience and brand</li>

@@ -36,6 +36,14 @@ if ($base_dir !== '/') {
 $request_uri = trim($request_uri, '/');
 logMessage("Processed URI: '$request_uri'");
 
+// Check if a PHP file exists for the request URI (with hyphens replaced by underscores)
+$php_file_candidate = str_replace('-', '_', $request_uri) . '.php';
+if ($request_uri !== '' && file_exists($php_file_candidate)) {
+    logMessage("Direct file match: Including $php_file_candidate");
+    include $php_file_candidate;
+    exit();
+}
+
 // Define your routes
 $routes = [
     // Main Pages

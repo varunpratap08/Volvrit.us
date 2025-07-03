@@ -1,6 +1,6 @@
 <?php
 // Include header
-$page_title = 'Web Development - Volvrit';
+$page_title = 'AI Development - Evolvix';
 require_once 'includes/header.php';
 ?>
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ require_once 'includes/header.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Development - Volvrit</title>
+    <title>AI Development - Evolvix</title>
     <style>
         * {
             margin: 0;
@@ -824,7 +824,7 @@ require_once 'includes/header.php';
         <div class="container">
             <h1>We Design Smart AI <br> That Works for You</h1>
             <p>From machine learning to predictive analytics, Evolvix builds secure and scalable AI systems that empower smarter business decisions across industries.</p>
-            <a href="/contact.php" class="btn">
+            <a href="/contact-us" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
             </a>
@@ -954,11 +954,11 @@ require_once 'includes/header.php';
                 <span class="offer-text">Business Value</span>
             </div>
             <h2 class="section-title" style="margin-top: 16px">
-            AI That’s Ethical, Transparent,<br> and Built to Scale
+            AI That's Ethical, Transparent,<br> and Built to Scale
             </h2>
             <div>
                         <p class="item-text">At Evolvix, we develop AI solutions rooted in responsibility—prioritizing fairness, data privacy, and explainability. Every model we build is scalable, secure, and aligned with your long-term business goals.</p>
-                       <h3>Our AI solutions aren’t just powerful—they’re responsible. At Evolvix, we emphasize</h3>
+                       <h3>Our AI solutions aren't just powerful—they're responsible. At Evolvix, we emphasize</h3>
                         <ul class="sub-list">
                             <li>Ethical AI Design with fairness, explainability, and human-centric outcomes.</li>
                             <li>Privacy-First Development with data encryption and regulation compliance.</li>

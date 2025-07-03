@@ -1,6 +1,6 @@
 <?php
 // Include header
-$page_title = 'Our Portfolio - Volvrit';
+$page_title = 'Our Portfolio - Evolvix';
 require_once 'includes/header.php';
 ?>
 <style>

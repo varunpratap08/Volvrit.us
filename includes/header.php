@@ -390,7 +390,7 @@
     <div class="page-container">
     <header>
         <div class="header-container">
-            <a href="index.php" class="logo">
+            <a href="/" class="logo">
               <img src="assets/images/evolvix logo.png" alt="Evolvix Logo"> 
             </a>
             
@@ -400,8 +400,8 @@
 
             <div class="nav-container">
                 <nav class="nav" id="mainNav">
-                    <a href="/index.php" class="nav-link <?php echo $currentPage == 'home' ? 'active' : ''; ?>">Home</a>
-                    <a href="about.php" class="nav-link <?php echo $currentPage == 'about' ? 'active' : ''; ?>">About Us</a>
+                    <a href="/" class="nav-link <?php echo $currentPage == 'home' ? 'active' : ''; ?>">Home</a>
+                    <a href="/about-us" class="nav-link <?php echo $currentPage == 'about' ? 'active' : ''; ?>">About Us</a>
                     
                     <div class="services-dropdown">
                         <div class="services-toggle">
@@ -411,35 +411,35 @@
                         <div class="services-menu">
                             <h3>Our Services</h3>
                             <div class="services-grid">
-                                <a href="/web_development.php" class="service-item">
+                                <a href="/web-development" class="service-item">
                                     <span class="service-icon"><i class="fas fa-globe"></i></span>
                                     <span>Web Development</span>
                                 </a>
-                                <a href="app_development.php" class="service-item">
+                                <a href="/app-development" class="service-item">
                                     <span class="service-icon"><i class="fas fa-mobile-alt"></i></span>
                                     <span>App Development</span>
                                 </a>
-                                <a href="/ui_ux_development.php" class="service-item">
+                                <a href="/ui-ux-development" class="service-item">
                                     <span class="service-icon"><i class="fas fa-paint-brush"></i></span>
                                     <span>UI/UX Design</span>
                                 </a>
-                                <a href="/digitalMarketing.php" class="service-item">
+                                <a href="/digital-marketing" class="service-item">
                                     <span class="service-icon"><i class="fas fa-bullhorn"></i></span>
                                     <span>Digital Marketing</span>
                                 </a>
-                                <a href="/crm_development.php" class="service-item">
+                                <a href="/crm-development" class="service-item">
                                     <span class="service-icon"><i class="fas fa-users"></i></span>
                                     <span>CRM Development</span>
                                 </a>
-                                <a href="/API_development.php" class="service-item">
+                                <a href="/api-development" class="service-item">
                                     <span class="service-icon"><i class="fas fa-plug"></i></span>
                                     <span>API Development</span>
                                 </a>
-                                <a href="/blockchain_development.php" class="service-item">
+                                <a href="/blockchain-development" class="service-item">
                                     <span class="service-icon"><i class="fas fa-link"></i></span>
                                     <span>Blockchain</span>
                                 </a>
-                                <a href="/AI_development.php" class="service-item">
+                                <a href="/ai-development" class="service-item">
                                     <span class="service-icon"><i class="fas fa-robot"></i></span>
                                     <span>AI Development</span>
                                 </a>
@@ -447,9 +447,9 @@
                         </div>
                     </div>
                     
-                    <a href="/portfolio.php" class="nav-link <?php echo $currentPage == 'portfolio' ? 'active' : ''; ?>">Portfolio</a>
+                    <a href="/portfolio" class="nav-link <?php echo $currentPage == 'portfolio' ? 'active' : ''; ?>">Portfolio</a>
                 </nav>
-                <a href="/contact.php" class="contact-btn">Contact Us</a>
+                <a href="/contact-us" class="contact-btn">Contact Us</a>
             </div>
         </div>
     </header>

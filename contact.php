@@ -1,6 +1,6 @@
 <?php
 // Include header
-$page_title = 'Contact Us - Volvrit';
+$page_title = 'Contact Us - Evolvix';
 require_once 'includes/header.php';
 ?>
 
@@ -695,7 +695,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <span class="title-line">How Can We Help You?</span>
                 </h3>
                 <p class="item-text">Have a project idea?</p>
-                <p class="item-text">Need help scaling your marketing efforts? </p>
+                <p class="item-text">Need help scaling your marketing efforts?</p>
                 <p class="item-text">Want expert input on your technology roadmap?</p>
                 <div>
                     <p class="item-text">Our team is here to provide expert consultation, technical insights, and customized solutions — no matter where you are in your journey.</p>

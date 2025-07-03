@@ -1,6 +1,6 @@
 <?php
 // Include header
-$page_title = 'Web Development - Volvrit';
+$page_title = 'Digital Marketing - Evolvix';
 require_once 'includes/header.php';
 ?>
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ require_once 'includes/header.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Development - Volvrit</title>
+    <title>Digital Marketing - Evolvix</title>
     <style>
         * {
             margin: 0;
@@ -887,8 +887,8 @@ require_once 'includes/header.php';
        
         <div class="container">
         <h1>Drive Results, Not Just Traffic<br><span style="display: inline-block;">With Performance-First Digital Marketing</span></h1>
-        <p>Transform your brand’s online presence with Evolvix’s data-driven, full-funnel digital marketing solutions. Based in New York, we help businesses across the United States grow smarter, rank faster, and convert better</p>
-            <a href="/contact.php" class="btn">
+        <p>Transform your brand's online presence with Evolvix's data-driven, full-funnel digital marketing solutions. Based in New York, we help businesses across the United States grow smarter, rank faster, and convert better</p>
+            <a href="/contact-us" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
             </a>
@@ -910,7 +910,7 @@ require_once 'includes/header.php';
         <div class="container">
             <h1 class="section-title">Performance-Driven <br> Digital Marketing Solutions for Modern Brands</h1>
             <div class="section-content">
-                <p>At Evolvix, we understand that digital marketing is more than just online visibility—it's about measurable growth. Our team combines strategic planning, creative execution, and analytics-driven decisions to ensure your brand doesn’t just compete but leads in your niche and delivers maximum ROI. We cater to both B2B and B2C clients across the United States, helping startups, SMEs, and enterprises create sustainable digital ecosystems with tailored marketing campaigns.</p>
+                <p>At Evolvix, we understand that digital marketing is more than just online visibility—it's about measurable growth. Our team combines strategic planning, creative execution, and analytics-driven decisions to ensure your brand doesn't just compete but leads in your niche and delivers maximum ROI. We cater to both B2B and B2C clients across the United States, helping startups, SMEs, and enterprises create sustainable digital ecosystems with tailored marketing campaigns.</p>
             </div>
         </div>
         <style>
@@ -992,14 +992,14 @@ require_once 'includes/header.php';
                         <p class="item-text">At Evolvix, we offer tailored digital marketing strategies that combine creativity with performance. From SEO and PPC to content marketing, social media campaigns, and email automation, we help businesses across the United States increase visibility, generate qualified leads, and convert them into loyal customers — all through data-driven and channel-specific execution.</p>
                         <h3 class="item-title">Our services include</h3>
                         <ul class="sub-list">
-                            <li><span class="sub-list-text" style="color: black">Search Engine Optimization (SEO):</span> <p >We improve your website’s visibility on search engines like Google by optimizing your content, keywords, site structure, and speed. Our SEO strategies drive long-term organic traffic, helping your business rank higher, get discovered more easily, and reach the right audience.</p></li>
+                            <li><span class="sub-list-text" style="color: black">Search Engine Optimization (SEO):</span> <p >We improve your website's visibility on search engines like Google by optimizing your content, keywords, site structure, and speed. Our SEO strategies drive long-term organic traffic, helping your business rank higher, get discovered more easily, and reach the right audience.</p></li>
                             <li><span class="sub-list-text" style="color: black">Social Media Marketing (SMM):</span> <p >We craft platform-specific strategies for Facebook, Instagram, LinkedIn, and more to help your brand grow its community, build engagement, and drive sales. From content creation to audience targeting, we turn social media into a revenue-generating channel for your business.</p></li>
                             <li><span class="sub-list-text" style="color: black">Content Marketing:</span> <p >We create engaging, high-quality content that resonates with your audience and helps you build trust, authority, and visibility. Whether it's blog posts, videos, or infographics, our content marketing strategies are designed to keep your audience coming back for more.</p></li>
                             <li><span class="sub-list-text" style="color: black">Email Marketing:</span> <p >We build and manage email campaigns that nurture leads and retain customers. From drip sequences to newsletters, our strategies personalize your outreach, boost open rates, and drive repeat sales through automation and timely communication.</p></li>
-                            <li><span class="sub-list-text" style="color: black">Pay-Per-Click (PPC):</span> <p >Through targeted ad campaigns on Google, Bing, and social platforms, we help you get instant visibility and measurable returns. Whether it’s search ads, display banners, or remarketing, our PPC experts optimize every click to maximize your ROI and conversions.</p></li>
+                            <li><span class="sub-list-text" style="color: black">Pay-Per-Click (PPC):</span> <p >Through targeted ad campaigns on Google, Bing, and social platforms, we help you get instant visibility and measurable returns. Whether it's search ads, display banners, or remarketing, our PPC experts optimize every click to maximize your ROI and conversions.</p></li>
                             <li><span class="sub-list-text" style="color: black">Local SEO & GMB Optimization:</span> <p >Want to rank locally and attract nearby customers? We optimize your Google Business Profile, citations, reviews, and local keywords to help your business appear in local search results and maps — critical for brick-and-mortar or region-specific services.</p></li>
-                            <li><span class="sub-list-text" style="color: black">Web Analytics & Conversion Tracking:</span> <p >Using tools like Google Analytics, GA4, and Meta Pixel, we track every click, conversion, and campaign. Our team transforms data into actionable insights so you can see what’s working, where to improve, and how to grow smarter.</p></li>
-                            <li><span class="sub-list-text" style="color: black">CGI & 3D Visualization Services:</span> <p > We bring your ideas to life with hyper-realistic 3D renders, animations, and visual storytelling. From product visualizations and architectural walkthroughs to motion graphics for social media, our CGI experts craft immersive content that captures attention and drives engagement. Whether you're launching a new product or building brand presence, our 3D visuals enhance user experience, boost conversions, and make your digital presence unforgettable.</p></li>
+                            <li><span class="sub-list-text" style="color: black">Web Analytics & Conversion Tracking:</span> <p >Using tools like Google Analytics, GA4, and Meta Pixel, we track every click, conversion, and campaign. Our team transforms data into actionable insights so you can see what's working, where to improve, and how to grow smarter.</p></li>
+                            <li><span class="sub-list-text" style="color: black">CGI & 3D Visualization Services:</span> <p >We bring your ideas to life with hyper-realistic 3D renders, animations, and visual storytelling. From product visualizations and architectural walkthroughs to motion graphics for social media, our CGI experts craft immersive content that captures attention and drives engagement. Whether you're launching a new product or building brand presence, our 3D visuals enhance user experience, boost conversions, and make your digital presence unforgettable.</p></li>
                             
                         </ul>
                     </div>
@@ -1024,8 +1024,8 @@ require_once 'includes/header.php';
             </h2>
             
                     <div>
-                        <p class="item-text">At Evolvix, we operate with complete transparency, clear communication, and measurable intent. Every campaign is backed by ethical marketing standards, continuous learning, and a deep understanding of user behavior. We don’t just follow trends — we create value-driven strategies that are honest, adaptable, and focused on long-term success for our clients in NYC and across the United States.</p>
-                       <h3>Our values drive more than just strategy—they shape results. We believe great marketing is built on trust, clarity, and adaptability. That’s why every campaign we deliver reflects who we are and how we work</h3>
+                        <p class="item-text">At Evolvix, we operate with complete transparency, clear communication, and measurable intent. Every campaign is backed by ethical marketing standards, continuous learning, and a deep understanding of user behavior. We don't just follow trends — we create value-driven strategies that are honest, adaptable, and focused on long-term success for our clients in NYC and across the United States.</p>
+                       <h3>Our values drive more than just strategy—they shape results. We believe great marketing is built on trust, clarity, and adaptability. That's why every campaign we deliver reflects who we are and how we work</h3>
                         <ul class="sub-list">
                             <li class="sub-list-text">Transparency in planning, execution, and reporting</li>
                             <li class="sub-list-text">Data-driven strategies focused on measurable outcomes</li>
@@ -1077,7 +1077,7 @@ require_once 'includes/header.php';
                             <li class="sub-list-text">Monthly reports with actionable insights.</li>
                             <li class="sub-list-text">Cross-platform expertise from search engines to social media</li>
                         </ul>
-                        <span class="values-tagline">Whether it’s brand awareness or revenue growth, we deliver marketing that drives tangible business results.</span>
+                        <span class="values-tagline">Whether it's brand awareness or revenue growth, we deliver marketing that drives tangible business results.</span>
                         <style>
                             .values-tagline {
                                 font-family: 'Roboto', sans-serif;

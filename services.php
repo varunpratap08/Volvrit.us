@@ -10,7 +10,7 @@ require_once 'includes/header.php';
         <h1>Our Services</h1>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="/volvrit-website/index.php">Home</a></li>
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Services</li>
             </ol>
         </nav>
@@ -74,7 +74,7 @@ require_once 'includes/header.php';
     <div class="container">
         <h2>Ready to Start Your Project?</h2>
         <p>Contact us today to discuss how we can help bring your ideas to life.</p>
-        <a href="/contact.php" class="btn btn-primary">Get in Touch</a>
+        <a href="/contact-us" class="btn btn-primary">Get in Touch</a>
     </div>
 </section>
 

@@ -1,6 +1,6 @@
 <?php
 // Include header
-$page_title = 'Web Development - Volvrit';
+$page_title = 'Blockchain Development - Evolvix';
 require_once 'includes/header.php';
 ?>
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ require_once 'includes/header.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Development - Volvrit</title>
+        <title>Blockchain Development - Evolvix</title>
     <style>
         * {
             margin: 0;
@@ -888,7 +888,7 @@ require_once 'includes/header.php';
         <div class="container">
         <h1>We evolve ideas into<br><span style="display: inline-block;">Intelligent Blockchain Products</span></h1>
         <p>From secure smart contracts to tokenized ecosystems, we build scalable blockchain solutions that unlock trust and transparency in the digital age. Whether you're a startup or enterprise, we help you go from idea to execution—with speed, precision, and innovation.</p>
-            <a href="/contact.php" class="btn">
+            <a href="/contact-us" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
             </a>
@@ -1056,8 +1056,8 @@ require_once 'includes/header.php';
             </div>
             <h2 class="section-title" style="margin-top: 16px">
             Turn innovation into impact with <br>Smart Blockchain Development         <div>
-                        <p class="item-text">Blockchain is more than just a trend—it’s a tool for creating long-term value, security, and operational efficiency. At Evolvix, we deliver custom blockchain solutions that help your business scale smarter, transact faster, and build with trust.</p>
-                        <h4>Here’s what you get when you work with us</h4>
+                        <p class="item-text">Blockchain is more than just a trend—it's a tool for creating long-term value, security, and operational efficiency. At Evolvix, we deliver custom blockchain solutions that help your business scale smarter, transact faster, and build with trust.</p>
+                        <h4>Here's what you get when you work with us</h4>
                         <p class="item-text">From tokenization to smart contracts, we make complex technology feel seamless, intuitive, and secure.</p>
                         <ul class="sub-list">
                             <li>Security-Driven Architecture: Every solution is built to resist vulnerabilities and protect digital assets at scale.</li>

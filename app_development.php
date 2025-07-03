@@ -1,6 +1,6 @@
 <?php
 // Include header
-$page_title = 'Web Development - Volvrit';
+$page_title = 'App Development - Evolvix';
 require_once 'includes/header.php';
 ?>
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ require_once 'includes/header.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Development - Volvrit</title>
+    <title>App Development - Evolvix</title>
     <style>
         * {
             margin: 0;
@@ -888,7 +888,7 @@ require_once 'includes/header.php';
         <div class="container">
         <h1 >We turn ideas into intelligent, high-performance applications.</h1>
         <p class="item-text">From MVPs to enterprise-grade systems, our US-based team builds custom mobile, web, and cloud-native apps that are secure, scalable, and ready to grow with your business.</p>
-            <a href="/contact.php" class="btn">
+            <a href="/contact-us" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
             </a>
@@ -910,7 +910,7 @@ require_once 'includes/header.php';
         <div class="container">
             <h1 class="section-title">From Concept to Code, We Deliver Results That Matter</h1>
             <div class="section-content">
-                <p class="item-text">At Evolvix, we specialize in full-cycle app development services tailored for businesses across the United States. Based in New York, we help startups, SMBs, and enterprises transform ideas into impactful digital products—built to perform and evolve. Our agile team designs and develops robust mobile applications, cross-platform solutions, and complex enterprise apps that deliver seamless performance, secure integrations, and outstanding user experiences. Whether it’s your first app or your next big upgrade—we make it future-ready.</p>
+                <p class="item-text">At Evolvix, we specialize in full-cycle app development services tailored for businesses across the United States. Based in New York, we help startups, SMBs, and enterprises transform ideas into impactful digital products—built to perform and evolve. Our agile team designs and develops robust mobile applications, cross-platform solutions, and complex enterprise apps that deliver seamless performance, secure integrations, and outstanding user experiences. Whether it's your first app or your next big upgrade—we make it future-ready.</p>
             </div>
         </div>
         <style>

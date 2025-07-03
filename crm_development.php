@@ -1,6 +1,6 @@
 <?php
 // Include header
-$page_title = 'Web Development - Volvrit';
+$page_title = 'CRM Development - Evolvix';
 require_once 'includes/header.php';
 ?>
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ require_once 'includes/header.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Development - Volvrit</title>
+    <title>CRM Development - Evolvix</title>
     <style>
         * {
             margin: 0;
@@ -888,7 +888,7 @@ require_once 'includes/header.php';
         <div class="container">
         <h1>Streamline Customer Engagement with Smart CRM Solutions</h1>
         <p> We develop scalable and secure CRM systems that empower your business to build stronger customer relationships, automate workflows, and increase efficiency. Headquartered in New York, we serve companies across the United States with tailored CRM solutions built for performance, integration, and growth.</p>
-            <a href="/contact.php" class="btn">
+            <a href="/contact-us" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
             </a>
@@ -910,7 +910,7 @@ require_once 'includes/header.php';
         <div class="container">
             <h1 class="section-title">Connecting People, Data, and Growth through Custom CRM Development</h1>
             <div class="section-content">
-                <p>At Evolvix, we design and develop custom CRM solutions that simplify operations, automate sales and support, and centralize customer data. Based in New York and serving businesses across the United States, our CRM development services are tailored to help you improve retention, streamline communication, and scale with confidence. In today’s data-driven world, a well-designed CRM is key to success. At Evolvix, we specialize in building powerful CRM platforms that centralize customer data, automate interactions, and simplify your operations. Whether you’re enhancing an existing solution or starting from scratch, our expert team ensures a system that aligns with your business goals and scales with your growth.</p>
+                <p>At Evolvix, we design and develop custom CRM solutions that simplify operations, automate sales and support, and centralize customer data. Based in New York and serving businesses across the United States, our CRM development services are tailored to help you improve retention, streamline communication, and scale with confidence. In today's data-driven world, a well-designed CRM is key to success. At Evolvix, we specialize in building powerful CRM platforms that centralize customer data, automate interactions, and simplify your operations. Whether you're enhancing an existing solution or starting from scratch, our expert team ensures a system that aligns with your business goals and scales with your growth.</p>
             </div>
         </div>
         <style>
@@ -1039,15 +1039,15 @@ require_once 'includes/header.php';
             </h2>
             
                     <div>
-                        <p class="item-text">At Evolvix, we believe technology should simplify, not complicate. That’s why our CRM systems are built on the principles of user-friendliness, scalability, and transparency.</p>
+                        <p class="item-text">At Evolvix, we believe technology should simplify, not complicate. That's why our CRM systems are built on the principles of user-friendliness, scalability, and transparency.</p>
                         <h3>We uphold</h3>
                         <ul class="sub-list">
                             <li>Client-Centric Thinking – Your goals shape every function.</li>
                             <li>Adaptability – Built to grow with you, not restrict you.</li>
-                            <li>Clear Communication – You’re always in the loop.</li>
+                            <li>Clear Communication – You're always in the loop.</li>
                             <li>Long-Term Vision – Designed for results, not just delivery.</li>
                         </ul>
-                        <span class="values-tagline">We don’t just code CRMs—we craft tools that connect, engage, and deliver value every day.</span>
+                        <span class="values-tagline">We don't just code CRMs—we craft tools that connect, engage, and deliver value every day.</span>
                         <style>
                             .values-tagline {
                                 font-family: 'Roboto', sans-serif;
@@ -1082,7 +1082,7 @@ require_once 'includes/header.php';
             <h2 class="section-title" style="margin-top: 16px">
             A Smarter Way to Manage Customers and Teams          <div>
                         <p class="item-text">With Evolvix, you get a fully customized CRM solution that centralizes data, automates repetitive tasks, and enhances team collaboration. From lead tracking and contact management to real-time reporting and customer segmentation, our CRMs are built to drive smarter workflows, improve customer retention, and scale with your business—no matter your industry.</p>
-                        <h4>When you choose Evolvix for CRM development, you get more than just a tool—you get a solution built to deliver impact. Here’s what you can expect</h4>
+                        <h4>When you choose Evolvix for CRM development, you get more than just a tool—you get a solution built to deliver impact. Here's what you can expect</h4>
                         <ul class="sub-list">
                             <li>Centralized Customer Data & Activity Tracking</li>
                             <li>Sales Pipeline Visualization & Automation</li>

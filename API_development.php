@@ -1,6 +1,6 @@
 <?php
 // Include header
-$page_title = 'Web Development - Volvrit';
+$page_title = 'API Development - Evolvix';
 require_once 'includes/header.php';
 ?>
 <!DOCTYPE html>
@@ -8,7 +8,7 @@ require_once 'includes/header.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Development - Volvrit</title>
+        <title>API Development - Evolvix</title>
     <style>
         * {
             margin: 0;
@@ -888,7 +888,7 @@ require_once 'includes/header.php';
         <div class="container">
         <h1>We build APIs that connect, automate,<br> and scale your digital world</h1>
         <p>From SaaS platforms and mobile apps to enterprise software and cloud systems—our custom API development solutions streamline operations and drive digital growth</p>
-            <a href="/contact.php" class="btn">
+            <a href="/contact-us" class="btn">
             <img src="assets/images/fluent_handshake-20-filled.svg" alt="Handshake" class="btn-icon">
             <span>Let's plan your project</span>
             </a>
