@@ -1,14 +1,13 @@
 <?php
+// Set page variables for header
+$GLOBALS['page_title'] = 'CRM Development Services NYC | Custom CRM Solutions';
+$GLOBALS['page_description'] = 'Expert CRM development services in NYC. We build custom CRM solutions that streamline your sales, marketing, and customer service operations.';
+$GLOBALS['canonical_url'] = 'crm-development-services-nyc';
+$currentPage = 'crm-development';
+
 // Include header
-$page_title = 'CRM Development - Evolvix';
-require_once 'includes/header.php';
+include 'includes/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRM Development - Evolvix</title>
     <style>
         * {
             margin: 0;
@@ -1175,6 +1174,3 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
     </div><!-- Close page-container -->
-</body>
-   
-</html>

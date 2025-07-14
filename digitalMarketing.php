@@ -1,14 +1,13 @@
 <?php
+// Set page variables for header
+$GLOBALS['page_title'] = 'Digital Marketing Services NYC | Online Marketing Agency';
+$GLOBALS['page_description'] = 'Top digital marketing agency in NYC. We provide comprehensive digital marketing services including SEO, PPC, social media, and content marketing to grow your business online.';
+$GLOBALS['canonical_url'] = 'digital-marketing-services-nyc';
+$currentPage = 'digital-marketing';
+
 // Include header
-$page_title = 'Digital Marketing - Evolvix';
-require_once 'includes/header.php';
+include 'includes/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Marketing - Evolvix</title>
     <style>
         * {
             margin: 0;
@@ -1149,6 +1148,3 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
     </div><!-- Close page-container -->
-</body>
-   
-</html>

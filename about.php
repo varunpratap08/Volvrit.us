@@ -1,14 +1,13 @@
 <?php
+// Set page variables for header
+$GLOBALS['page_title'] = 'About Us - Evolvix | Web Development & Digital Solutions';
+$GLOBALS['page_description'] = 'Learn about Evolvix, a leading web development and digital solutions company. Discover our mission, values, and commitment to delivering exceptional digital experiences.';
+$GLOBALS['canonical_url'] = 'about-us';
+$currentPage = 'about';
+
 // Include header
-$page_title = 'About Us - Evolvix';
-require_once 'includes/header.php';
+include 'includes/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About Us - Evolvix</title>
     <style>
         * {
             margin: 0;
@@ -1264,6 +1263,3 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
     </div><!-- Close page-container -->
-</body>
-    
-</html>

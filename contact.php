@@ -1,7 +1,12 @@
 <?php
+// Set page variables for header
+$GLOBALS['page_title'] = 'Contact Us - Evolvix | Get in Touch for Digital Solutions';
+$GLOBALS['page_description'] = 'Contact Evolvix for professional web development, mobile apps, and digital solutions. Get in touch with our expert team to discuss your project requirements.';
+$GLOBALS['canonical_url'] = 'contact-us';
+$currentPage = 'contact';
+
 // Include header
-$page_title = 'Contact Us - Evolvix';
-require_once 'includes/header.php';
+include 'includes/header.php';
 ?>
 
 <style>

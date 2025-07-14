@@ -1,14 +1,13 @@
 <?php
+// Set page variables for header
+$GLOBALS['page_title'] = 'Blockchain Development Services NYC | Blockchain Solutions';
+$GLOBALS['page_description'] = 'Expert blockchain development company in NYC. We build secure, decentralized applications and smart contracts on various blockchain platforms.';
+$GLOBALS['canonical_url'] = 'blockchain-development-services-nyc';
+$currentPage = 'blockchain';
+
 // Include header
-$page_title = 'Blockchain Development - Evolvix';
-require_once 'includes/header.php';
+include 'includes/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Blockchain Development - Evolvix</title>
     <style>
         * {
             margin: 0;
@@ -1130,6 +1129,3 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
     </div><!-- Close page-container -->
-</body>
-
-</html>

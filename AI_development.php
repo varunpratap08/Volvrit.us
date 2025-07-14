@@ -1,14 +1,13 @@
 <?php
+// Set page variables for header
+$GLOBALS['page_title'] = 'AI Development Services NYC | Artificial Intelligence Solutions';
+$GLOBALS['page_description'] = 'Leading AI development company in NYC. We deliver cutting-edge artificial intelligence solutions including machine learning, computer vision, and natural language processing.';
+$GLOBALS['canonical_url'] = 'ai-development-services-nyc';
+$currentPage = 'ai-development';
+
 // Include header
-$page_title = 'AI Development - Evolvix';
-require_once 'includes/header.php';
+include 'includes/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Development - Evolvix</title>
     <style>
         * {
             margin: 0;
@@ -1090,6 +1089,3 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
     </div><!-- Close page-container -->
-</body>
-    
-</html>

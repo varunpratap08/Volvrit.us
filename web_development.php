@@ -1,14 +1,13 @@
 <?php
+// Set page variables for header
+$GLOBALS['page_title'] = 'Web Development Services NYC | Custom Website Development';
+$GLOBALS['page_description'] = 'Professional web development services in NYC. We create custom, responsive, and scalable websites tailored to your business needs.';
+$GLOBALS['canonical_url'] = 'web-development-services-nyc';
+$currentPage = 'web-development';
+
 // Include header
-$page_title = 'Web Development - Evolvix';
-require_once 'includes/header.php';
+include 'includes/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Development - Evolvix</title>
     <style>
         * {
             margin: 0;
@@ -1128,6 +1127,3 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
     </div><!-- Close page-container -->
-</body>
-   
-</html>

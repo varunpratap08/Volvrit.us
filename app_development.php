@@ -1,14 +1,13 @@
 <?php
+// Set page variables for header
+$GLOBALS['page_title'] = 'App Development Services NYC | Custom Mobile App Development';
+$GLOBALS['page_description'] = 'Top-rated mobile app development company in NYC. We create custom iOS and Android applications that drive business growth and user engagement.';
+$GLOBALS['canonical_url'] = 'app-development-services-nyc';
+$currentPage = 'app-development';
+
 // Include header
-$page_title = 'App Development - Evolvix';
-require_once 'includes/header.php';
+include 'includes/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Development - Evolvix</title>
     <style>
         * {
             margin: 0;
@@ -1172,6 +1171,3 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
     </div><!-- Close page-container -->
-</body>
-   
-</html>

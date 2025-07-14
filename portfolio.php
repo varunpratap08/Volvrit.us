@@ -1,7 +1,12 @@
 <?php
+// Set page variables for header
+$GLOBALS['page_title'] = 'Our Portfolio - Evolvix | Web Development Projects';
+$GLOBALS['page_description'] = 'Explore our portfolio of successful web development, mobile app, and digital marketing projects. See how we help businesses achieve their digital goals.';
+$GLOBALS['canonical_url'] = 'portfolio';
+$currentPage = 'portfolio';
+
 // Include header
-$page_title = 'Our Portfolio - Evolvix';
-require_once 'includes/header.php';
+include 'includes/header.php';
 ?>
 <style>
     * {

@@ -12,6 +12,11 @@ function logMessage($message) {
     $logFile = __DIR__ . '/router.log';
     $timestamp = date('Y-m-d H:i:s');
     file_put_contents($logFile, "[$timestamp] $message\n", FILE_APPEND);
+    
+    // Also output to browser for debugging
+    if (isset($_GET['debug'])) {
+        echo "<!-- DEBUG: $message -->\n";
+    }
 }
 
 // Get the requested URL path, preferring explicit rewrite param
@@ -33,14 +38,26 @@ if ($base_dir !== '/') {
     $request_uri = preg_replace("#^" . preg_quote($base_dir, '#') . "#", '', $request_uri);
 }
 
+// For localhost development, remove any project folder from the path
+if (strpos($request_uri, 'volvrit-website') !== false) {
+    $request_uri = str_replace('volvrit-website/', '', $request_uri);
+    $request_uri = str_replace('volvrit-website', '', $request_uri);
+}
+
 $request_uri = trim($request_uri, '/');
 logMessage("Processed URI: '$request_uri'");
 
 // Check if a PHP file exists for the request URI (with hyphens replaced by underscores)
 $php_file_candidate = str_replace('-', '_', $request_uri) . '.php';
+$php_file_capital = ucfirst(str_replace('-', '_', $request_uri)) . '.php';
+
 if ($request_uri !== '' && file_exists($php_file_candidate)) {
     logMessage("Direct file match: Including $php_file_candidate");
     include $php_file_candidate;
+    exit();
+} elseif ($request_uri !== '' && file_exists($php_file_capital)) {
+    logMessage("Direct file match (capital): Including $php_file_capital");
+    include $php_file_capital;
     exit();
 }
 
@@ -118,14 +135,14 @@ $routes = [
     ],
     
     'blockchain-development' => [
-        'file' => 'blockchain_development.php',
+        'file' => 'Blockchain_development.php',
         'seo_slug' => 'blockchain-development-services-nyc',
         'title' => 'Blockchain Development Services NYC | Blockchain Solutions',
         'description' => 'Expert blockchain development company in NYC. We build secure, decentralized applications and smart contracts on various blockchain platforms.',
         'canonical' => 'blockchain-development-services-nyc'
     ],
     'blockchain-development-services-nyc' => [
-        'file' => 'blockchain_development.php',
+        'file' => 'Blockchain_development.php',
         'seo_slug' => 'blockchain-development-services-nyc',
         'title' => 'Blockchain Development Services NYC | Blockchain Solutions',
         'description' => 'Expert blockchain development company in NYC. We build secure, decentralized applications and smart contracts on various blockchain platforms.',

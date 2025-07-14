@@ -1,14 +1,13 @@
 <?php
+// Set page variables for header
+$GLOBALS['page_title'] = 'API Development Services NYC | Custom API Integration';
+$GLOBALS['page_description'] = 'Professional API development services in NYC. We design and develop secure, scalable, and well-documented APIs for seamless system integration.';
+$GLOBALS['canonical_url'] = 'api-development-services-nyc';
+$currentPage = 'api-development';
+
 // Include header
-$page_title = 'API Development - Evolvix';
-require_once 'includes/header.php';
+include 'includes/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>API Development - Evolvix</title>
     <style>
         * {
             margin: 0;
@@ -1141,8 +1140,3 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
     </div><!-- Close page-container -->
-</body>
-    
-            
-           
-</html>

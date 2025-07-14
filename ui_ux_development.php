@@ -1,14 +1,13 @@
 <?php
+// Set page variables for header
+$GLOBALS['page_title'] = 'UI/UX Design Services NYC | User Experience Design Agency';
+$GLOBALS['page_description'] = 'Award-winning UI/UX design agency in NYC. We create intuitive, user-centered digital experiences that drive engagement and conversions.';
+$GLOBALS['canonical_url'] = 'ui-ux-design-services-nyc';
+$currentPage = 'ui-ux-development';
+
 // Include header
-$page_title = 'UI/UX Development - Evolvix';
-require_once 'includes/header.php';
+include 'includes/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UI/UX Development - Evolvix</title>
     <style>
         * {
             margin: 0;
@@ -1172,6 +1171,3 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
     </div><!-- Close page-container -->
-</body>
-    
-</html>

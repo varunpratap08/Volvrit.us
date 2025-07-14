@@ -1,7 +1,12 @@
 <?php
+// Set page variables for header
+$GLOBALS['page_title'] = 'Our Services - Evolvix | Web Development & Digital Solutions';
+$GLOBALS['page_description'] = 'Explore our comprehensive range of digital services including web development, mobile apps, UI/UX design, and digital marketing solutions.';
+$GLOBALS['canonical_url'] = 'services';
+$currentPage = 'services';
+
 // Include header
-$page_title = 'Our Services - Volvrit';
-require_once 'includes/header.php';
+include 'includes/header.php';
 ?>
 
 <!-- Services Hero Section -->
